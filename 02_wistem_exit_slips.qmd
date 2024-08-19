@@ -1,0 +1,2675 @@
+---
+title: "WiSTEM 2023 - 2024"
+subtitle: "Exit Slip Analysis"
+format:
+  html:
+    toc: true
+    embed-resources: true
+    echo: false
+    link-external-newwindow: true
+execute:
+  warning: false
+  message: false
+from: markdown+emoji  
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: load-packages
+
+library(tidyverse)
+library(patchwork)
+library(readr)
+library(kableExtra)
+
+set.seed(1968)
+```
+
+```{r}
+#| label: load-data-set
+
+# Load Data
+wistem_exit_slip_data <- read_csv(file = "data/processed/wistem_2324_exit_slips_processed.csv")
+wistem_attendance_data <- read_csv(file = "data/processed/wistem_2324_attendance_processed.csv")
+
+# Leveling
+wistem_exit_slip_data$interesting <- factor(wistem_exit_slip_data$interesting, levels = c("Somewhat", "Fairly", "Very"))
+wistem_exit_slip_data$included <- factor(wistem_exit_slip_data$included, levels = c("Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"))
+wistem_exit_slip_data$belong <- factor(wistem_exit_slip_data$belong, levels = c("Strongly disagree", "Neutral", "Agree", "Strongly agree"))
+
+wistem_exit_slip_data$date <- factor(wistem_exit_slip_data$date, levels = c("Sep 29th", "Oct 13th", "Oct 27th", "Nov 17th", "Dec 1st", "Dec 15th", "Jan 18th", "Jan 19th", "Feb 16th", "Mar 1st", "Mar 15th", "Apr 5th", "Apr 19th", "May 3rd"))
+
+wistem_attendance_data$date <- factor(wistem_attendance_data$date, levels = c("Sep 29th", "Oct 13th", "Oct 27th", "Nov 15th", "Nov 17th", "Dec 1st", "Dec 15th", "Jan 18th", "Mar 1st", "Mar 15th", "Apr 5th", "Apr 19th", "May 6th"))
+
+# Colors
+color <- c("#7000B0")
+fill <- c("#B477FF")
+```
+
+# Background
+
+**WiSTEM:** In total, there were 17 overall WiSTEM meetings held throughout the 2023-2024 academic school year. However, there were 13 meetings with attendance data and 14 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
+
+**Exit Slips Distribution:** Overall, there were 483 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 14 meetings where exit slips were provided: 
+```{r}
+#| label: exit-slip-per-meeting
+
+# Graph
+ggplot(data = wistem_exit_slip_data, mapping = aes(y = date)) +
+  geom_bar(color = color, fill = fill) + 
+  geom_text(
+    stat = 'count', 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.9),
+    family = "Georgia", 
+    fontface = "bold"
+    ) +
+  labs(
+    title = "Number of Exit Slips Per Meeting", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responsesz", 
+    y = "Meeting Date"
+    ) +
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Number of Exit Slips Per Meeting
+```{r}
+# Table
+wistem_exit_slip_data %>%
+  filter(!is.na(date)) %>%
+  count(date) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  rename(count = n) %>%
+  kbl(caption = "Number of Exit Slips Per Meeting") %>%
+  kable_styling()
+```
+
+:::
+
+# Completion Rate
+
+```{r}
+#| label: completion
+
+# Creating Data
+attendance_completion <- wistem_attendance_data %>%
+  filter(!is.na(date)) %>% 
+  count(date) %>% 
+  rename(count = n) %>% 
+  mutate(type = "attendance")
+
+exit_completion <- wistem_exit_slip_data %>% 
+  filter(!is.na(date)) %>% 
+  count(date) %>% 
+  rename(count = n) %>% 
+  mutate(type = "exit slips")
+
+completion_data <- rbind(attendance_completion, exit_completion)
+
+completion_data <- pivot_wider(completion_data, names_from = type, values_from = count) 
+
+completion_data <- completion_data %>% 
+  mutate(
+    completion_prop = `exit slips` / attendance, 
+    completion_percent = completion_prop * 100
+    ) %>%
+  rename(
+    Date = date, 
+    `Exit Slip Count` = `exit slips`, 
+    `Attendance Count` = attendance, 
+    Proportion = completion_prop, 
+    Percent = completion_percent
+  ) %>% 
+  select(Date, `Exit Slip Count`, `Attendance Count`, Proportion, Percent)
+
+# Leveling
+completion_data$Date <- factor(completion_data$Date, levels = c("Sep 29th", "Oct 13th", "Oct 27th", "Nov 15th", "Nov 17th", "Dec 1st", "Dec 15th", "Jan 18th", "Jan 19th", "Feb 16th", "Mar 1st", "Mar 15th", "Apr 5th", "Apr 19th", "May 3rd", "May 6th"))
+
+completion_data %>%
+  kbl(caption = "Exit Slip Completion Rate Per Meeting") %>%
+  kable_styling()
+```
+
+# Overall Distribution Per Category
+## Question 1
+**Question:** How interesting was today's meeting?
+
+```{r}
+#| label: avg-interesting
+
+# Graph
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting)) %>% 
+  group_by(interesting) %>%
+  summarize(percentage = n() / nrow(wistem_exit_slip_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "Overall", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Overall Interesting
+```{r}
+# Table
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting)) %>%
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+:::
+
+## Question 2
+**Question:** I feel included in WiSTEM. 
+
+```{r}
+#| label: avg-included
+
+# Graph
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included)) %>% 
+  group_by(included) %>%
+  summarize(percentage = n() / nrow(wistem_exit_slip_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I Feel Included in WiSTEM", 
+    subtitle = "Overall", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Overall Included
+```{r}
+# Table
+wistem_exit_slip_data %>%
+  filter(!is.na(included)) %>%
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Included") %>%
+  kable_styling()
+```
+:::
+
+## Question 3
+**Question:** I belong in a STE(A)M community. 
+
+```{r}
+#| label: avg-belong
+
+# Graph
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong)) %>% 
+  group_by(belong) %>%
+  summarize(percentage = n() / nrow(wistem_exit_slip_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "Overall", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Overall Belong
+```{r}
+# Table
+wistem_exit_slip_data %>%
+  filter(!is.na(belong)) %>%
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Belong") %>%
+  kable_styling()
+```
+:::
+
+# Distribution Per Meeting
+
+## September 29th, 2023
+**Topic:** Activity
+
+```{r}
+#| label: sep-29-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Sep 29th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "September 29th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Sep 29th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "September 29th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Sep 29th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "September 29th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for September 29th, 2023
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Sep 29th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Sep 29th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Sep 29th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## October 13th, 2023
+**Topic:** Activity
+
+```{r}
+#| label: oct-13-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Oct 13th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "October 13th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Oct 13th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "October 13th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Oct 13th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "October 13th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for October 13th, 2023
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Oct 13th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Oct 13th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Oct 13th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## October 27th, 2023
+**Topic:** Activity
+
+```{r}
+#| label: oct-27-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Oct 27th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "October 27th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Oct 27th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "October 27th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Oct 27th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "October 27th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for October 27th, 2023
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Oct 27th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Oct 27th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Oct 27th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## November 17th, 2023
+**Topic:** Guest Presenter
+
+```{r}
+#| label: nov-17-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Nov 17th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "November 17th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Nov 17th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "November 17th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Nov 17th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "November 17th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for November 17th, 2023
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Nov 17th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Nov 17th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Nov 17th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## December 1st, 2023
+**Topic:** Discussion
+
+```{r}
+#| label: dec-01-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Dec 1st") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "December 1st, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Dec 1st") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "December 1st, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Dec 1st") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "December 1st, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for December 1st, 2023
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Dec 1st") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Dec 1st") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Dec 1st") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## December 15th, 2023
+**Topic:** Hangout
+
+```{r}
+#| label: dec-15-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Dec 15th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "December 15th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Dec 15th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "December 15th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Dec 15th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "December 15th, 2023", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for December 15th, 2023
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Dec 15th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Dec 15th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Dec 15th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## January 18th, 2024
+**Topic:** Out of School Event
+
+```{r}
+#| label: jan-18-2024
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Jan 18th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "January 18th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Jan 18th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "January 18th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Jan 18th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "January 18th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for January 18th, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Jan 18th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Jan 18th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Jan 18th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## January 19th, 2024
+**Topic:** Guest Presenter
+
+```{r}
+#| label: jan-19-2024
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Jan 19th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "January 19th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Jan 19th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "January 19th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Jan 19th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "January 19th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for January 19th, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Jan 19th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Jan 19th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Jan 19th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## February 16th, 2024
+**Topic:** Guest Speaker
+
+```{r}
+#| label: feb-16-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Feb 16th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "February 16th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Feb 16th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "February 16th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Feb 16th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "February 16th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for February 16th, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Feb 16th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Feb 16th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Feb 16th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## March 1st, 2024
+**Topic:** Activity
+
+```{r}
+#| label: mar-01-2024
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Mar 1st") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "March 1st, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Mar 1st") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "March 1st, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Mar 1st") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "March 1st, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for March 1st, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Mar 1st") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Mar 1st") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Mar 1st") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## March 15th, 2024
+**Topic:** Activity
+
+```{r}
+#| label: mar-15-2024
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Mar 15th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "March 15th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Mar 15th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "March 15th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Mar 15th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "March 15th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for March 15th, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Mar 15th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Mar 15th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Mar 15th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## April 5th, 2024
+**Topic:** Guest Presenter
+
+```{r}
+#| label: apr-05-2023
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Apr 5th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "April 5th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Apr 5th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "April 5th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Apr 5th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "April 5th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for April 5th, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Apr 5th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Apr 5th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Apr 5th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## April 19th, 2024
+**Topic:** Activity
+
+```{r}
+#| label: apr-19-2024
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Apr 19th") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "April 19th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Apr 19th") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "April 19th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Apr 19th") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "April 19th, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for April 19th, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "Apr 19th") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "Apr 19th") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "Apr 19th") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::
+
+## May 3rd, 2024
+**Topic:** Activity
+
+```{r}
+#| label: may-03-2024
+
+# Interesting
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "May 3rd") %>% 
+  group_by(interesting) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = interesting, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = interesting, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "How Interesting Was Today’s Meeting?", 
+    subtitle = "May 3rd, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Included
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "May 3rd") %>% 
+  group_by(included) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = included, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = included, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I feel included in WiSTEM", 
+    subtitle = "May 3rd, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+# Belong
+percentage_data <- wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "May 3rd") %>% 
+  group_by(belong) 
+
+percentage_data <- percentage_data %>%
+  summarize(percentage = n() / nrow(percentage_data) * 100)
+
+ggplot(data = percentage_data, mapping = aes(x = belong, y = percentage)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    data = percentage_data, 
+    mapping = aes(x = belong, y = percentage, label = paste0(round(percentage, 1), "%")),
+    vjust = -0.5, 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = scales::label_percent(scale = 1)) +
+  labs(
+    title = "I belong in a STE(A)M community", 
+    subtitle = "May 3rd, 2024", 
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Responses", 
+    y = "Count"
+    ) +
+  theme_minimal() + 
+    theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Tables for May 3rd, 2024
+
+```{r}
+# Interesting
+wistem_exit_slip_data %>%
+  filter(!is.na(interesting), date == "May 3rd") %>% 
+  count(interesting) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Included
+wistem_exit_slip_data %>%
+  filter(!is.na(included), date == "May 3rd") %>% 
+  count(included) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+
+# Belong
+wistem_exit_slip_data %>%
+  filter(!is.na(belong), date == "May 3rd") %>% 
+  count(belong) %>%
+  mutate(
+    proportion = n / sum(n), 
+    percent = (n / sum(n)) * 100 
+  ) %>%
+  arrange(desc(n)) %>%
+  rename(count = n) %>%
+  kbl(caption = "Distribution for Interesting") %>%
+  kable_styling()
+```
+
+:::

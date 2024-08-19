@@ -1,0 +1,283 @@
+---
+title: "WiSTEM 2023 - 2024"
+subtitle: "Attendance Analysis"
+format:
+  html:
+    toc: true
+    embed-resources: true
+    echo: false
+    link-external-newwindow: true
+execute:
+  warning: false
+  message: false
+from: markdown+emoji  
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: load-packages
+
+library(tidyverse)
+library(patchwork)
+library(readr)
+library(kableExtra)
+
+set.seed(1968)
+```
+
+```{r}
+#| label: load-data-set
+
+# Load Data
+wistem_attendance_data <- read_csv(file = "data/processed/wistem_2324_attendance_processed.csv")
+
+# Leveling
+wistem_attendance_data$date <- factor(wistem_attendance_data$date, levels = c("Sep 29th", "Oct 13th", "Oct 27th", "Nov 15th", "Nov 17th", "Dec 1st", "Dec 15th", "Jan 18th", "Jan 19th", "Feb 16th", "Mar 1st", "Mar 15th", "Apr 5th", "Apr 19th", "May 3rd"))
+
+# Colors
+color <- c("#7000B0")
+fill <- c("#B477FF")
+```
+
+# Background
+
+**WiSTEM:** In total, there were 17 overall WiSTEM meetings held throughout the 2023-2024 academic school year. However, there were 13 meetings with attendance data and 14 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
+
+**Exit Slips Distribution:** Overall, there were 483 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 14 meetings where exit slips were provided. 
+
+## Attendance Per Meeting
+ 
+```{r}
+#| label: attnd-per-meeting
+
+# Graph
+ggplot(data = wistem_attendance_data, mapping = aes(y = date)) + 
+  geom_bar(color = color, fill = fill) + 
+  geom_text(
+    stat = 'count', 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.8), 
+    family = "Georgia", 
+    fontface = "bold"
+    ) +
+  labs(
+    title = "Number of Attendance Per Meeting", 
+    subtitle = "With Repeats",
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Students", 
+    y = "Meeting Date"
+    ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Attendance Per Meeting
+```{r}
+# Table
+wistem_attendance_data %>%
+  count(date) %>%
+  rename(num_students = n) %>% 
+  mutate(
+    proportion = num_students / sum(num_students), 
+    percent = (num_students / sum(num_students)) * 100 
+  ) %>%
+  kbl(caption = "Number of Attendance Per Meeting") %>%
+  kable_styling()
+```
+:::
+
+## Attendance Per Month
+ 
+```{r}
+#| label: attnd-per-month
+
+data_split_date <- wistem_attendance_data[c('month', 'day')] <- str_split_fixed(wistem_attendance_data$date, ' ', 2) %>%
+  as_tibble() %>%
+  rename(month = V1, day = V2) %>%
+  mutate(day = substr(day, 1, 2))
+
+data_split_date$month <- factor(data_split_date$month, levels = c("Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May")) 
+
+# Graph
+ggplot(data = data_split_date, mapping = aes(y = month)) + 
+  geom_bar(color = color, fill = fill) + 
+  geom_text(
+    stat = 'count', 
+    mapping = aes(label=..count..), 
+    position = position_stack(vjust = 0.9), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  labs(
+    title = "Number of Attendance In Each Month", 
+    subtitle = "With Repeats",
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Number of Students", 
+    y = "Month"
+    ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Attendance Per Month
+```{r}
+# Table
+data_split_date %>%
+  count(month) %>%
+  rename(num_students = n) %>%
+  mutate(
+    proportion = num_students / sum(num_students), 
+    percent = (num_students / sum(num_students)) * 100 
+  ) %>%
+  kbl(caption = "Number of Attedance In Each Month") %>%
+  kable_styling()
+```
+:::
+
+## Attendance Per Topic
+ 
+```{r}
+#| label: attnd-per-topic
+
+# Graph
+ggplot(data = wistem_attendance_data, mapping = aes(x = topic)) + 
+  geom_bar(color = color, fill = fill) + 
+  geom_text(
+    stat = 'count', 
+    mapping = aes(label=..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  labs(
+    title = "Total Attendance Per Topic Type", 
+    subtitle = "With Repeats",
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Meeting Topic", 
+    y = "Number of Students"
+    ) + 
+  scale_x_discrete(guide = guide_axis(angle = 90)) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Attendance Per Topic
+```{r}
+# Table
+topic_attn_total <- wistem_attendance_data %>%
+  count(topic) %>%
+  rename(total = n)
+
+topic_attn_total %>%
+  mutate(
+    proportion = total / sum(total), 
+    percent = (total / sum(total)) * 100 
+  ) %>%
+  kbl(caption = "Total Attendance Per Topic Type") %>%
+  kable_styling()
+```
+:::
+
+## Average Attendance Per Topic
+ 
+```{r}
+#| label: avg-attnd-per-topic
+
+topic_meeting_total <- wistem_attendance_data %>%
+  select(date, topic) %>%
+  unique() %>%
+  count(topic) %>%
+  rename(meeting_count = n)
+
+avg_topic_data <- full_join(topic_meeting_total, topic_attn_total) %>%
+  mutate(
+    meeting_avg = total / meeting_count, 
+    total_avg = nrow(wistem_attendance_data) / 15 
+    )
+
+# Graph
+ggplot(data = avg_topic_data, mapping = aes(x = topic, y = meeting_avg)) + 
+  geom_col(color = color, fill = fill) + 
+  geom_text(
+    mapping = aes(label = round(meeting_avg, 2)), 
+    position = position_stack(vjust = 0.5),
+    family = "Georgia", 
+    fontface = "bold"
+  ) +
+  geom_hline(yintercept = nrow(wistem_attendance_data) / 15) +
+  scale_x_discrete(guide = guide_axis(angle = 90)) + 
+  labs(
+    title = "Average Attendance per Meeting Topic Compared to Overall Average", 
+    subtitle = "With Repeats",
+    caption = "Source: WiSTEM 2023-2024",
+    x = "Meeting Topic", 
+    y = "Average Number of Students"
+    ) +
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Average Attendance Per Topic
+```{r}
+# Table
+mutate_better_than <- function(avg_topic_data) {
+  avg_topic_data %>%
+    mutate(benchmark = ifelse(meeting_avg > total_avg, "yes", "no"))
+}
+
+avg_topic_data <- mutate_better_than(avg_topic_data)
+
+avg_topic_data %>%
+  kbl(caption = "Average Attendance Per Meeting Topic") %>%
+  kable_styling()
+```
+:::
+
