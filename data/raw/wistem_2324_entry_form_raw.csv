@@ -1,0 +1,166 @@
+Q1,Q7,Q2,Q3,Q4,Q5,Q6,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,Q24
+date,career_amount,survey_type,involved,work_hard,knowledge,courses,career_one,career_two,career_three,career_four,career_five,career_six,career_seven,career_eight,career_nine,career_ten,succesful,important,member,career,identity,meaningful,everyday
+"{""ImportId"":""QID2_TEXT""}","{""ImportId"":""QID7_TEXT""}","{""ImportId"":""QID3""}","{""ImportId"":""QID1""}","{""ImportId"":""QID4""}","{""ImportId"":""QID5""}","{""ImportId"":""QID6""}","{""ImportId"":""QID10_TEXT""}","{""ImportId"":""QID11_TEXT""}","{""ImportId"":""QID14_TEXT""}","{""ImportId"":""QID13_TEXT""}","{""ImportId"":""QID12_TEXT""}","{""ImportId"":""QID15_TEXT""}","{""ImportId"":""QID16_TEXT""}","{""ImportId"":""QID17_TEXT""}","{""ImportId"":""QID18_TEXT""}","{""ImportId"":""QID19_TEXT""}","{""ImportId"":""QID20""}","{""ImportId"":""QID26""}","{""ImportId"":""QID25""}","{""ImportId"":""QID24""}","{""ImportId"":""QID23""}","{""ImportId"":""QID22""}","{""ImportId"":""QID21""}"
+Sep 29th,4,Pre,1-2 years,Agree,Agree,Agree,Environmental Scientist,Mechanical Engineer,Computer Scientist,Biomedical Engineer,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Neutral
+Sep 29th,3,Pre,0-1 years,Neutral,Neutral,Neutral,Chemist,Physicist,Engineer,,,,,,,,Agree,Strongly agree,Neutral,Neutral,Neutral,Strongly agree,Strongly agree
+Sep 29th,5,Pre,0-1 years,Agree,Strongly agree,Agree,Chemist,Forensic Scientist,Biologist,Doctor,Psychologist,,,,,,Agree,Strongly agree,Agree,Strongly agree,Neutral,Neutral,Agree
+Sep 29th,5,Pre,2-3 years,Agree,Agree,Agree,Industrial Engineer,Biochemist,Math Teacher,Biomedical Engineer,Technician,,,,,,Agree,Strongly agree,Agree,Neutral,Neutral,Agree,Neutral
+Sep 29th,5,Pre,2-3 years,Agree,Agree,Agree,Biomedical Engineer,Orthopedic Surgeon,Public Health Worker,Neuroscientist,"Anesthesiologist ",,,,,,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+Sep 29th,3,Pre,1-2 years,Agree,Neutral,Agree,Environmental Engineer,Environmental Scientist,Public Health Worker,,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Disagree
+Sep 29th,5,Pre,1-2 years,Agree,Agree,Neutral,Engineer,IT,App Programmer,Electrician,Scientist,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,7,Pre,0-1 years,Agree,Agree,Agree,Engineer,Astronaut,Pediatrician,Marine Biologist,Physical Therapist,Surgeon,Biologist,,,,Neutral,Strongly agree,Neutral,Agree,Neutral,Neutral,Disagree
+Sep 29th,6,Pre,0-1 years,Agree,Agree,Agree,Marine Biologist,Engineer,Microbiologist,Physicist,Astronomer,Doctor,,,,,Agree,Strongly agree,Strongly agree,Agree,Neutral,Agree,Agree
+" Sep 29th",4,Pre,0-1 years,Agree,Neutral,Strongly agree,Engineer,Scientist,Mathematician,Chemist,,,,,,,Strongly agree,Agree,Neutral,Strongly agree,Agree,Agree,Neutral
+Sep 29th,5,Pre,0-1 years,Agree,Agree,Agree,Industrial Engineer,Civil Engineer,Architect,Chemist,Astrophysicist,,,,,,Agree,Strongly agree,Agree,Agree,Agree,Agree,Disagree
+Sep 29th,8,Pre,0-1 years,Agree,Agree,Agree,Doctor,Engineer,Accountant,Chemist,Astronomer,Architect,Mathematician,Computer Scientist,,,Agree,Agree,Agree,Agree,Agree,Agree,Neutral
+Sep 29th,10,Pre,1-2 years,Agree,Agree,Agree,Environmental Engineer,Psychologist,Nurse,Technician,OB-GYN,Cardiac Surgeon,Chemist,Physicist,Mathematician,Astronaut,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,4,Pre,0-1 years,Agree,Agree,Agree,Doctor,Teacher,Scientist,Artist,,,,,,,Agree,Agree,Agree,Neutral,Strongly disagree,Agree,Disagree
+Sep 29th,7,Pre,1-2 years,Agree,Agree,Agree,Mathematician,Engineer,Programmer,Researcher,Surgeon,Dentist,Biomedical Engineer,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,9,Pre,1-2 years,Agree,Agree,Agree,Cardiologist,Bioengineer,Pediatrician,Surgeon,Engineer,Biotechnician,Astronomer,Architect,Neurologist,,Agree,Agree,Agree,Agree,Agree,Agree,Neutral
+Sep 29th,0,Pre,0-1 years,Strongly agree,Agree,Agree,,,,,,,,,,,Neutral,Strongly agree,Neutral,Agree,Agree,Agree,Neutral
+Sep 29th,7,Pre,1-2 years,Agree,Agree,Agree,Doctor,Engineer,Chemist,Physicist,Biochemist,Mathematician,Teacher,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,7,Pre,0-1 years,Agree,Agree,Agree,IT,Computer Scientist,Chemist,Biologist,Engineer,Marine Biologist,Teacher,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Neutral
+Sep 29th,5,Pre,0-1 years,Agree,Agree,Agree,Chemist,Physicist,Computer Scientist,Doctor,"Physiologist ",,,,,,Agree,Strongly agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,10,Pre,2-3 years,Agree,Strongly agree,Strongly agree,Doctor,Engineer,IT,Mathematician,Architecture,Biologist,Chemist,Astronomer,Physicist,Astronaut,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,10,Pre,0-1 years,Agree,Agree,Agree,Doctor,Nurse,Engineer,Biologist,Surgeon,Architect,Anesthesiologist,Astronomer,Physicist,Chemist,Agree,Strongly agree,Neutral,Neutral,Disagree,Agree,Neutral
+Sep 29th,10,Pre,0-1 years,Agree,Agree,Agree,Biologist,Engineer,Doctor,Astronomer,Mathematician,Chemist,Ecologist,Forensic Scientist,Data Scientist,Geologist,Agree,Strongly agree,Neutral,Agree,Agree,Agree,Agree
+Sep 29th,10,Pre,0-1 years,Neutral,Neutral,Disagree,Doctor,Scientist,Engineer,Electrician,Nurse,Biologist,Anesthesiologist,Neuroscientist,Astronomer,Surgeon,Disagree,Agree,Neutral,Disagree,Disagree,Neutral,Neutral
+Sep 29th,10,Pre,0-1 years,Agree,Agree,Agree,Doctor,Nurse,Engineer,Astronomer,Physicist,Chemist,Marine Biologist,Architect,Biomedical Engineer,Aerospace Engineer,Agree,Agree,Neutral,Agree,Agree,Agree,Agree
+Sep 29th,10,Pre,0-1 years,Agree,Agree,Agree,Mathematician,Bioengineer,Rocket Scientist,Neurobiologist,Biologist,Neuroscientist,Doctor,Engineer,Researcher,Ecologist,Neutral,Agree,Neutral,Neutral,Disagree,Agree,Neutral
+Sep 29th,5,Pre,0-1 years,Strongly agree,Strongly agree,Strongly agree,Robotics Engineer,Technician,Computer Scientist,Biologist,Mechanical Engineer,,,,,,Strongly agree,Strongly agree,Strongly agree,Agree,Agree,Strongly agree,Neutral
+Sep 29th,4,Pre,1-2 years,Agree,Agree,Agree,Nurse,Doctor,Researcher,Teacher,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,3,Pre,0-1 years,Agree,Neutral,Agree,Nurse,Doctor,Researcher,,,,,,,,Strongly agree,Strongly agree,Neutral,Agree,Agree,Agree,Agree
+Sep 29th,2,Pre,1-2 years,Agree,Agree,Neutral,Engineer,Scientist,,,,,,,,,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral
+Sep 29th,4,Pre,0-1 years,Agree,Agree,,Doctor,Engineer,IT,Mathematician,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,5,Pre,0-1 years,Strongly agree,Strongly agree,Neutral,Scientist,Technician,Engineeer,Artist,Mechanical Engineeer,,,,,,Agree,Agree,Neutral,Neutral,Neutral,Strongly agree,Neutral
+Sep 29th,5,Pre,1-2 years,Agree,Agree,Agree,Doctor,Veterinarian,Engineer,Marine Biologist,Architect,,,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Agree
+Sep 29th,7,Pre,0-1 years,Neutral,Disagree,Neutral,Doctor,Veterinarian,Engineer,Scientist,Chemist,Physicist,Surgeon,,,,Neutral,,Disagree,Disagree,Neutral,Disagree,Disagree
+Sep 29th,4,Pre,3-4 years,Strongly agree,Strongly agree,Strongly agree,Engineer,Doctor,Architect,Teacher,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,3,Pre,0-1 years,Agree,Agree,Neutral,Chemical Engineer,Environmental Scientist,Chemist,,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,4,Pre,1-2 years,Agree,Agree,Agree,Accountant,Engineer,Teacher,Doctor,,,,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Neutral
+Sep 29th,5,Pre,1-2 years,Agree,Agree,Agree,Doctor,Nnurse,Engineer,Teacher,Accountant,,,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Disagree
+Sep 29th,4,Pre,1-2 years,Agree,Agree,Strongly agree,Bioengineer,Neural Engineer,Mechanical Engineer,Material Engineer,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+Sep 29th,2,Pre,0-1 years,Agree,Agree,Agree,Biomedical Engineer,Industrial Engineer,,,,,,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Neutral
+Sep 29th,6,Pre,0-1 years,Agree,Agree,Agree,Doctor,Industrial Engineer,Architect,Chemist,Astronomer,Computer Scientist,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,1,Pre,0-1 years,Agree,Agree,Agree,Engineer,,,,,,,,,,Neutral,Agree,Agree,Neutral,Neutral,Agree,Agree
+Sep 29th,10,Pre,0-1 years,Agree,Agree,Agree,Chemist,Psychologist,Biologist,Physician,Engineer,Bioengineer,Mechanic,Architect,Science Teacher,Doctor,Agree,Agree,Neutral,Strongly agree,Strongly agree,Strongly agree,Neutral
+Sep 29th,6,Pre,0-1 years,Agree,Agree,Agree,Doctor,Teacher,Artist,Nurse,Scientist,Athlete,,,,,Agree,Agree,Agree,Neutral,Neutral,Neutral,Neutral
+Sep 29th,8,Pre,0-1 years,Strongly agree,Strongly agree,Strongly agree,Architect,Engineer,Chemist,Doctor,Scientist,Artist,Mathematician,Astronaut,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,5,Pre,0-1 years,Strongly agree,Agree,Strongly agree,Mathematician,Researcher,Scientist,Physicist,Technician,,,,,,Neutral,Strongly agree,Strongly agree,Neutral,Disagree,Agree,Disagree
+Sep 29th,2,Pre,0-1 years,Agree,Agree,Agree,Doctor,Nurse,,,,,,,,,Agree,Strongly agree,Agree,Agree,Neutral,Neutral,Neutral
+Sep 29th,8,Pre,1-2 years,Agree,Agree,Agree,Microbiologist,Chemist,Physicist,Doctor,OB-GYN,Nurse,Physician,Mathematician,,,Agree,Strongly agree,Strongly agree,Agree,Agree,Agree,Neutral
+Sep 29th,6,Pre,1-2 years,Agree,Strongly agree,Strongly agree,Marine Biologist,Chemist,Biologist,Physicist,Geneticist,Mathematician,,,,,Strongly agree,Strongly agree,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,4,Pre,0-1 years,Strongly agree,Agree,Neutral,Teacher,Doctor,Biologist,Computer Programmer,,,,,,,Agree,Neutral,Neutral,Agree,Neutral,Neutral,Neutral
+Sep 29th,4,Pre,0-1 years,Agree,Agree,Agree,Mechanical Engineer,Chemist,Engineer,Manager,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+Sep 29th,2,Pre,0-1 years,Agree,Neutral,Neutral,Engineer,Chemist,,,,,,,,,Agree,Strongly agree,Neutral,Agree,Agree,Agree,Disagree
+Sep 29th,3,Pre,0-1 years,Agree,Neutral,Neutral,Statistician,Engineer,Computer Programmer,,,,,,,,Agree,Strongly agree,Agree,Agree,Agree,Neutral,Disagree
+Sep 29th,6,Pre,1-2 years,Agree,Agree,Agree,Physicist,Veterinarian,Psychologist,Doctor,Pediatrician,Pharmacist,,,,,Neutral,Strongly agree,Agree,Agree,Neutral,Agree,Neutral
+Sep 29th,9,Pre,1-2 years,Agree,Agree,Strongly agree,Astronomer,Physicist,Biologist,Chemist,Aerospace Engineer,Mathematician,Surgeon,Doctor,Environmental Scientist,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Neutral
+Sep 29th,3,Pre,1-2 years,Strongly agree,Agree,Agree,Computer Programmer,Mechanical Engineer,Biochemical Engineer,,,,,,,,Strongly agree,Strongly agree,Agree,,Disagree,Agree,Neutral
+Sep 29th,5,Pre,1-2 years,Agree,Neutral,Agree,Engineer,Computer Scientist,Chemist,Physicist,Computer Programmer,,,,,,Neutral,Agree,Agree,Neutral,Neutral,Neutral,Neutral
+Sep 29th,5,Pre,0-1 years,Strongly agree,Strongly agree,Strongly agree,Neuroscientist,Physicist,Geneticist,Neuropsychologist,Engineer,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,8,Pre,3-4 years,Strongly agree,Strongly agree,Strongly agree,Materials Engineer,Mechanical Engineer,Industrial Engineer,Chemical Engineer,Systems Engineer,Bioengineer,Biomedical Engineer,Geologist,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,5,Pre,2-3 years,Strongly agree,Strongly agree,Strongly agree,Materials Engineer,Biomedical Engineer,Radiologist,Nurse,Engineer,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,5,Pre,2-3 years,Agree,Agree,Agree,Biomedical Engineer,Techniciain,Mechanical Engineer,Materials Engineer,Mathematician,,,,,,Agree,Strongly agree,Agree,Agree,Neutral,Neutral,Agree
+Sep 29th,10,Pre,2-3 years,Strongly agree,Strongly agree,Strongly agree,Radiologist,Doctor,Mathematician,Engineer,Chemist,Physicist,Nurse,Biomedical Engineer,Geneticist,Physicians Assistant,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Sep 29th,3,Pre,0-1 years,Agree,Agree,Agree,Mechanical Engineer,Environmental Engineer,Bioengineer,,,,,,,,Agree,Strongly agree,Agree,Neutral,Neutral,Agree,Strongly agree
+Sep 29th,3,Pre,1-2 years,Strongly agree,Agree,Neutral,Biochemist,Biologist,Architect,,,,,,,,Agree,Agree,Neutral,Agree,Agree,Agree,Agree
+Sep 29th,2,Pre,0-1 years,Agree,Agree,Agree,Bioengineer,Environmental Engineer,,,,,,,,,Neutral,Agree,Agree,Neutral,Neutral,Agree,Neutral
+Oct 6th,0,Pre,1-2 years,Agree,Agree,Agree,,,,,,,,,,,Agree,Agree,Agree,Agree,Neutral,Neutral,Neutral
+Oct 6th,7,Pre,0-1 years,Strongly agree,Agree,Strongly agree,Environmental Engineer,Biologist,Electrician,Mathematician,Computer Scientist,Programmer,Chemist,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+Oct 6th,4,Pre,0-1 years,Agree,Agree,Strongly agree,Doctor,Engineer,Programmer,Teacher,,,,,,,Agree,Strongly agree,Neutral,Strongly agree,Strongly agree,Strongly agree,Neutral
+Oct 6th,9,Pre,1-2 years,Strongly agree,Strongly agree,Strongly agree,Aerospace Engineer,Physicist,Biochemical Engineer,Marine Biologist,Meterologist,Nuclear Engineer,Software Engineer,Neuroscientist,Architect,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+Oct 6th,9,Pre,0-1 years,Agree,Agree,Agree,Mathematician,Neurosurgeon,Architect,Computer Scientist,Civil Engineer,Biologist,Nurse,Chemist,Technician,,Agree,Agree,Neutral,Agree,Strongly agree,Agree,Neutral
+May 3rd,3,Post,0-1 years,Agree,Agree,Strongly agree,Engineer,Doctor,Programmer,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Strongly agree,Agree
+May 3rd,0,Post,1-2 years,Strongly agree,Strongly agree,Strongly agree,,,,,,,,,,,Agree,Strongly agree,Strongly agree,Agree,Agree,Strongly agree,Agree
+May 3rd,2,Post,1-2 years,Agree,Agree,Agree,Doctor,Researcher,,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Agree,Neutral
+May 3rd,2,Post,0-1 years,Agree,Agree,Agree,Mechanical Engineer,Robotics Engineer,,,,,,,,,Agree,Agree,Agree,Agree,Strongly agree,Agree,Neutral
+May 3rd,5,Post,0-1 years,Agree,Strongly agree,Agree,Data Scientist,Software Developer,Engineer,IT,Biomedical Engineer,,,,,,Agree,Strongly agree,Strongly agree,Agree,Neutral,Strongly agree,Strongly agree
+May 3rd,8,Post,1-2 years,Strongly agree,Strongly agree,Strongly agree,Astronaut,Scientist,Architect,Neuroscientist,Biomedical Engineer,Chemical Engineer,Material Engineer,Industrial Engineer,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,3,Post,0-1 years,Strongly agree,Agree,Agree,Chemical Engineer,Sustainability Coordinator,Researcher,,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,4,Post,3-4 years,Strongly agree,Strongly agree,Strongly agree,Neuroscientist,Psychologist,Mathematician,Electrical Engineer,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,7,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Dentist,Physical Therapist,X-ray Technician,Dermatologist,Professor,Nurse,OB-GYN,,,,Agree,Strongly agree,Neutral,Neutral,Neutral,Agree,Neutral
+May 3rd,5,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Doctor,X-ray Technician,Engineer,Dentist,Professor,,,,,,Agree,Strongly agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,6,Post,1-2 years,Neutral,Agree,Agree,Nurse,Doctor,Researcher,Scientist,Biologist,Science Teacher,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,10,Post,1-2 years,Strongly agree,Strongly agree,Strongly agree,Biochemist,Biophysicist,Astrophysicist,Aerospace Engineer,Mathematician,Geneticist,Software Engineer,OB-GYN,Chemist,Biologist,Strongly agree,Strongly agree,Agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,5,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Engineer,Doctor,Chemist,Biologist,Nurse,,,,,,Strongly agree,Strongly agree,Strongly agree,Agree,Agree,Strongly agree,Agree
+May 3rd,4,Post,0-1 years,Agree,Strongly agree,Agree,Engineer,Doctor,Chemist,Nurse,,,,,,,Agree,Strongly agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,7,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Doctor,Engineer,Marine Biologist,Mathematician,Microbiologist,Nurse,Chemist,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,4,Post,0-1 years,Agree,Strongly agree,Agree,Engineer,Professor,Biologist,Chemist,,,,,,,Agree,Strongly agree,Agree,Neutral,Neutral,Agree,Agree
+May 3rd,3,Post,0-1 years,Agree,Agree,Agree,Marine Biologist,Engineer,Chemist,,,,,,,,Neutral,Agree,Agree,Neutral,Disagree,Neutral,Disagree
+May 3rd,9,Post,0-1 years,Strongly agree,Agree,Agree,Engineer,Mathematician,Astronaut,Chemist,Marine Biologist,Software Engineer,Data Scientist,Biomedical Engineer,Technician,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,3,Post,0-1 years,Agree,Agree,Agree,Engineer,Biologist,Chemist,,,,,,,,Neutral,Agree,Agree,Neutral,Disagree,Neutral,Disagree
+May 3rd,5,Post,1-2 years,Agree,Strongly agree,Strongly agree,Engineer,Computer Scientist,Doctor,Math Teacher,Veterinarian,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,8,Post,1-2 years,Agree,Agree,Agree,Researcher,Doctor,Computer Scientist,Mathematician,Engineer,Physicist,Professor,Bioethicist,,,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,8,Post,1-2 years,Agree,Strongly agree,Strongly agree,Engineer,Civil Engineer,Aerospace Engineer,Traffic Controller,Software Engineer,Accountant,Mechanical Engineer,Data Scientist,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Neutral,Agree
+May 3rd,10,Post,0-1 years,Agree,Agree,Neutral,Bioengineer,Architect,Chemist,Biologist,Mathematician,Doctor,Electrician,Surgeon,Radiologist,Orthopedic Technician,Agree,Agree,Agree,Agree,Neutral,Neutral,Neutral
+May 3rd,10,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Biomedical Engineer,Radiologist,Environmental Engineer,Mathematician,Biologist,Doctor,Surgeon,Architectural Engineer,Mechanical Engineer,"Cosmetics Engineer ",Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,10,Post,0-1 years,Agree,Strongly agree,Agree,Bioengineer,Architect,Animator,Forensics Psychologist,Radiologist,Mathematician,Surgeon,Doctor,Mechanical Engineer,Electrician,Strongly agree,Strongly agree,Agree,Agree,Agree,Strongly agree,Agree
+May 3rd,8,Post,0-1 years,Agree,Agree,Agree,Computer Scientist,Engineer,Chemist,Doctor,Chemical Engineer,Professor,Mathematician,Patents Lawyer,,,Strongly agree,Strongly agree,Agree,Strongly agree,Agree,Agree,Agree
+May 3rd,1,Post,0-1 years,Agree,Agree,Agree,Biologist,,,,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,5,Post,1-2 years,Strongly agree,Strongly agree,Agree,Mechanical Engineer,Civil Engineer,Doctor,Chemist,Graphic Designer,,,,,,Neutral,Agree,Neutral,Neutral,Neutral,Agree,Agree
+May 3rd,6,Post,1-2 years,Strongly agree,Agree,Strongly agree,Science Teacher,Chemist,Biologist,Doctor,Nurse,Researcher,,,,,Agree,Strongly agree,Strongly agree,Agree,Neutral,Agree,Neutral
+May 3rd,5,Post,0-1 years,Agree,Neutral,Neutral,Engineer,Mathematician,Chemist,Doctor,Computer Scientist,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Neutral
+May 3rd,3,Post,0-1 years,Neutral,Agree,Neutral,Engineer,Scientist,Doctor,,,,,,,,Disagree,Agree,Neutral,Disagree,Strongly disagree,Agree,Agree
+May 3rd,2,Post,1-2 years,Agree,Strongly agree,Strongly agree,Engineer,Computer Scientist,,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Neutral,Strongly agree,Strongly agree
+May 3rd,7,Post,3-4 years,Agree,Agree,Agree,Biochemistry,Aerospace Engineer,Astrophysicist,Neuroscientist,Forensics Scientist,Bioengineer,Chemical Engineer,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,9,Post,2-3 years,Strongly agree,Strongly agree,Strongly agree,Chemist,Engineer,Mathematician,Biologist,Neurologist,Astronaut,Astrophysicist,Theoretical Physicist,Biomechanist,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Strongly agree,Strongly agree
+May 3rd,2,Post,0-1 years,Agree,Agree,Agree,Computer Scientist,Biologist,,,,,,,,,Agree,Agree,Neutral,Agree,Disagree,Agree,Agree
+May 3rd,0,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,,,,,,,,,,,Agree,Strongly agree,Strongly agree,Agree,Agree,Agree,Agree
+May 3rd,5,Post,0-1 years,Agree,Agree,Agree,Computer Scientist,Data Scientist,Professor,Doctor,Engineer,,,,,,Agree,Agree,Neutral,Neutral,Strongly agree,Strongly agree,Neutral
+May 3rd,5,Post,1-2 years,Neutral,Agree,Agree,Doctor,Veterinarian,Engineer,Mathematician,Physicist,,,,,,Agree,Strongly agree,Agree,Agree,Neutral,Agree,Agree
+May 3rd,6,Post,0-1 years,Agree,Agree,Strongly agree,Software Engineer,Mechanical Engineer,Civil Engineer,Biochemist,Science Teacher,Math Teacher,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Neutral
+May 3rd,9,Post,1-2 years,Strongly agree,Strongly agree,Strongly agree,Doctor,Engineer,Chemical Engineer,Biomedical Engineer,Nurse,Astrophysicist,Programmer,Nuclear Engineer,Climate Change Scientist,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,3,Post,0-1 years,Agree,Strongly agree,Strongly agree,Neuroscientist,Nuclear Physicist,Zoologist,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,2,Post,0-1 years,Agree,Neutral,Agree,Engineer,Biologist,,,,,,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Neutral
+May 3rd,1,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Doctor,,,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Neutral,Neutral,Agree,Disagree
+May 3rd,3,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Engineer,Technologist,Mathematician,,,,,,,,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral,Neutral
+May 3rd,4,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Architect,Civil Engineer,Roboticist,Programmer,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Strongly agree,Agree
+May 3rd,5,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Engineer,Architecture,Marine Biologist,Civil Engineer,Programmer,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,4,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Biomedical Engineer,Architect,Graphic Designer,Artist,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,5,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Scientist,Biomedical Engineer,Architect,Graphic Designer,Artist,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,7,Post,1-2 years,Strongly agree,Agree,Strongly agree,Mechanical Engineer,Electrical Engineer,Marine Biologist,Psychiatrist,Physician,Chemist,Physicist,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,8,Post,0-1 years,Agree,Agree,Strongly agree,Engineer,Professor,Programmer,Chemist,Scientist,Architect,Biologist,Artist,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Agree,Agree
+May 3rd,8,Post,0-1 years,Agree,Agree,Agree,Material Engineer,Software Manager,Software Developer,Mathematician,Radiologist,Nuclear Engineer,Data Scientist,Wed Developer,,,Strongly agree,Strongly agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,6,Post,0-1 years,Agree,Agree,Agree,Engineer,Chemist,Biologist,Artist,Graphic Designer,Traffic Controller,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,4,Post,0-1 years,Agree,Agree,Agree,Traffic Controller,Chemist,Math Teacher,Marine Biologist,,,,,,,Agree,Agree,Neutral,Agree,Neutral,Agree,Neutral
+May 3rd,3,Post,0-1 years,Agree,Agree,Agree,Engineer,Computer Scientist,Chemist,,,,,,,,Neutral,Agree,Agree,Neutral,Neutral,Agree,Neutral
+May 3rd,10,Post,2-3 years,Agree,Agree,Agree,Doctor,Engineer,Chemist,Biologist,Physicist,Mathematician,Physical Therapist,Researcher,Professor,Computer Scientist,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Agree
+May 3rd,1,Post,0-1 years,Agree,Agree,Agree,Aerospace Engineer,,,,,,,,,,Strongly agree,Strongly agree,Agree,Agree,Agree,Agree,Neutral
+May 3rd,6,Post,3-4 years,Agree,Agree,Agree,Radiologist,Neurologist,OB-GYN,Orthopedic Surgeon,Genetic Counselor,Biomedical Engineer,,,,,Agree,Strongly agree,Strongly agree,Agree,Agree,Agree,Agree
+May 3rd,7,Post,2-3 years,Strongly agree,Strongly agree,Strongly agree,Bioengineer,Physicist,Engineer,Mechanical Engineer,Chemist,Chemical Engineer,Aerospace Engineer,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,6,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Bioengineer,Physicist,Engineer,Mechanical Engineer,Chemist,Aerospace Engineer,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Strongly agree,Neutral
+May 3rd,5,Post,0-1 years,Agree,Agree,Agree,Physicist,Engineer,Biochemist,Biochemical Engineer,Chemist,,,,,,Neutral,Neutral,Disagree,Strongly disagree,Strongly disagree,Neutral,Agree
+May 3rd,5,Post,0-1 years,Agree,Agree,Agree,Physician,Engineer,Artist,Biologist,Technologist,,,,,,Agree,Strongly agree,Agree,Agree,Neutral,Agree,Neutral
+May 3rd,2,Post,0-1 years,Agree,Agree,Agree,Engineer,Chemist,,,,,,,,,Agree,Agree,Agree,Agree,Neutral,Agree,Neutral
+May 3rd,3,Post,0-1 years,Agree,Neutral,Agree,Doctor,Veterinarian,Science Teacher,,,,,,,,Strongly agree,Agree,Strongly agree,Agree,Neutral,Agree,Neutral
+May 3rd,6,Post,2-3 years,Agree,Agree,Agree,Veterinarian,Surgeon,Researcher,Professor,Doctor,Nurse,,,,,Neutral,Strongly agree,Agree,Neutral,Neutral,Strongly agree,Agree
+May 3rd,6,Post,2-3 years,Strongly agree,Strongly agree,Strongly agree,Chemical Engineer,Astronomer,Aerospace Engineer,Biologist,Electrical Engineer,Theoretical Physicist,,,,,Strongly agree,Strongly agree,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,3,Post,2-3 years,Strongly agree,Strongly agree,Agree,Marine Biologist,Mechanical Engineer,Biomedical Engineer,,,,,,,,Agree,Strongly agree,Agree,Neutral,Neutral,Agree,Strongly agree
+May 3rd,9,Post,3-4 years,Strongly agree,Strongly agree,Strongly agree,Marine Biologist,Mechanical Engineer,Medical Engineer,Bioengineer,Pediatrician,Psychiatrist,Chemist,Professor,Surgeon,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,5,Post,2-3 years,Strongly agree,Strongly agree,Strongly agree,Biologist,Chemical Engineer,Chemical Physicist,Chemist,Biomedical Engineer,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,3,Post,2-3 years,Strongly agree,Strongly agree,Agree,Biologist,Marine Biologist,Doctor,,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,2,Post,2-3 years,Strongly agree,Strongly agree,Agree,Engineer,Chemist,,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Agree,Agree,Neutral,Agree
+May 3rd,1,Post,0-1 years,Agree,Strongly agree,Strongly agree,Environmental Engineer,,,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Agree,Neutral,Agree,Neutral
+May 3rd,1,Post,0-1 years,Agree,Agree,Agree,Doctor,,,,,,,,,,Strongly agree,Strongly agree,Agree,Strongly agree,Agree,Agree,Neutral
+May 3rd,2,Post,0-1 years,Agree,Strongly agree,Agree,Dentist,Engineer,,,,,,,,,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,2,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Fashion Designer,Business Manager,,,,,,,,,Disagree,Strongly agree,Neutral,Agree,Neutral,Strongly agree,Neutral
+May 3rd,7,Post,0-1 years,Agree,Strongly agree,Strongly agree,Doctor,Veterinarian,FDA Tester,Chemist,Physicist,Biologist,Science Teacher,,,,Strongly agree,Strongly agree,Agree,Strongly agree,Strongly agree,Neutral,Agree
+May 3rd,5,Post,2-3 years,Agree,Agree,Agree,Computer Scientist,Biologist,Physicist,Engineer,Architect,,,,,,Agree,Strongly agree,Strongly agree,Agree,Agree,Agree,Agree
+May 3rd,4,Post,3-4 years,Strongly agree,Strongly agree,Strongly agree,Material Engineer,Computer Scientist,Biologist,Chemist,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,4,Post,0-1 years,Agree,Agree,Agree,Scientist,Engineer,Chemist,Biomedical Engineer,,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Agree
+May 3rd,4,Post,1-2 years,Strongly agree,Strongly agree,Strongly agree,Mechanical Engineer,Biomedical Engineer,Architect,Chemical Engineer,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,5,Post,0-1 years,Agree,Agree,Agree,Software Engineer,Mathematician,Statistician,Engineer,Programmer,,,,,,Strongly agree,Strongly agree,Agree,Agree,Neutral,Strongly agree,Strongly agree
+May 3rd,5,Post,0-1 years,Agree,Strongly agree,Strongly agree,Chemical Engineer,Mechanical Engineer,Biomedical Engineer,Engineer,Chemist,,,,,,Agree,Agree,Agree,Agree,Agree,Agree,Neutral
+May 3rd,1,Post,0-1 years,Agree,Agree,Neutral,Architect,,,,,,,,,,Agree,Agree,Neutral,Agree,Agree,Agree,Agree
+May 3rd,4,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Scientist,Biologist,Chemist,Anthropologist,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,2,Post,1-2 years,Agree,Agree,Agree,Engineer,Architect,,,,,,,,,Strongly agree,Agree,Agree,Agree,Strongly agree,Agree,Strongly agree
+May 3rd,8,Post,0-1 years,Agree,Agree,Agree,Mechanical Engineer,Environmental Engineer,Biologist,Chemist,Physicist,Environmental Scientist,Computer Scientist,Technologist,,,Agree,Strongly agree,Strongly agree,Agree,Agree,Agree,Neutral
+May 3rd,10,Post,2-3 years,Strongly agree,Strongly agree,Strongly agree,Mechanical Engineer,Structural Engineer,Chemical Engineer,Biochemist,Astrophysicist,Mathematician,Programmer,Surgeon,Pediatrician,Geneticist,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,7,Post,2-3 years,Agree,Agree,Agree,OB-GYN,Surgeon,Programmer,Engineer,Biologist,Chemist,Chemical Engineer,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree
+May 3rd,0,Post,0-1 years,Strongly agree,Agree,Agree,,,,,,,,,,,Agree,Strongly agree,Agree,Agree,Agree,Strongly agree,Agree
+May 3rd,6,Post,0-1 years,Agree,Agree,Neutral,Chemist,Scientist,Engineer,Mechanic,Math Teacher,Doctor,,,,,Agree,Agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,3,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Chemist,Scientist,Mathematician,,,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Strongly agree
+May 3rd,0,Post,0-1 years,Agree,Strongly agree,Agree,,,,,,,,,,,Strongly agree,Strongly agree,Agree,Agree,Agree,Strongly agree,Strongly agree
+May 3rd,7,Post,0-1 years,Strongly agree,Strongly agree,Strongly agree,Engineer,Biologist,Chemist,Doctor,Surgeon,Psychologist,Astronomer,,,,Agree,Strongly agree,Agree,Strongly agree,Agree,Agree,Neutral
+May 3rd,5,Post,0-1 years,Agree,Strongly agree,Strongly agree,Computer Scientist,Mathematician,Physicist,Engineer,Computer Engineer,,,,,,Strongly agree,Strongly agree,Strongly agree,Strongly agree,Agree,Strongly agree,Agree
