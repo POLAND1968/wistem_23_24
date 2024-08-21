@@ -277,6 +277,15 @@ student_charac <- student_dem %>%
 
 wistem_attendance <- left_join(wistem_attendance, student_charac)
 
+## Adding Number of Meetings ----
+indiv_atten <- wistem_attendance %>%
+  filter(!is.na(full_name)) %>% 
+  count(full_name) %>% 
+  rename(num_meetings = n) %>%
+  select(full_name, num_meetings)
+
+wistem_attendance <- left_join(wistem_attendance, indiv_atten)
+
 ## Save Processed Data Set ----
 write_csv(wistem_attendance, file = "data/processed/wistem_2324_attendance_processed.csv")
 wistem_attendance_data <- read_csv(file = "data/processed/wistem_2324_attendance_processed.csv")
@@ -499,6 +508,15 @@ wieng_attendance <- wieng_attendance %>%
   mutate(id = as.numeric(id))
 
 wieng_attendance <- left_join(wieng_attendance, student_charac)
+
+## Adding Number of Meetings ----
+indiv_atten <- wieng_attendance %>%
+  filter(!is.na(full_name)) %>% 
+  count(full_name) %>% 
+  rename(num_meetings = n) %>%
+  select(full_name, num_meetings)
+
+wieng_attendance <- left_join(wieng_attendance, indiv_atten)
 
 ## Save Processed Data Set ----
 write_csv(wieng_attendance, file = "data/processed/wieng_2324_attendance_processed.csv")
