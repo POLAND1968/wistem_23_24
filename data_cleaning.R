@@ -5,6 +5,50 @@ library(readxl) # helps read in data files (xls and xlxs)
 library(skimr) # help skim data and see its general distribution
 library(janitor) # helps with cleaning the data (variable names)
 
+# Student Demographics ----
+student_dem <- read_excel(path = "data/raw/student_dem_raw.xlsx") %>% 
+  janitor::clean_names()
+
+student_dem <- student_dem %>% 
+  rename(race = federal_race_name) %>% 
+  select(-gender, -activity) %>% 
+  mutate(name = paste(first_name, last_name)) %>% 
+  mutate(grade = case_when(
+    grad_year == 2027 ~ 9,
+    grad_year == 2026 ~ 10,
+    grad_year == 2025 ~ 11,
+    grad_year == 2024 ~ 12,
+    TRUE ~ NA_integer_  
+  ))
+
+student_dem$race <- recode(student_dem$race, "Two or More Races" = "ToM") 
+student_dem$race <- recode(student_dem$race, "Hispanic or Latino" = "Hispanic") 
+student_dem$race <- recode(student_dem$race, "Black or African American" = "Black")
+
+write_csv(student_dem, file = "data/processed/student_dem_processed.csv")
+student_dem <- read_csv(file = "data/processed/student_dem_processed.csv")
+
+## Checking Missing Student Information ----
+### WiSTEM ---- 
+wistem_attendance_data$student_present <- wistem_attendance_data$full_name %in% student_dem$name
+
+wistem_needed_students <- wistem_attendance_data %>% 
+  filter(student_present == "FALSE") %>% 
+  filter(!is.na(full_name)) %>% 
+  select(id, first_name, last_name, full_name)
+
+write_csv(wistem_needed_students, file = "wistem_needed_students.csv")
+
+### WiENG ----
+wieng_attendance_data$student_present <- wieng_attendance_data$full_name %in% student_dem$name
+
+wieng_needed_students <- wieng_attendance_data %>% 
+  filter(student_present == "FALSE") %>% 
+  filter(!is.na(full_name)) %>% 
+  select(id, first_name, last_name, full_name)
+
+write_csv(wieng_needed_students, file = "wieng_needed_students.csv")
+
 # WiSTEM Student Entry Forms ----
 ## Load in Data Set ----
 entry_form <- read_csv(file = "data/raw/wistem_2324_entry_form_raw.csv")
@@ -80,6 +124,18 @@ wistem_exit_new$date <- factor(wistem_exit_new$date, levels = c("Sep 29th", "Oct
 ## Save Processed Data Set ----
 write_csv(wistem_exit_new, file = "data/processed/wistem_2324_exit_slips_processed.csv")
 wistem_exit_slip_data <- read_csv(file = "data/processed/wistem_2324_exit_slips_processed.csv")
+
+### Pivoting Longer ----
+wistem_exit_longer_data <- pivot_longer( # this will help put all the questions into one graph
+  data = wistem_exit_slip_data, 
+  cols = c(interesting, included, belong), 
+  names_to = "question", 
+  values_to = "response"
+)
+
+### Save Processed Data Set ----
+write_csv(wistem_exit_longer_data, file = "data/processed/wistem_2324_exit_slips_longer_processed.csv")
+wistem_exit_longer_data <- read_csv(file = "data/processed/wistem_2324_exit_slips_longer_processed.csv")
 
 # WiSTEM Attendance ----
 ## Load in Data Sets ----
@@ -214,24 +270,16 @@ new_observation <- data.frame(
 wistem_topics <- bind_rows(wistem_topics, new_observation)
 wistem_attendance <- left_join(wistem_attendance, wistem_topics)
 
+## Adding Demographics ----
+student_charac <- student_dem %>%
+  select(-name) %>%
+  unique()
+
+wistem_attendance <- left_join(wistem_attendance, student_charac)
+
 ## Save Processed Data Set ----
 write_csv(wistem_attendance, file = "data/processed/wistem_2324_attendance_processed.csv")
 wistem_attendance_data <- read_csv(file = "data/processed/wistem_2324_attendance_processed.csv")
-
-# WiSTEM Exit Slips Longer ----
-wistem_exit_slip_data <- read_csv(file = "data/processed/wistem_2324_exit_slips_processed.csv")
-
-## Pivoting Longer ----
-wistem_exit_longer_data <- pivot_longer( # this will help put all the questions into one graph
-  data = wistem_exit_slip_data, 
-  cols = c(interesting, included, belong), 
-  names_to = "question", 
-  values_to = "response"
-    )
-
-## Save Processed Data Set ----
-write_csv(wistem_exit_longer_data, file = "data/processed/wistem_2324_exit_slips_longer_processed.csv")
-wistem_exit_longer_data <- read_csv(file = "data/processed/wistem_2324_exit_slips_longer_processed.csv")
 
 # WiENG Attendance ----
 ## Load in Data Sets ----
@@ -441,6 +489,17 @@ new_observation <- data.frame(
 wieng_topics <- bind_rows(wieng_topics, new_observation)
 wieng_attendance <- left_join(wieng_attendance, wieng_topics)
 
+## Adding Demographics ----
+student_charac <- student_dem %>%
+  select(-name) %>%
+  mutate(id = as.numeric(id)) %>% 
+  unique()
+
+wieng_attendance <- wieng_attendance %>% 
+  mutate(id = as.numeric(id))
+
+wieng_attendance <- left_join(wieng_attendance, student_charac)
+
 ## Save Processed Data Set ----
 write_csv(wieng_attendance, file = "data/processed/wieng_2324_attendance_processed.csv")
 wieng_attendance_data <- read_csv(file = "data/processed/wieng_2324_attendance_processed.csv")
@@ -471,52 +530,3 @@ wieng_exit_new$date <- gsub("Dec 5th", "Dec 1st", wieng_exit_new$date)
 ## Save Processed Data Set ----
 write_csv(wieng_exit_new, file = "data/processed/wieng_2324_exit_slips_processed.csv")
 wieng_exit_slip_data <- read_csv(file = "data/processed/wieng_2324_exit_slips_processed.csv")
-
-# Student Demographics ----
-student_dem <- read_excel(path = "data/raw/student_dem_raw.xlsx") %>% 
-  janitor::clean_names()
-
-student_dem <- student_dem %>% 
-  rename(race = federal_race_name) %>% 
-  select(-gender, -activity) %>% 
-  mutate(name = paste(first_name, last_name)) %>% 
-  mutate(grade = case_when(
-    grad_year == 2027 ~ 9,
-    grad_year == 2026 ~ 10,
-    grad_year == 2025 ~ 11,
-    grad_year == 2024 ~ 12,
-    TRUE ~ NA_integer_  
-  ))
-
-student_dem$race <- recode(student_dem$race, "Two or More Races" = "ToM") 
-student_dem$race <- recode(student_dem$race, "Hispanic or Latino" = "Hispanic") 
-student_dem$race <- recode(student_dem$race, "Black or African American" = "Black")
-
-write_csv(student_dem, file = "data/processed/student_dem_processed.csv")
-student_dem <- read_csv(file = "data/processed/student_dem_processed.csv")
-
-## Checking Missing Student Information ----
-### WiSTEM ---- 
-wistem_attendance_data$student_present <- wistem_attendance_data$full_name %in% student_dem$name
-
-wistem_needed_students <- wistem_attendance_data %>% 
-  filter(student_present == "FALSE") %>% 
-  filter(!is.na(full_name)) %>% 
-  select(id, first_name, last_name, full_name)
-
-write_csv(wistem_needed_students, file = "wistem_needed_students.csv")
-
-### WiENG ----
-wieng_attendance_data$student_present <- wieng_attendance_data$full_name %in% student_dem$name
-
-wieng_needed_students <- wieng_attendance_data %>% 
-  filter(student_present == "FALSE") %>% 
-  filter(!is.na(full_name)) %>% 
-  select(id, first_name, last_name, full_name)
-
-write_csv(wieng_needed_students, file = "wieng_needed_students.csv")
-
-## WiSTEM ----
-
-
-## WiENG ----
