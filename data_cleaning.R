@@ -277,6 +277,9 @@ student_charac <- student_dem %>%
 
 wistem_attendance <- left_join(wistem_attendance, student_charac)
 
+wistem_attendance <- wistem_attendance %>%
+  mutate(white_non_white = ifelse(race == "White", "White", "Non-White"))
+
 ## Adding Number of Meetings ----
 indiv_atten <- wistem_attendance %>%
   filter(!is.na(full_name)) %>% 
@@ -508,6 +511,9 @@ wieng_attendance <- wieng_attendance %>%
   mutate(id = as.numeric(id))
 
 wieng_attendance <- left_join(wieng_attendance, student_charac)
+
+wieng_attendance <- wieng_attendance %>%
+  mutate(white_non_white = ifelse(race == "White", "White", "Non-White"))
 
 ## Adding Number of Meetings ----
 indiv_atten <- wieng_attendance %>%
