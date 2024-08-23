@@ -32,7 +32,7 @@ set.seed(1968)
 ```{r}
 #| label: load-data-sets
 
-# Data Sets
+# Data Sets 
 entry_form_data <- read_csv(file = "data/processed/wistem_2324_entry_form_processed.csv")
 pre_entry_form_data <- read_csv(file = "data/processed/wistem_2324_pre_entry_form_processed.csv")
 post_entry_form_data <- read_csv(file = "data/processed/wistem_2324_post_entry_form_processed.csv")
@@ -57,7 +57,7 @@ colors <- c("#B477FF", "#7000B0") # called in later graphs for simplicity
 
 **WiSTEM:** In total, there were 14 overall WiSTEM meetings held throughout the 2023-2024 academic school year. However, there were 13 meetings with specific attendance data (January 18th, 2024 is missing) and 14 meetings with exit slip data. 
 
-**WiENG:** In total, there were 25 overall WiENG meetings held throughout the 2023-2024 academic school year. However, there were 25 meetings with attendance data while there were 22 meetings with exit slip data (March 16th, May 10th, and May 17th are missing). 
+**WiENG:** In total, there were 25 overall WiENG meetings held throughout the 2023-2024 academic school year. However, there were 25 meetings with attendance data while there were 22 meetings with exit slip data (March 16th and May 17th are missing). 
 
 **Distribution:** As can be seen in the table below, there were a total of 70 student forms obtained for the Pre-Test while there were 93 student forms obtained for the Post-Test. There is a large discrepancy of 23 more forms being filled out by the end of the year, but the general trend can still be identified. These forms were either filled out during the original WiSTEM meetings (where a majority of them were) while some were filled out during some WiENG meetings. 
 ```{r}
