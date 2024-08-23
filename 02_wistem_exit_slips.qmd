@@ -46,8 +46,8 @@ wistem_exit_slip_data$date <- factor(wistem_exit_slip_data$date, levels = c("Sep
 wistem_attendance_data$date <- factor(wistem_attendance_data$date, levels = c("Sep 29th", "Oct 13th", "Oct 27th", "Nov 15th", "Nov 17th", "Dec 1st", "Dec 15th", "Jan 18th", "Mar 1st", "Mar 15th", "Apr 5th", "Apr 19th", "May 6th"))
 
 # Colors
-color <- c("#7000B0")
-fill <- c("#B477FF")
+color <- c("#716C6B")
+fill <- c("#B6ACD1")
 ```
 
 # Background
