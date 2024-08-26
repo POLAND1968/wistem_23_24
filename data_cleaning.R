@@ -19,11 +19,13 @@ student_dem <- student_dem %>%
     grad_year == 2025 ~ 11,
     grad_year == 2024 ~ 12,
     TRUE ~ NA_integer_  
-  ))
+  )) %>% 
+  unique()
 
 student_dem$race <- recode(student_dem$race, "Two or More Races" = "ToM") 
 student_dem$race <- recode(student_dem$race, "Hispanic or Latino" = "Hispanic") 
 student_dem$race <- recode(student_dem$race, "Black or African American" = "Black")
+student_dem$race <- recode(student_dem$race, "American Indian or Alaska Native" = "Native")
 
 write_csv(student_dem, file = "data/processed/student_dem_processed.csv")
 student_dem <- read_csv(file = "data/processed/student_dem_processed.csv")
@@ -275,6 +277,11 @@ student_charac <- student_dem %>%
   select(-name) %>%
   unique()
 
+wistem_attendance <- wistem_attendance %>% 
+  mutate(id = ifelse(first_name == "Izzah" & last_name == "Shah", 627199, id)) %>% 
+  mutate(id = ifelse(first_name == "Hannah" & last_name == "McLeod", 999010, id)) %>% 
+  mutate(id = ifelse(first_name == "Yulian" & last_name == "Ramos", 119413, id))
+
 wistem_attendance <- left_join(wistem_attendance, student_charac)
 
 wistem_attendance <- wistem_attendance %>%
@@ -508,7 +515,8 @@ student_charac <- student_dem %>%
   unique()
 
 wieng_attendance <- wieng_attendance %>% 
-  mutate(id = as.numeric(id))
+  mutate(id = as.numeric(id)) %>% 
+  mutate(id = ifelse(first_name == "Ellen" & last_name == "Pepsnik", 857052, id))
 
 wieng_attendance <- left_join(wieng_attendance, student_charac)
 
