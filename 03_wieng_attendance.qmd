@@ -41,6 +41,8 @@ wieng_attendance_data$date <- factor(wieng_attendance_data$date, levels = c("Oct
 # Colors
 color <- c("#716C6B")
 fill <- c("#B6ACD1")
+
+unique_colors <- c("lavender", "darkseagreen2", "lightpink2", "khaki", "lightcyan2", "peachpuff")
 ```
 
 # Background
