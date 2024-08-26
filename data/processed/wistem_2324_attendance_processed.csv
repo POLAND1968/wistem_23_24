@@ -5,11 +5,11 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 996075,Francesca,Battalora-Vallera,Mar 1st,Francesca Battalora-Vallera,Activity,White,2025,11,White,5
 200681,Lillian,Lorch,Mar 1st,Lillian Lorch,Activity,White,2027,9,White,7
 118940,Keira,Beaudoin,Mar 1st,Keira Beaudoin,Activity,ToM,2027,9,Non-White,4
-822371,Chloe,Ross,Mar 1st,Chloe Ross,Activity,NA,NA,NA,NA,2
+822371,Chloe,Ross,Mar 1st,Chloe Ross,Activity,ToM,2027,9,Non-White,2
 928391,Clare,Koeniger,Mar 1st,Clare Koeniger,Activity,White,2026,10,White,5
 726379,Harlow,Medhurst,Mar 1st,Harlow Medhurst,Activity,White,2026,10,White,10
 748699,Sofia,Reel,Mar 1st,Sofia Reel,Activity,Hispanic,2026,10,Non-White,9
-978318,Natalie,Weinert,Mar 1st,Natalie Weinert,Activity,NA,NA,NA,NA,5
+978318,Natalie,Weinert,Mar 1st,Natalie Weinert,Activity,White,2027,9,White,5
 999660,Rose,Eccleston,Mar 1st,Rose Eccleston,Activity,White,2025,11,White,4
 999234,Kari,Robinson,Mar 1st,Kari Robinson,Activity,Black,2025,11,Non-White,7
 999262,Jenet,Luning,Mar 1st,Jenet Luning,Activity,White,2025,11,White,7
@@ -29,9 +29,9 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 996061,Delsey,Garfield,Mar 1st,Delsey Garfield,Activity,White,2025,11,White,6
 708906,Karla,Hackett,Mar 1st,Karla Hackett,Activity,ToM,2026,10,Non-White,10
 823640,Eva,Hansen,Mar 1st,Eva Hansen,Activity,White,2026,10,White,11
-967159,Naiyeli,Vera,Mar 1st,Naiyeli Vera,Activity,NA,NA,NA,NA,3
-784998,Alondra,Lagunilla,Mar 1st,Alondra Lagunilla,Activity,NA,NA,NA,NA,2
-914725,Laissa,Vazquez,Mar 1st,Laissa Vazquez,Activity,NA,NA,NA,NA,1
+967159,Naiyeli,Vera,Mar 1st,Naiyeli Vera,Activity,Hispanic,2026,10,Non-White,3
+784998,Alondra,Lagunilla,Mar 1st,Alondra Lagunilla,Activity,Hispanic,2026,10,Non-White,2
+914725,Laissa,Vazquez,Mar 1st,Laissa Vazquez,Activity,Hispanic,2026,10,Non-White,1
 118546,Clare,Styslinger,Mar 1st,Clare Styslinger,Activity,White,2025,11,White,7
 725931,Chloe,Wagner,Mar 1st,Chloe Wagner,Activity,White,2024,12,White,10
 857052,Ellen,Pepsnik,Mar 1st,Ellen Pepsnik,Activity,White,2026,10,White,11
@@ -47,7 +47,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 997985,Olivia,Catayong,Mar 1st,Olivia Catayong,Activity,Hispanic,2024,12,Non-White,8
 999725,Rachael,Rubin,Mar 1st,Rachael Rubin,Activity,White,2025,11,White,13
 118700,Toluwanimi,Adeosun,Mar 1st,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,11
-921923,Natalia,Acosta,Mar 1st,Natalia Acosta,Activity,NA,NA,NA,NA,1
+921923,Natalia,Acosta,Mar 1st,Natalia Acosta,Activity,Hispanic,2024,12,Non-White,1
 799158,Alice,Grossman,Mar 1st,Alice Grossman,Activity,White,2026,10,White,10
 787742,Amelia,Bonney,Mar 1st,Amelia Bonney,Activity,ToM,2026,10,Non-White,13
 911310,Siena,Bowen,Mar 1st,Siena Bowen,Activity,ToM,2026,10,Non-White,11
@@ -72,7 +72,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118862,Anna,Hanson,Mar 1st,Anna Hanson,Activity,White,2026,10,White,7
 880933,Katalin,Maji,Mar 1st,Katalin Maji,Activity,ToM,2024,12,Non-White,12
 999007,Naomi,Criz,Mar 1st,Naomi Criz,Activity,White,2025,11,White,10
-118512,Grace,Freeman,Mar 1st,Grace Freeman,Activity,NA,NA,NA,NA,3
+118512,Grace,Freeman,Mar 1st,Grace Freeman,Activity,White,2025,11,White,3
 939322,Chloe,Lundervold,Mar 1st,Chloe Lundervold,Activity,White,2026,10,White,5
 849293,Ella,Gutowski,Mar 1st,Ella Gutowski,Activity,White,2025,11,White,5
 985839,Miriam,Cortelyou,Mar 1st,Miriam Cortelyou,Activity,White,2026,10,White,9
@@ -82,7 +82,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 701778,Yuliana,Aguilar Lemus,Mar 1st,Yuliana Aguilar Lemus,Activity,Hispanic,2026,10,Non-White,7
 119142,Alexa,Llanes,Mar 1st,Alexa Llanes,Activity,ToM,2027,9,Non-White,8
 818471,Leela,Vinci,Mar 1st,Leela Vinci,Activity,Asian,2027,9,Non-White,5
-848012,Casey,Martin,Mar 1st,Casey Martin,Activity,NA,NA,NA,NA,4
+848012,Casey,Martin,Mar 1st,Casey Martin,Activity,White,2027,9,White,4
 972107,Samantha,Caldwell,Mar 1st,Samantha Caldwell,Activity,White,2026,10,White,4
 790218,Mahea,Dano,Mar 1st,Mahea Dano,Activity,ToM,2025,11,Non-White,7
 996106,Sabine,Batza,Mar 1st,Sabine Batza,Activity,White,2025,11,White,10
@@ -93,15 +93,15 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 830634,Larkin,Zdawczyk,Mar 1st,Larkin Zdawczyk,Activity,White,2025,11,White,12
 999595,Madeline,Ross,Mar 1st,Madeline Ross,Activity,White,2025,11,White,13
 969777,Sophia,Hinton,Mar 1st,Sophia Hinton,Activity,Hispanic,2025,11,Non-White,12
-869238,Amelia,Harris,Mar 1st,Amelia Harris,Activity,NA,NA,NA,NA,2
-763331,Frances,Wade,Mar 1st,Frances Wade,Activity,NA,NA,NA,NA,2
+869238,Amelia,Harris,Mar 1st,Amelia Harris,Activity,White,2026,10,White,2
+763331,Frances,Wade,Mar 1st,Frances Wade,Activity,White,2026,10,White,2
 118699,Monijesu,Adeosun,Mar 1st,Monijesu Adeosun,Activity,Black,2024,12,Non-White,13
-752164,Leah,Amromin,Mar 1st,Leah Amromin,Activity,NA,NA,NA,NA,3
-724901,Cameron,Corbett,Mar 1st,Cameron Corbett,Activity,NA,NA,NA,NA,1
-999712,Molly,O'Hare,Mar 1st,Molly O'Hare,Activity,NA,NA,NA,NA,3
+752164,Leah,Amromin,Mar 1st,Leah Amromin,Activity,White,2025,11,White,3
+724901,Cameron,Corbett,Mar 1st,Cameron Corbett,Activity,Native,2025,11,Non-White,1
+999712,Molly,O'Hare,Mar 1st,Molly O'Hare,Activity,White,2025,11,White,3
 716056,Ana,Benitez,Mar 1st,Ana Benitez,Activity,Hispanic,2025,11,Non-White,4
-709828,Sophia,Lindsey,Mar 1st,Sophia Lindsey,Activity,NA,NA,NA,NA,1
-764963,Jessica,Frolichstein,Mar 1st,Jessica Frolichstein,Activity,NA,NA,NA,NA,3
+709828,Sophia,Lindsey,Mar 1st,Sophia Lindsey,Activity,ToM,2024,12,Non-White,1
+764963,Jessica,Frolichstein,Mar 1st,Jessica Frolichstein,Activity,White,2026,10,White,3
 999725,Rachael,Rubin,Mar 15th,Rachael Rubin,Activity,White,2025,11,White,13
 792695,Naomi,Satut,Mar 15th,Naomi Satut,Activity,White,2026,10,White,11
 118948,Brynn,Litus,Mar 15th,Brynn Litus,Activity,White,2027,9,White,6
@@ -123,15 +123,15 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 999262,Jenet,Luning,Mar 15th,Jenet Luning,Activity,White,2025,11,White,7
 803608,Tea,Hartenstein,Mar 15th,Tea Hartenstein,Activity,White,2026,10,White,6
 999010,Hannah,McLeod,Mar 15th,Hannah McLeod,Activity,White,2025,11,White,9
-118535,Rivka,Mordka,Mar 15th,Rivka Mordka,Activity,NA,NA,NA,NA,2
+118535,Rivka,Mordka,Mar 15th,Rivka Mordka,Activity,White,2025,11,White,2
 200681,Lillian,Lorch,Mar 15th,Lillian Lorch,Activity,White,2027,9,White,7
 118940,Keira,Beaudoin,Mar 15th,Keira Beaudoin,Activity,ToM,2027,9,Non-White,4
 806246,Ella,Cleary,Mar 15th,Ella Cleary,Activity,White,2025,11,White,2
-978318,Natalie,Weinert,Mar 15th,Natalie Weinert,Activity,NA,NA,NA,NA,5
+978318,Natalie,Weinert,Mar 15th,Natalie Weinert,Activity,White,2027,9,White,5
 859606,Talia,Polish,Mar 15th,Talia Polish,Activity,White,2025,11,White,2
 119023,Kate,Flint,Mar 15th,Kate Flint,Activity,White,2026,10,White,11
 957925,Tinsae,Geyer,Mar 15th,Tinsae Geyer,Activity,Black,2026,10,Non-White,11
-118680,Ingrid,Olko,Mar 15th,Ingrid Olko,Activity,NA,NA,NA,NA,1
+118680,Ingrid,Olko,Mar 15th,Ingrid Olko,Activity,White,2025,11,White,1
 999275,Cecilia,Bilski,Mar 15th,Cecilia Bilski,Activity,White,2025,11,White,5
 936210,Joy,Spalding,Mar 15th,Joy Spalding,Activity,Hispanic,2025,11,Non-White,7
 999168,Katherine,Schober,Mar 15th,Katherine Schober,Activity,White,2025,11,White,12
@@ -147,8 +147,8 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 725931,Chloe,Wagner,Mar 15th,Chloe Wagner,Activity,White,2024,12,White,10
 823723,Elli,Proctor,Mar 15th,Elli Proctor,Activity,White,2024,12,White,2
 887090,Liviani,Sumi,Mar 15th,Liviani Sumi,Activity,Asian,2026,10,Non-White,9
-784998,Alondra,Lagunilla,Mar 15th,Alondra Lagunilla,Activity,NA,NA,NA,NA,2
-967159,Naiyeli,Vera,Mar 15th,Naiyeli Vera,Activity,NA,NA,NA,NA,3
+784998,Alondra,Lagunilla,Mar 15th,Alondra Lagunilla,Activity,Hispanic,2026,10,Non-White,2
+967159,Naiyeli,Vera,Mar 15th,Naiyeli Vera,Activity,Hispanic,2026,10,Non-White,3
 799158,Alice,Grossman,Mar 15th,Alice Grossman,Activity,White,2026,10,White,10
 118629,Lilian,DiCrescenzo,Mar 15th,Lilian DiCrescenzo,Activity,White,2026,10,White,3
 118700,Toluwanimi,Adeosun,Mar 15th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,11
@@ -166,11 +166,11 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 963532,Talia,Bahar,Mar 15th,Talia Bahar,Activity,White,2025,11,White,6
 996041,Teagan,Kenney,Mar 15th,Teagan Kenney,Activity,White,2025,11,White,11
 803773,Abigail,Serpa,Mar 15th,Abigail Serpa,Activity,White,2025,11,White,13
-700300,Eleanor,Feeney,Mar 15th,Eleanor Feeney,Activity,NA,NA,NA,NA,1
+700300,Eleanor,Feeney,Mar 15th,Eleanor Feeney,Activity,White,2025,11,White,1
 996106,Sabine,Batza,Mar 15th,Sabine Batza,Activity,White,2025,11,White,10
-752164,Leah,Amromin,Mar 15th,Leah Amromin,Activity,NA,NA,NA,NA,3
+752164,Leah,Amromin,Mar 15th,Leah Amromin,Activity,White,2025,11,White,3
 118820,Samantha,Blix,Mar 15th,Samantha Blix,Activity,Asian,2026,10,Non-White,12
-999712,Molly,O'Hare,Mar 15th,Molly O'Hare,Activity,NA,NA,NA,NA,3
+999712,Molly,O'Hare,Mar 15th,Molly O'Hare,Activity,White,2025,11,White,3
 999250,Grace,Stewart,Mar 15th,Grace Stewart,Activity,White,2025,11,White,12
 999624,Maija,Ahleman,Mar 15th,Maija Ahleman,Activity,Asian,2025,11,Non-White,10
 744876,Eloise,Straussman,Mar 15th,Eloise Straussman,Activity,White,2025,11,White,10
@@ -210,7 +210,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 200681,Lillian,Lorch,Apr 5th,Lillian Lorch,Guest Speaker,White,2027,9,White,7
 118938,Ruby,Matouschek,Apr 5th,Ruby Matouschek,Guest Speaker,White,2027,9,White,6
 728527,Macyn,Hearn,Apr 5th,Macyn Hearn,Guest Speaker,White,2026,10,White,9
-772915,Josephine,Solar,Apr 5th,Josephine Solar,Guest Speaker,NA,NA,NA,NA,1
+772915,Josephine,Solar,Apr 5th,Josephine Solar,Guest Speaker,White,2027,9,White,1
 849384,Elaine,Harris-Stapleton,Apr 5th,Elaine Harris-Stapleton,Guest Speaker,White,2027,9,White,11
 981754,Emily,Schirer,Apr 5th,Emily Schirer,Guest Speaker,ToM,2025,11,Non-White,11
 119174,Selam,Dejene,Apr 5th,Selam Dejene,Guest Speaker,Black,2027,9,Non-White,11
@@ -221,17 +221,17 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 996061,Delsey,Garfield,Apr 5th,Delsey Garfield,Guest Speaker,White,2025,11,White,6
 999660,Rose,Eccleston,Apr 5th,Rose Eccleston,Guest Speaker,White,2025,11,White,4
 996075,Francesca,Battalora-Vallera,Apr 5th,Francesca Battalora-Vallera,Guest Speaker,White,2025,11,White,5
-118535,Rivka,Mordka,Apr 5th,Rivka Mordka,Guest Speaker,NA,NA,NA,NA,2
+118535,Rivka,Mordka,Apr 5th,Rivka Mordka,Guest Speaker,White,2025,11,White,2
 999044,Malia,Schoonyoung,Apr 5th,Malia Schoonyoung,Guest Speaker,White,2025,11,White,7
 999010,Hannah,McLeod,Apr 5th,Hannah McLeod,Guest Speaker,White,2025,11,White,9
 708906,Karla,Hackett,Apr 5th,Karla Hackett,Guest Speaker,ToM,2026,10,Non-White,10
 711315,Aden,Johansen,Apr 5th,Aden Johansen,Guest Speaker,White,2025,11,White,10
 823640,Eva,Hansen,Apr 5th,Eva Hansen,Guest Speaker,White,2026,10,White,11
-946622,Phoebe,Kimrey,Apr 5th,Phoebe Kimrey,Guest Speaker,NA,NA,NA,NA,2
+946622,Phoebe,Kimrey,Apr 5th,Phoebe Kimrey,Guest Speaker,White,2026,10,White,2
 792695,Naomi,Satut,Apr 5th,Naomi Satut,Guest Speaker,White,2026,10,White,11
 803608,Tea,Hartenstein,Apr 5th,Tea Hartenstein,Guest Speaker,White,2026,10,White,6
-853875,Penelope,Cohn,Apr 5th,Penelope Cohn,Guest Speaker,NA,NA,NA,NA,1
-978318,Natalie,Weinert,Apr 5th,Natalie Weinert,Guest Speaker,NA,NA,NA,NA,5
+853875,Penelope,Cohn,Apr 5th,Penelope Cohn,Guest Speaker,Asian,2025,11,Non-White,1
+978318,Natalie,Weinert,Apr 5th,Natalie Weinert,Guest Speaker,White,2027,9,White,5
 878595,Sophia,Schriner,Apr 5th,Sophia Schriner,Guest Speaker,White,2027,9,White,12
 857052,Ellen,Pepsnik,Apr 5th,Ellen Pepsnik,Guest Speaker,White,2026,10,White,11
 996035,Jacinta,Diversiev,Apr 5th,Jacinta Diversiev,Guest Speaker,Hispanic,2025,11,Non-White,11
@@ -255,19 +255,19 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 744876,Eloise,Straussman,Apr 5th,Eloise Straussman,Guest Speaker,White,2025,11,White,10
 816425,Hannah,Cervantes,Apr 5th,Hannah Cervantes,Guest Speaker,Hispanic,2026,10,Non-White,3
 787284,Catharina,Wientjes,Apr 5th,Catharina Wientjes,Guest Speaker,White,2026,10,White,3
-764963,Jessica,Frolichstein,Apr 5th,Jessica Frolichstein,Guest Speaker,NA,NA,NA,NA,3
+764963,Jessica,Frolichstein,Apr 5th,Jessica Frolichstein,Guest Speaker,White,2026,10,White,3
 999250,Grace,Stewart,Apr 5th,Grace Stewart,Guest Speaker,White,2025,11,White,12
 999072,Beri,Barton,Apr 5th,Beri Barton,Guest Speaker,White,2025,11,White,9
 999624,Maija,Ahleman,Apr 5th,Maija Ahleman,Guest Speaker,Asian,2025,11,Non-White,10
-999712,Molly,O'Hare,Apr 5th,Molly O'Hare,Guest Speaker,NA,NA,NA,NA,3
-752164,Leah,Amromin,Apr 5th,Leah Amromin,Guest Speaker,NA,NA,NA,NA,3
+999712,Molly,O'Hare,Apr 5th,Molly O'Hare,Guest Speaker,White,2025,11,White,3
+752164,Leah,Amromin,Apr 5th,Leah Amromin,Guest Speaker,White,2025,11,White,3
 119142,Alexa,Llanes,Apr 5th,Alexa Llanes,Guest Speaker,ToM,2027,9,Non-White,8
-118512,Grace,Freeman,Apr 5th,Grace Freeman,Guest Speaker,NA,NA,NA,NA,3
-848012,Casey,Martin,Apr 5th,Casey Martin,Guest Speaker,NA,NA,NA,NA,4
+118512,Grace,Freeman,Apr 5th,Grace Freeman,Guest Speaker,White,2025,11,White,3
+848012,Casey,Martin,Apr 5th,Casey Martin,Guest Speaker,White,2027,9,White,4
 999587,Margaret,Peter,Apr 5th,Margaret Peter,Guest Speaker,Asian,2025,11,Non-White,7
 849293,Ella,Gutowski,Apr 5th,Ella Gutowski,Guest Speaker,White,2025,11,White,5
 118812,Cassia,Major,Apr 5th,Cassia Major,Guest Speaker,White,2026,10,White,11
-999274,Madeleine,Schwendener,Apr 5th,Madeleine Schwendener,Guest Speaker,NA,NA,NA,NA,2
+999274,Madeleine,Schwendener,Apr 5th,Madeleine Schwendener,Guest Speaker,White,2025,11,White,2
 970930,Eve,Abraham,Apr 5th,Eve Abraham,Guest Speaker,White,2027,9,White,11
 986303,Quynh,Lenz,Apr 5th,Quynh Lenz,Guest Speaker,ToM,2027,9,Non-White,11
 872611,Grace,Midyan,Apr 5th,Grace Midyan,Guest Speaker,White,2026,10,White,2
@@ -282,8 +282,8 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118597,Eva,Cherkasky,Apr 5th,Eva Cherkasky,Guest Speaker,White,2025,11,White,5
 787742,Amelia,Bonney,Apr 5th,Amelia Bonney,Guest Speaker,ToM,2026,10,Non-White,13
 999058,Ashlyn,Rogowski,Apr 5th,Ashlyn Rogowski,Guest Speaker,White,2025,11,White,5
-869238,Amelia,Harris,Apr 5th,Amelia Harris,Guest Speaker,NA,NA,NA,NA,2
-763331,Frances,Wade,Apr 5th,Frances Wade,Guest Speaker,NA,NA,NA,NA,2
+869238,Amelia,Harris,Apr 5th,Amelia Harris,Guest Speaker,White,2026,10,White,2
+763331,Frances,Wade,Apr 5th,Frances Wade,Guest Speaker,White,2026,10,White,2
 792695,Naomi,Satut,Apr 19th,Naomi Satut,Activity,White,2026,10,White,11
 119023,Kate,Flint,Apr 19th,Kate Flint,Activity,White,2026,10,White,11
 957925,Tinsae,Geyer,Apr 19th,Tinsae Geyer,Activity,Black,2026,10,Non-White,11
@@ -297,10 +297,10 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 945469,Tacy,Jamison,Apr 19th,Tacy Jamison,Activity,White,2026,10,White,11
 981754,Emily,Schirer,Apr 19th,Emily Schirer,Activity,ToM,2025,11,Non-White,11
 999168,Katherine,Schober,Apr 19th,Katherine Schober,Activity,White,2025,11,White,12
-999607,Thalia,Selch,Apr 19th,Thalia Selch,Activity,NA,NA,NA,NA,1
+999607,Thalia,Selch,Apr 19th,Thalia Selch,Activity,Hispanic,2025,11,Non-White,1
 996035,Jacinta,Diversiev,Apr 19th,Jacinta Diversiev,Activity,Hispanic,2025,11,Non-White,11
 996061,Delsey,Garfield,Apr 19th,Delsey Garfield,Activity,White,2025,11,White,6
-848075,Susannah,Keller,Apr 19th,Susannah Keller,Activity,NA,NA,NA,NA,2
+848075,Susannah,Keller,Apr 19th,Susannah Keller,Activity,White,2027,9,White,2
 804684,Elyse,King,Apr 19th,Elyse King,Activity,Black,2024,12,Non-White,3
 919106,Natalie,Lundgren,Apr 19th,Natalie Lundgren,Activity,Hispanic,2024,12,Non-White,7
 853505,Alexia,Lennon,Apr 19th,Alexia Lennon,Activity,White,2024,12,White,3
@@ -315,18 +315,18 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118700,Toluwanimi,Adeosun,Apr 19th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,11
 799158,Alice,Grossman,Apr 19th,Alice Grossman,Activity,White,2026,10,White,10
 118546,Clare,Styslinger,Apr 19th,Clare Styslinger,Activity,White,2025,11,White,7
-967159,Naiyeli,Vera,Apr 19th,Naiyeli Vera,Activity,NA,NA,NA,NA,3
+967159,Naiyeli,Vera,Apr 19th,Naiyeli Vera,Activity,Hispanic,2026,10,Non-White,3
 725931,Chloe,Wagner,Apr 19th,Chloe Wagner,Activity,White,2024,12,White,10
 990060,Samantha,Albaugh,Apr 19th,Samantha Albaugh,Activity,White,2027,9,White,7
 823640,Eva,Hansen,Apr 19th,Eva Hansen,Activity,White,2026,10,White,11
 928391,Clare,Koeniger,Apr 19th,Clare Koeniger,Activity,White,2026,10,White,5
 849384,Elaine,Harris-Stapleton,Apr 19th,Elaine Harris-Stapleton,Activity,White,2027,9,White,11
-978318,Natalie,Weinert,Apr 19th,Natalie Weinert,Activity,NA,NA,NA,NA,5
+978318,Natalie,Weinert,Apr 19th,Natalie Weinert,Activity,White,2027,9,White,5
 999725,Rachael,Rubin,Apr 19th,Rachael Rubin,Activity,White,2025,11,White,13
 119109,Norah,Tillery,Apr 19th,Norah Tillery,Activity,Black,2027,9,Non-White,6
 996075,Francesca,Battalora-Vallera,Apr 19th,Francesca Battalora-Vallera,Activity,White,2025,11,White,5
-118633,Kayla,Rodriguez,Apr 19th,Kayla Rodriguez,Activity,NA,NA,NA,NA,1
-840189,Amiah,Stringer,Apr 19th,Amiah Stringer,Activity,NA,NA,NA,NA,1
+118633,Kayla,Rodriguez,Apr 19th,Kayla Rodriguez,Activity,Hispanic,2024,12,Non-White,1
+840189,Amiah,Stringer,Apr 19th,Amiah Stringer,Activity,Black,2025,11,Non-White,1
 917829,Ivy,Torvik,Apr 19th,Ivy Torvik,Activity,White,2026,10,White,12
 741193,Hannah,Tauber-Weiss,Apr 19th,Hannah Tauber-Weiss,Activity,White,2026,10,White,8
 996041,Teagan,Kenney,Apr 19th,Teagan Kenney,Activity,White,2025,11,White,11
@@ -345,12 +345,12 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 787742,Amelia,Bonney,Apr 19th,Amelia Bonney,Activity,ToM,2026,10,Non-White,13
 880933,Katalin,Maji,Apr 19th,Katalin Maji,Activity,ToM,2024,12,Non-White,12
 911310,Siena,Bowen,Apr 19th,Siena Bowen,Activity,ToM,2026,10,Non-White,11
-200343,Lucy,Gallo,Apr 19th,Lucy Gallo,Activity,NA,NA,NA,NA,1
+200343,Lucy,Gallo,Apr 19th,Lucy Gallo,Activity,White,2025,11,White,1
 818471,Leela,Vinci,Apr 19th,Leela Vinci,Activity,Asian,2027,9,Non-White,5
 119142,Alexa,Llanes,Apr 19th,Alexa Llanes,Activity,ToM,2027,9,Non-White,8
-848012,Casey,Martin,Apr 19th,Casey Martin,Activity,NA,NA,NA,NA,4
+848012,Casey,Martin,Apr 19th,Casey Martin,Activity,White,2027,9,White,4
 738826,Kupunoli,Sumi,Apr 19th,Kupunoli Sumi,Activity,Asian,2024,12,Non-White,7
-118512,Grace,Freeman,Apr 19th,Grace Freeman,Activity,NA,NA,NA,NA,3
+118512,Grace,Freeman,Apr 19th,Grace Freeman,Activity,White,2025,11,White,3
 970930,Eve,Abraham,Apr 19th,Eve Abraham,Activity,White,2027,9,White,11
 986303,Quynh,Lenz,Apr 19th,Quynh Lenz,Activity,ToM,2027,9,Non-White,11
 999671,Charlotte,Gass,Apr 19th,Charlotte Gass,Activity,White,2025,11,White,5
@@ -370,13 +370,13 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118699,Monijesu,Adeosun,Apr 19th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,13
 999007,Naomi,Criz,Apr 19th,Naomi Criz,Activity,White,2025,11,White,10
 119023,Kate,Flint,May 3rd,Kate Flint,Activity,White,2026,10,White,11
-946622,Phoebe,Kimrey,May 3rd,Phoebe Kimrey,Activity,NA,NA,NA,NA,2
+946622,Phoebe,Kimrey,May 3rd,Phoebe Kimrey,Activity,White,2026,10,White,2
 119174,Selam,Dejene,May 3rd,Selam Dejene,Activity,Black,2027,9,Non-White,11
 118940,Keira,Beaudoin,May 3rd,Keira Beaudoin,Activity,ToM,2027,9,Non-White,4
 118840,Simone,Llanes,May 3rd,Simone Llanes,Activity,ToM,2026,10,Non-White,9
 118948,Brynn,Litus,May 3rd,Brynn Litus,Activity,White,2027,9,White,6
-822371,Chloe,Ross,May 3rd,Chloe Ross,Activity,NA,NA,NA,NA,2
-848075,Susannah,Keller,May 3rd,Susannah Keller,Activity,NA,NA,NA,NA,2
+822371,Chloe,Ross,May 3rd,Chloe Ross,Activity,ToM,2027,9,Non-White,2
+848075,Susannah,Keller,May 3rd,Susannah Keller,Activity,White,2027,9,White,2
 957925,Tinsae,Geyer,May 3rd,Tinsae Geyer,Activity,Black,2026,10,Non-White,11
 996061,Delsey,Garfield,May 3rd,Delsey Garfield,Activity,White,2025,11,White,6
 999262,Jenet,Luning,May 3rd,Jenet Luning,Activity,White,2025,11,White,7
@@ -387,8 +387,8 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 849384,Elaine,Harris-Stapleton,May 3rd,Elaine Harris-Stapleton,Activity,White,2027,9,White,11
 907231,Antonia,Keith,May 3rd,Antonia Keith,Activity,White,2025,11,White,6
 823640,Eva,Hansen,May 3rd,Eva Hansen,Activity,White,2026,10,White,11
-902833,Francesca,Decastro,May 3rd,Francesca Decastro,Activity,NA,NA,NA,NA,1
-978318,Natalie,Weinert,May 3rd,Natalie Weinert,Activity,NA,NA,NA,NA,5
+902833,Francesca,Decastro,May 3rd,Francesca Decastro,Activity,ToM,2027,9,Non-White,1
+978318,Natalie,Weinert,May 3rd,Natalie Weinert,Activity,White,2027,9,White,5
 737983,Nola,Bokor,May 3rd,Nola Bokor,Activity,White,2026,10,White,10
 748699,Sofia,Reel,May 3rd,Sofia Reel,Activity,Hispanic,2026,10,Non-White,9
 711315,Aden,Johansen,May 3rd,Aden Johansen,Activity,White,2025,11,White,10
@@ -399,7 +399,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 999609,Daniela,Shepherd,May 3rd,Daniela Shepherd,Activity,Hispanic,2025,11,Non-White,6
 990060,Samantha,Albaugh,May 3rd,Samantha Albaugh,Activity,White,2027,9,White,7
 999034,Audra,Gaul,May 3rd,Audra Gaul,Activity,Black,2025,11,Non-White,2
-865008,Abigail,Quail,May 3rd,Abigail Quail,Activity,NA,NA,NA,NA,1
+865008,Abigail,Quail,May 3rd,Abigail Quail,Activity,White,2027,9,White,1
 799158,Alice,Grossman,May 3rd,Alice Grossman,Activity,White,2026,10,White,10
 999234,Kari,Robinson,May 3rd,Kari Robinson,Activity,Black,2025,11,Non-White,7
 940278,Annika,Wartowski,May 3rd,Annika Wartowski,Activity,White,2026,10,White,9
@@ -407,7 +407,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 981754,Emily,Schirer,May 3rd,Emily Schirer,Activity,ToM,2025,11,Non-White,11
 999725,Rachael,Rubin,May 3rd,Rachael Rubin,Activity,White,2025,11,White,13
 878595,Sophia,Schriner,May 3rd,Sophia Schriner,Activity,White,2027,9,White,12
-826295,Vanya,Gojakovic,May 3rd,Vanya Gojakovic,Activity,NA,NA,NA,NA,1
+826295,Vanya,Gojakovic,May 3rd,Vanya Gojakovic,Activity,White,2027,9,White,1
 999007,Naomi,Criz,May 3rd,Naomi Criz,Activity,White,2025,11,White,10
 726379,Harlow,Medhurst,May 3rd,Harlow Medhurst,Activity,White,2026,10,White,10
 970930,Eve,Abraham,May 3rd,Eve Abraham,Activity,White,2027,9,White,11
@@ -418,7 +418,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 119142,Alexa,Llanes,May 3rd,Alexa Llanes,Activity,ToM,2027,9,Non-White,8
 118812,Cassia,Major,May 3rd,Cassia Major,Activity,White,2026,10,White,11
 776309,Elise,Goulding,May 3rd,Elise Goulding,Activity,Asian,2024,12,Non-White,5
-999274,Madeleine,Schwendener,May 3rd,Madeleine Schwendener,Activity,NA,NA,NA,NA,2
+999274,Madeleine,Schwendener,May 3rd,Madeleine Schwendener,Activity,White,2025,11,White,2
 790218,Mahea,Dano,May 3rd,Mahea Dano,Activity,ToM,2025,11,Non-White,7
 999624,Maija,Ahleman,May 3rd,Maija Ahleman,Activity,Asian,2025,11,Non-White,10
 963532,Talia,Bahar,May 3rd,Talia Bahar,Activity,White,2025,11,White,6
@@ -430,7 +430,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118820,Samantha,Blix,May 3rd,Samantha Blix,Activity,Asian,2026,10,Non-White,12
 969777,Sophia,Hinton,May 3rd,Sophia Hinton,Activity,Hispanic,2025,11,Non-White,12
 996148,Saheli,Goel,May 3rd,Saheli Goel,Activity,Asian,2025,11,Non-White,12
-764963,Jessica,Frolichstein,May 3rd,Jessica Frolichstein,Activity,NA,NA,NA,NA,3
+764963,Jessica,Frolichstein,May 3rd,Jessica Frolichstein,Activity,White,2026,10,White,3
 721091,Camila,Rojas,May 3rd,Camila Rojas,Activity,Hispanic,2026,10,Non-White,3
 996041,Teagan,Kenney,May 3rd,Teagan Kenney,Activity,White,2025,11,White,11
 999595,Madeline,Ross,May 3rd,Madeline Ross,Activity,White,2025,11,White,13
@@ -438,7 +438,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 885762,Anika,Radhakrishnan,May 3rd,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,10
 999072,Beri,Barton,May 3rd,Beri Barton,Activity,White,2025,11,White,9
 807833,Reena,Guben,May 3rd,Reena Guben,Activity,Black,2026,10,Non-White,3
-930935,Kelen,Kasprzycki,May 3rd,Kelen Kasprzycki,Activity,NA,NA,NA,NA,1
+930935,Kelen,Kasprzycki,May 3rd,Kelen Kasprzycki,Activity,White,2026,10,White,1
 803773,Abigail,Serpa,May 3rd,Abigail Serpa,Activity,White,2025,11,White,13
 999587,Margaret,Peter,May 3rd,Margaret Peter,Activity,Asian,2025,11,Non-White,7
 917829,Ivy,Torvik,May 3rd,Ivy Torvik,Activity,White,2026,10,White,12
@@ -825,11 +825,11 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 990060,Samantha,Albaugh,Dec 15th,Samantha Albaugh,Hangout,White,2027,9,White,7
 119345,Elisenda,Mones Marli,Dec 15th,Elisenda Mones Marli,Hangout,Hispanic,2025,11,Non-White,2
 119174,Selam,Dejene,Dec 15th,Selam Dejene,Hangout,Black,2027,9,Non-White,11
-705247,Casey,Mcdermott,Dec 15th,Casey Mcdermott,Hangout,NA,NA,NA,NA,1
+705247,Casey,Mcdermott,Dec 15th,Casey Mcdermott,Hangout,White,2026,10,White,1
 118575,Edith,Albert,Dec 15th,Edith Albert,Hangout,White,2025,11,White,6
 999044,Malia,Schoonyoung,Dec 15th,Malia Schoonyoung,Hangout,White,2025,11,White,7
 119413,Yulian,Ramos,Dec 15th,Yulian Ramos,Hangout,Black,2025,11,Non-White,4
-119074,Sophie,Kegler,Dec 15th,Sophie Kegler,Hangout,NA,NA,NA,NA,1
+119074,Sophie,Kegler,Dec 15th,Sophie Kegler,Hangout,White,2025,11,White,1
 750906,Jhonae,Jaghai,Dec 15th,Jhonae Jaghai,Hangout,Black,2027,9,Non-White,11
 878595,Sophia,Schriner,Dec 15th,Sophia Schriner,Hangout,White,2027,9,White,12
 828254,Georgia,Stoolmaker,Dec 15th,Georgia Stoolmaker,Hangout,White,2026,10,White,5
@@ -875,11 +875,11 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 996148,Saheli,Goel,Dec 15th,Saheli Goel,Hangout,Asian,2025,11,Non-White,12
 799158,Alice,Grossman,Dec 15th,Alice Grossman,Hangout,White,2026,10,White,10
 725931,Chloe,Wagner,Dec 15th,Chloe Wagner,Hangout,White,2024,12,White,10
-725469,Clara,Buell,Dec 15th,Clara Buell,Hangout,NA,NA,NA,NA,1
+725469,Clara,Buell,Dec 15th,Clara Buell,Hangout,Asian,2027,9,Non-White,1
 200266,Caroline,Emrich,Dec 15th,Caroline Emrich,Hangout,White,2026,10,White,2
 972107,Samantha,Caldwell,Dec 15th,Samantha Caldwell,Hangout,White,2026,10,White,4
-817615,Eliza,Hogan,Dec 15th,Eliza Hogan,Hangout,NA,NA,NA,NA,1
-750251,Makeda,Hausman,Dec 15th,Makeda Hausman,Hangout,NA,NA,NA,NA,1
+817615,Eliza,Hogan,Dec 15th,Eliza Hogan,Hangout,White,2026,10,White,1
+750251,Makeda,Hausman,Dec 15th,Makeda Hausman,Hangout,Black,2027,9,Non-White,1
 999007,Naomi,Criz,Dec 15th,Naomi Criz,Hangout,White,2025,11,White,10
 917829,Ivy,Torvik,Dec 15th,Ivy Torvik,Hangout,White,2026,10,White,12
 999624,Maija,Ahleman,Dec 15th,Maija Ahleman,Hangout,Asian,2025,11,Non-White,10
@@ -901,12 +901,12 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118941,Emma,Reese,Dec 15th,Emma Reese,Hangout,White,2027,9,White,8
 118820,Samantha,Blix,Dec 15th,Samantha Blix,Hangout,Asian,2026,10,Non-White,12
 119142,Alexa,Llanes,Dec 15th,Alexa Llanes,Hangout,ToM,2027,9,Non-White,8
-848012,Casey,Martin,Dec 15th,Casey Martin,Hangout,NA,NA,NA,NA,4
+848012,Casey,Martin,Dec 15th,Casey Martin,Hangout,White,2027,9,White,4
 927929,Olivia,De La Haza Stockenstrom,Dec 15th,Olivia De La Haza Stockenstrom,Hangout,Hispanic,2026,10,Non-White,11
 818471,Leela,Vinci,Dec 15th,Leela Vinci,Hangout,Asian,2027,9,Non-White,5
-877560,Vivian,Solomon,Dec 15th,Vivian Solomon,Hangout,NA,NA,NA,NA,1
+877560,Vivian,Solomon,Dec 15th,Vivian Solomon,Hangout,Black,2027,9,Non-White,1
 118787,Finley,Allen,Dec 15th,Finley Allen,Hangout,White,2026,10,White,2
-769657,Oaklyn,Waldron,Dec 15th,Oaklyn Waldron,Hangout,NA,NA,NA,NA,1
+769657,Oaklyn,Waldron,Dec 15th,Oaklyn Waldron,Hangout,Black,2026,10,Non-White,1
 737983,Nola,Bokor,Dec 15th,Nola Bokor,Hangout,White,2026,10,White,10
 999595,Madeline,Ross,Dec 15th,Madeline Ross,Hangout,White,2025,11,White,13
 985839,Miriam,Cortelyou,Dec 15th,Miriam Cortelyou,Hangout,White,2026,10,White,9
@@ -917,27 +917,27 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 999671,Charlotte,Gass,Dec 15th,Charlotte Gass,Hangout,White,2025,11,White,5
 701778,Yuliana,Aguilar Lemus,Dec 15th,Yuliana Aguilar Lemus,Hangout,Hispanic,2026,10,Non-White,7
 741193,Hannah,Tauber-Weiss,Dec 15th,Hannah Tauber-Weiss,Hangout,White,2026,10,White,8
-119297,Luenonie Ruvikk,Villaruel,Dec 15th,Luenonie Ruvikk Villaruel,Hangout,NA,NA,NA,NA,1
+119297,Luenonie Ruvikk,Villaruel,Dec 15th,Luenonie Ruvikk Villaruel,Hangout,Asian,2027,9,Non-White,1
 738826,Kupunoli,Sumi,Dec 15th,Kupunoli Sumi,Hangout,Asian,2024,12,Non-White,7
 830634,Larkin,Zdawczyk,Dec 15th,Larkin Zdawczyk,Hangout,White,2025,11,White,12
-118423,Abigail,Buell,Dec 15th,Abigail Buell,Hangout,NA,NA,NA,NA,1
+118423,Abigail,Buell,Dec 15th,Abigail Buell,Hangout,Asian,2024,12,Non-White,1
 963532,Talia,Bahar,Dec 15th,Talia Bahar,Hangout,White,2025,11,White,6
-996050,Leela,Wittenberg Trubowitz,Dec 15th,Leela Wittenberg Trubowitz,Hangout,NA,NA,NA,NA,1
+996050,Leela,Wittenberg Trubowitz,Dec 15th,Leela Wittenberg Trubowitz,Hangout,White,2025,11,White,1
 744876,Eloise,Straussman,Dec 15th,Eloise Straussman,Hangout,White,2025,11,White,10
 885762,Anika,Radhakrishnan,Dec 15th,Anika Radhakrishnan,Hangout,Asian,2024,12,Non-White,10
 880933,Katalin,Maji,Dec 15th,Katalin Maji,Hangout,ToM,2024,12,Non-White,12
 830634,Larkin,Zdawczyk,Nov 15th,Larkin Zdawczyk,Outside School Event,White,2025,11,White,12
 118700,Toluwanimi,Adeosun,Nov 15th,Toluwanimi Adeosun,Outside School Event,Black,2024,12,Non-White,11
-NA,Hannah,McLeod,Nov 15th,Hannah McLeod,Outside School Event,NA,NA,NA,NA,9
+999010,Hannah,McLeod,Nov 15th,Hannah McLeod,Outside School Event,White,2025,11,White,9
 999595,Madeline,Ross,Nov 15th,Madeline Ross,Outside School Event,White,2025,11,White,13
-118619,Natalya,Guiden,Nov 15th,Natalya Guiden,Outside School Event,NA,NA,NA,NA,1
+118619,Natalya,Guiden,Nov 15th,Natalya Guiden,Outside School Event,Black,2025,11,Non-White,1
 880933,Katalin,Maji,Nov 15th,Katalin Maji,Outside School Event,ToM,2024,12,Non-White,12
 118699,Monijesu,Adeosun,Nov 15th,Monijesu Adeosun,Outside School Event,Black,2024,12,Non-White,13
 999725,Rachael,Rubin,Nov 15th,Rachael Rubin,Outside School Event,White,2025,11,White,13
-996160,Mary,McDonald,Nov 15th,Mary McDonald,Outside School Event,NA,NA,NA,NA,1
-NA,Izzah,Shah,Nov 15th,Izzah Shah,Outside School Event,NA,NA,NA,NA,1
+996160,Mary,McDonald,Nov 15th,Mary McDonald,Outside School Event,White,2025,11,White,1
+627199,Izzah,Shah,Nov 15th,Izzah Shah,Outside School Event,Asian,2025,11,Non-White,1
 819084,Irys,Liang,Nov 15th,Irys Liang,Outside School Event,Asian,2025,11,Non-White,10
-NA,Yulian,Ramos,Nov 15th,Yulian Ramos,Outside School Event,NA,NA,NA,NA,4
+119413,Yulian,Ramos,Nov 15th,Yulian Ramos,Outside School Event,Black,2025,11,Non-White,4
 704613,Una,Breen,Nov 15th,Una Breen,Outside School Event,White,2025,11,White,6
 NA,Lucia,Scrimenti,Nov 15th,Lucia Scrimenti,Outside School Event,NA,NA,NA,NA,1
 NA,NA,NA,Jan 18th,NA,Outside School Event,NA,NA,NA,NA,NA
