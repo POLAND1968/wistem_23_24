@@ -41,6 +41,8 @@ wistem_attendance_data$date <- factor(wistem_attendance_data$date, levels = c("S
 # Colors
 color <- c("#716C6B")
 fill <- c("#B6ACD1")
+
+unique_colors <- c("lavender", "darkseagreen2", "lightpink2", "khaki", "lightcyan2", "peachpuff")
 ```
 
 # Background
@@ -440,8 +442,6 @@ one_meeting_fed_race <- wistem_attendance_data %>%
   )
 
 # Graph for All
-unique_colors <- c("lightpink2", "darkseagreen2", "lavender", "khaki", "lightcyan2")
-
 ggplot(data = one_meeting_fed_race, mapping = aes(x = race, y = num_students, fill = race)) +
   geom_col() + 
   scale_fill_manual(values = unique_colors) +
