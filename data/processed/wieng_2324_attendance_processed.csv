@@ -141,7 +141,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 118699,Monijesu,Adeosun,Mar 22nd,Monijesu Adeosun,Guest Presenter,Black,2024,12,Non-White,14
 725931,Chloe,Wagner,Mar 22nd,Chloe Wagner,Guest Presenter,White,2024,12,White,13
 944436,Satthapi,Miller,Mar 22nd,Satthapi Miller,Guest Presenter,Black,2026,10,Non-White,17
-627199,Izzah,Shah,Mar 22nd,Izzah Shah,Guest Presenter,NA,NA,NA,NA,1
+627199,Izzah,Shah,Mar 22nd,Izzah Shah,Guest Presenter,Asian,2025,11,Non-White,1
 975530,Anne,Bauer,Apr 5th,Anne Bauer,Activity,White,2027,9,White,25
 857052,Ellen,Pepsnik,Apr 5th,Ellen Pepsnik,Activity,White,2026,10,White,6
 118750,Deja,Malcolm,Apr 5th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
@@ -193,7 +193,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 996148,Saheli,Goel,Apr 26th,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,24
 995539,Nicole,Saenz Barros,May 3rd,Nicole Saenz Barros,Hangout,Hispanic,2026,10,Non-White,16
 849384,Elaine,Harris-Stapleton,May 3rd,Elaine Harris-Stapleton,Hangout,White,2027,9,White,12
-857502,Ellen,Pepsnik,May 3rd,Ellen Pepsnik,Hangout,NA,NA,NA,NA,6
+857052,Ellen,Pepsnik,May 3rd,Ellen Pepsnik,Hangout,White,2026,10,White,6
 999725,Rachael,Rubin,May 3rd,Rachael Rubin,Hangout,White,2025,11,White,17
 885762,Anika,Radhakrishnan,May 3rd,Anika Radhakrishnan,Hangout,Asian,2024,12,Non-White,20
 118750,Deja,Malcolm,May 3rd,Deja Malcolm,Hangout,Black,2025,11,Non-White,16
@@ -337,14 +337,14 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 830634,Larkin,Zdawczyk,Dec 15th,Larkin Zdawczyk,Activity,White,2025,11,White,23
 996148,Saheli,Goel,Dec 15th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
 996106,Sabine,Batza,Dec 15th,Sabine Batza,Activity,White,2025,11,White,24
-975150,Eve,Frajman,Dec 15th,Eve Frajman,Activity,NA,NA,NA,NA,1
+975150,Eve,Frajman,Dec 15th,Eve Frajman,Activity,White,2026,10,White,1
 118699,Monijesu,Adeosun,Dec 15th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
 861007,Miranda,Slayton,Dec 15th,Miranda Slayton,Activity,White,2025,11,White,2
 985839,Miriam,Cortelyou,Dec 15th,Miriam Cortelyou,Activity,White,2026,10,White,1
 750906,Jhonae,Jaghai,Dec 15th,Jhonae Jaghai,Activity,Black,2027,9,Non-White,3
 857052,Ellen,Pepsnik,Dec 15th,Ellen Pepsnik,Activity,White,2026,10,White,6
 118862,Anna,Hanson,Dec 15th,Anna Hanson,Activity,White,2026,10,White,1
-118990,Shaili,Peters,Dec 15th,Shaili Peters,Activity,NA,NA,NA,NA,1
+118990,Shaili,Peters,Dec 15th,Shaili Peters,Activity,ToM,2026,10,Non-White,1
 944436,Satthapi,Miller,Dec 15th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
 119174,Selam,Dejene,Dec 15th,Selam Dejene,Activity,Black,2027,9,Non-White,3
 999725,Rachael,Rubin,Dec 15th,Rachael Rubin,Activity,White,2025,11,White,17
@@ -354,7 +354,7 @@ id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_whit
 885762,Anika,Radhakrishnan,Dec 16th,Anika Radhakrishnan,Outside School Event,Asian,2024,12,Non-White,20
 999725,Rachael,Rubin,Dec 16th,Rachael Rubin,Outside School Event,White,2025,11,White,17
 940804,Tahryll,Sevilla,Dec 16th,Tahryll Sevilla,Outside School Event,Asian,2024,12,Non-White,7
-118619,Natalya,Guiden,Dec 16th,Natalya Guiden,Outside School Event,NA,NA,NA,NA,1
+118619,Natalya,Guiden,Dec 16th,Natalya Guiden,Outside School Event,Black,2025,11,Non-White,1
 880933,Katalin,Maji,Dec 16th,Katalin Maji,Outside School Event,ToM,2024,12,Non-White,16
 996148,Saheli,Goel,Dec 16th,Saheli Goel,Outside School Event,Asian,2025,11,Non-White,24
 830634,Larkin,Zdawczyk,Dec 16th,Larkin Zdawczyk,Outside School Event,White,2025,11,White,23
