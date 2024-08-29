@@ -47,7 +47,7 @@ unique_colors <- c("lavender", "darkseagreen2", "lightpink2", "khaki", "lightcya
 
 # Background
 
-**WiENG:** In total, there were 27 overall WiENG meetings held throughout the 2023-2024 academic school year. However, there were 27 meetings with attendance data and 23 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
+**WiENG:** In total, there were 26 overall WiENG meetings held throughout the 2023-2024 academic school year. There were 26 meetings with attendance data and 22 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
 
 **Exit Slips Distribution:** Overall, there were 303 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 23 meetings where exit slips were provided.
 
