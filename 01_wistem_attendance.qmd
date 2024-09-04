@@ -3802,8 +3802,6 @@ may_3_data %>%
 ```
 :::
 
-**INPUT THE REST OF THE DATES HERE**
-
 # Attendance by Graduation Year
 
 ## Total Grade Distribution
@@ -4554,7 +4552,7 @@ ggplot(data = race_without_one, mapping = aes(x = race, y = num_students, fill =
     caption = "Source: WiSTEM 2023-2024",
     x = "Federal Race", 
     y = "Number of Students"
-  ) + 
+) + 
   theme_minimal() + 
   theme(
     plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
@@ -4597,7 +4595,8 @@ ggplot(data = race_without_one_two, mapping = aes(x = white_non_white, y = num_s
     subtitle = "By White and Non-White Students (Unique Students)",
     caption = "Source: WiSTEM 2023-2024",
     x = "Federal Race", 
-    y = "Number of Students"
+    y = "Number of Students",
+    fill = ""
   ) + 
   theme_minimal() + 
   theme(
