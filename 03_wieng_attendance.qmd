@@ -47,9 +47,9 @@ unique_colors <- c("lavender", "darkseagreen2", "lightpink2", "khaki", "lightcya
 
 # Background
 
-**WiENG:** In total, there were 26 overall WiENG meetings held throughout the 2023-2024 academic school year. There were 26 meetings with attendance data and 22 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
+**WiENG:** In total, there were 29 overall WiENG meetings held throughout the 2023-2024 academic school year. There were 26 meetings with attendance data and 23 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
 
-**Exit Slips Distribution:** Overall, there were 303 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 23 meetings where exit slips were provided.
+**Exit Slips Distribution:** Overall, there were 310 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 23 meetings where exit slips were provided.
 
 ## Attendance Per Meeting
  
@@ -653,6 +653,7 @@ one_meeting_grad_year %>%
 # Distribution Per Meeting
 
 ## October 6, 2023
+**Topic: Activity**
 ```{r}
 #| label: oct-6-dist
 
@@ -878,6 +879,7 @@ oct_6_data %>%
 :::
 
 ## October 13, 2023
+**Topic: Activity**
 ```{r}
 #| label: oct-13-dist
 
@@ -1103,6 +1105,7 @@ oct_13_data %>%
 :::
 
 ## October 20, 2023
+**Topic: Activity**
 ```{r}
 #| label: oct-20-dist
 
@@ -1328,6 +1331,7 @@ oct_20_data %>%
 :::
 
 ## November 3, 2023
+**Topic: Activity**
 ```{r}
 #| label: nov-3-dist
 
@@ -1553,6 +1557,7 @@ nov_3_data %>%
 :::
 
 ## November 17, 2023
+**Topic: Activity**
 ```{r}
 #| label: nov-17-dist
 
@@ -1778,6 +1783,7 @@ nov_17_data %>%
 :::
 
 ## December 1, 2023
+**Topic: Activity**
 ```{r}
 #| label: dec-1-dist
 
@@ -2003,6 +2009,7 @@ dec_1_data %>%
 :::
 
 ## December 8, 2023
+**Topic: Discussion**
 ```{r}
 #| label: dec-8-dist
 
@@ -2228,6 +2235,7 @@ dec_8_data %>%
 :::
 
 ## December 15, 2023
+**Topic: Activity**
 ```{r}
 #| label: dec-15-dist
 
@@ -2453,6 +2461,7 @@ dec_15_data %>%
 :::
 
 ## December 16, 2023
+**Topic: Outside of School Event**
 ```{r}
 #| label: dec-16-dist
 
@@ -2678,6 +2687,7 @@ dec_16_data %>%
 :::
 
 ## January 19, 2024
+**Topic: Activity**
 ```{r}
 #| label: jan-19-dist
 
@@ -2903,6 +2913,7 @@ jan_19_data %>%
 :::
 
 ## January 26, 2024
+**Topic: Activity**
 ```{r}
 #| label: jan-26-dist
 
@@ -3128,6 +3139,7 @@ jan_26_data %>%
 :::
 
 ## February 2, 2024
+**Topic: Activity**
 ```{r}
 #| label: feb-2-dist
 
@@ -3353,6 +3365,7 @@ feb_2_data %>%
 :::
 
 ## February 9, 2024
+**Topic: Activity**
 ```{r}
 #| label: feb-9-dist
 
@@ -3578,6 +3591,7 @@ feb_9_data %>%
 :::
 
 ## February 16, 2024
+**Topic: Activity**
 ```{r}
 #| label: feb-16-dist
 
@@ -3803,6 +3817,7 @@ feb_16_data %>%
 :::
 
 ## February 23, 2024
+**Topic: Activity**
 ```{r}
 #| label: feb-23-dist
 
@@ -4028,6 +4043,7 @@ feb_23_data %>%
 :::
 
 ## March 1, 2024
+**Topic: Activity**
 ```{r}
 #| label: mar-1-dist
 
@@ -4253,6 +4269,7 @@ mar_1_data %>%
 :::
 
 ## March 8, 2024
+**Topic: Activity**
 ```{r}
 #| label: mar-8-dist
 
@@ -4478,6 +4495,7 @@ mar_8_data %>%
 :::
 
 ## March 15, 2024
+**Topic: Activity**
 ```{r}
 #| label: mar-15-dist
 
@@ -4703,6 +4721,7 @@ mar_15_data %>%
 :::
 
 ## March 22, 2024
+**Topic: Guest Presenters with Activity**
 ```{r}
 #| label: mar-22-dist
 
@@ -4928,6 +4947,7 @@ mar_22_data %>%
 :::
 
 ## April 5, 2024
+**Topic: Activity**
 ```{r}
 #| label: apr-5-dist
 
@@ -5153,6 +5173,7 @@ apr_5_data %>%
 :::
 
 ## April 12, 2024
+**Topic: Guest Presenters with Activity**
 ```{r}
 #| label: apr-12-dist
 
@@ -5378,6 +5399,7 @@ apr_12_data %>%
 :::
 
 ## April 19, 2024
+**Topic: Activity**
 ```{r}
 #| label: apr-19-dist
 
@@ -5603,6 +5625,7 @@ apr_19_data %>%
 :::
 
 ## April 26, 2024
+**Topic: Guest Presenters**
 ```{r}
 #| label: apr-26-dist
 
@@ -5828,6 +5851,7 @@ apr_26_data %>%
 :::
 
 ## May 3, 2024
+**Topic: Activity**
 ```{r}
 #| label: may-3-dist
 
@@ -6053,6 +6077,7 @@ may_3_data %>%
 :::
 
 ## May 10, 2024
+**Topic: Hangout**
 ```{r}
 #| label: may-10-dist
 
@@ -6278,6 +6303,7 @@ may_10_data %>%
 :::
 
 ## May 17, 2024
+**Topic: Activity**
 ```{r}
 #| label: may-17-dist
 
