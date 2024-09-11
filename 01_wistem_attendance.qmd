@@ -47,9 +47,9 @@ unique_colors <- c("lavender", "darkseagreen2", "lightpink2", "khaki", "lightcya
 
 # Background
 
-**WiSTEM:** In total, there were 17 overall WiSTEM meetings held throughout the 2023-2024 academic school year. However, there were 13 meetings with attendance data and 14 meetings with exit slip data. Some of these overlap in missing both attendance and exit slip data.
+**WiSTEM:** In total, there were 15 overall WiSTEM meetings held throughout the 2023-2024 academic school year. There were 14 meetings with attendance data and 14 meetings with exit slip data. There is an overlap in the meeting missing both attendance and exit slip data.
 
-**Exit Slips Distribution:** Overall, there were 483 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 14 meetings where exit slips were provided. 
+**Attendance Distribution:** On average, 78.33 students attended each WiSTEM meeting. The graphs and tables below show the attendance data obtained for each of the 14 meetings where attendance was taken. 
 
 ## Attendance Per Meeting
  
@@ -653,6 +653,7 @@ one_meeting_grad_year %>%
 # Distribution Per Meeting
 
 ## September 29, 2023
+**Topic: Activity**
 ```{r}
 #| label: sep-29-dist
 
@@ -878,6 +879,7 @@ sep_29_data %>%
 :::
 
 ## October 13, 2023
+**Topic: Activity**
 ```{r}
 #| label: oct-13-dist
 
@@ -1103,6 +1105,7 @@ oct_13_data %>%
 :::
 
 ## October 27, 2023
+**Topic: Activity**
 ```{r}
 #| label: oct-27-dist
 
@@ -1328,6 +1331,7 @@ oct_27_data %>%
 :::
 
 ## November 15, 2023
+**Topic: Outside of School Event**
 ```{r}
 #| label: nov-15-dist
 
@@ -1553,6 +1557,7 @@ nov_15_data %>%
 :::
 
 ## November 17, 2023
+**Topic: Guest Speaker with Activity**
 ```{r}
 #| label: nov-17-dist
 
@@ -1778,6 +1783,7 @@ nov_17_data %>%
 :::
 
 ## December 1, 2023
+**Topic: Discussion**
 ```{r}
 #| label: dec-1-dist
 
@@ -2003,6 +2009,7 @@ dec_1_data %>%
 :::
 
 ## December 15, 2023
+**Topic: Hangout**
 ```{r}
 #| label: dec-15-dist
 
@@ -2228,6 +2235,7 @@ dec_15_data %>%
 :::
 
 ## January 19, 2024
+**Topic: Guest Speakers with Activity**
 ```{r}
 #| label: jan-19-dist
 
@@ -2453,6 +2461,7 @@ jan_19_data %>%
 :::
 
 ## February 16, 2024
+**Topic: Activity**
 ```{r}
 #| label: feb-16-dist
 
@@ -2678,6 +2687,7 @@ feb_16_data %>%
 :::
 
 ## March 1, 2024
+**Topic: Activity**
 ```{r}
 #| label: mar-1-dist
 
@@ -2903,6 +2913,7 @@ mar_1_data %>%
 :::
 
 ## March 15, 2024
+**Topic: Activity**
 ```{r}
 #| label: mar-15-dist
 
@@ -3128,6 +3139,7 @@ mar_15_data %>%
 :::
 
 ## April 5, 2024
+**Topic: Guest Speakers with Activity**
 ```{r}
 #| label: apr-5-dist
 
@@ -3353,6 +3365,7 @@ apr_5_data %>%
 :::
 
 ## April 19, 2024
+**Topic: Activity**
 ```{r}
 #| label: apr-19-dist
 
@@ -3578,6 +3591,7 @@ apr_19_data %>%
 :::
 
 ## May 3, 2024
+**Topic: Activity**
 ```{r}
 #| label: may-3-dist
 
