@@ -54,7 +54,7 @@ fill <- c("#B6ACD1")
 
 **WiSTEM:** In total, there were 15 overall WiSTEM meetings held throughout the 2023-2024 academic school year. There were 14 meetings with attendance data and 14 meetings with exit slip data. There is an overlap in the meeting missing both attendance and exit slip data.
 
-**Exit Slips Distribution:** Overall, there were 483 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 14 meetings where exit slips were provided: 
+**Exit Slips Distribution:** Overall, there were 1,085 total exit slips collected over the course of the 2023-2024 academic school year. The graph and table below show the number of exit slips obtained for each of the 14 meetings where exit slips were provided: 
 ```{r}
 #| label: exit-slip-per-meeting
 
