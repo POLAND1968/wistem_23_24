@@ -36,7 +36,7 @@ set.seed(1968)
 wieng_attendance_data <- read_csv(file = "data/processed/wieng_2324_attendance_processed.csv")
 
 # Leveling
-wieng_attendance_data$date <- factor(wieng_attendance_data$date, levels = c("Oct 6th", "Oct 13th", "Oct 20th", "Nov 3rd", "Nov 17th", "Dec 1st", "Dec 8th", "Dec 15th", "Dec 16th", "Jan 19th", "Jan 26th", "Feb 2nd", "Feb 9th", "Feb 16th", "Feb 23rd", "Mar 1st", "Mar 8th", "Mar 15th", "Mar 22nd", "Apr 5th", "Apr 12th", "Apr 19th", "Apr 26th", "May 3rd", "May 10th", "May 17th"))
+wieng_attendance_data$date <- factor(wieng_attendance_data$date, levels = c("Oct 6th", "Oct 13th", "Oct 20th", "Nov 3rd", "Nov 15th", "Nov 17th", "Dec 1st", "Dec 8th", "Dec 15th", "Dec 16th", "Jan 19th", "Jan 26th", "Feb 2nd", "Feb 9th", "Feb 16th", "Feb 23rd", "Mar 1st", "Mar 8th", "Mar 15th", "Mar 16th", "Mar 22nd", "Apr 5th", "Apr 12th", "Apr 19th", "Apr 26th", "May 3rd", "May 10th", "May 17th"))
 
 # Colors
 color <- c("#716C6B")
@@ -1544,6 +1544,232 @@ ggplot(data = nov_3_data, mapping = aes(x = white_non_white, fill = white_non_wh
 ```{r}
 # Table
 nov_3_data %>%
+  select(date, white_non_white) %>%
+  count(white_non_white) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Distribution By White & Non-White") %>%
+  kable_styling()
+```
+:::
+
+## November 15, 2023
+**Topic: Activity**
+```{r}
+#| label: nov-15-dist
+
+nov_15_data <- wieng_attendance_data %>%
+  filter(date == "Nov 15th") %>%
+  select(date, topic, num_meetings, grad_year, race, white_non_white) %>%
+  mutate(
+    num_meetings = as_factor(num_meetings), 
+    grad_year = as_factor(grad_year), 
+    race = as_factor(race)
+  )
+```
+
+```{r}
+#| label: nov-15-num-meetings
+
+# Graph
+ggplot(data = nov_15_data, mapping = aes(x = num_meetings)) + 
+  geom_bar(color = color, fill = fill) + 
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +  
+  labs(
+    title = "Attendance Distribution By Number of Meetings Attended", 
+    subtitle = "Unique Students",
+    caption = "Source: WiENG 2023-2024",
+    x = "Number of Meetings Attended", 
+    y = "Number of Students"
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position = "top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Number of Meetings Attended for November 15th
+```{r}
+# Table
+nov_15_data %>%
+  select(date, num_meetings) %>%
+  count(num_meetings) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Attendance Distribution By Number of Meetings Attended") %>%
+  kable_styling()
+```
+:::
+  
+```{r}
+#| label: nov-15-grad-year
+
+# Graph
+ggplot(data = nov_15_data, mapping = aes(x = grad_year, fill = grad_year)) + 
+  geom_bar() + 
+  scale_fill_manual(values = unique_colors) + 
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +  
+  labs(
+    title = "Distribution By Graduation Year", 
+    subtitle = "Unique Students",
+    caption = "Source: WiENG 2023-2024",
+    x = "Graduation Year", 
+    y = "Number of Students", 
+    fill = ""
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position = "top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Graduation Race for November 15th
+```{r}
+# Table
+nov_15_data %>%
+  select(date, grad_year) %>%
+  count(grad_year) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Attendance Distribution By Graduation Year") %>%
+  kable_styling()
+```
+:::
+  
+```{r}
+#| label: nov-15-race
+
+# Graph
+ggplot(data = nov_15_data, mapping = aes(x = race, fill = race)) + 
+  geom_bar() + 
+  scale_fill_manual(values = unique_colors) + 
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +  
+  labs(
+    title = "Distribution By Race", 
+    subtitle = "Unique Students",
+    caption = "Source: WiENG 2023-2024",
+    x = "Federal Race", 
+    y = "Number of Students", 
+    fill = ""
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position = "top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Federal Race for November 15th
+```{r}
+# Table
+nov_15_data %>%
+  select(date, race) %>%
+  count(race) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Distribution By Federal Race") %>%
+  kable_styling()
+```
+:::
+  
+```{r}
+#| label: nov-15-two-race
+
+## Graph
+ggplot(data = nov_15_data, mapping = aes(x = white_non_white, fill = white_non_white)) +
+  geom_bar() + 
+  scale_fill_manual(values = unique_colors) +
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = paste0(round(after_stat(count / sum(count) * 100), 1), "%")),
+    position = position_stack(vjust = 0.5),
+    family = "Georgia",
+    fontface = "bold"
+  ) +
+  labs(
+    title = "Number of Students Per Meeting Who Attended One Meeting",
+    subtitle = "By White and Non-White Students (Unique Students)",
+    caption = "Source: WiENG 2023-2024",
+    x = "Federal Race", 
+    y = "Number of Students", 
+    fill = ""
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for White & Non-White for November 15th
+```{r}
+# Table
+nov_15_data %>%
   select(date, white_non_white) %>%
   count(white_non_white) %>%
   rename(num_students = n) %>%
@@ -4708,6 +4934,232 @@ ggplot(data = mar_15_data, mapping = aes(x = white_non_white, fill = white_non_w
 ```{r}
 # Table
 mar_15_data %>%
+  select(date, white_non_white) %>%
+  count(white_non_white) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Distribution By White & Non-White") %>%
+  kable_styling()
+```
+:::
+
+## March 16, 2024
+**Topic: Activity**
+```{r}
+#| label: mar-16-dist
+
+mar_16_data <- wieng_attendance_data %>%
+  filter(date == "Mar 16th") %>%
+  select(date, topic, num_meetings, grad_year, race, white_non_white) %>%
+  mutate(
+    num_meetings = as_factor(num_meetings), 
+    grad_year = as_factor(grad_year), 
+    race = as_factor(race)
+  )
+```
+
+```{r}
+#| label: mar-16-num-meetings
+
+# Graph
+ggplot(data = mar_16_data, mapping = aes(x = num_meetings)) + 
+  geom_bar(color = color, fill = fill) + 
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +  
+  labs(
+    title = "Attendance Distribution By Number of Meetings Attended", 
+    subtitle = "Unique Students",
+    caption = "Source: WiENG 2023-2024",
+    x = "Number of Meetings Attended", 
+    y = "Number of Students"
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position = "top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Number of Meetings Attended for March 16th
+```{r}
+# Table
+mar_16_data %>%
+  select(date, num_meetings) %>%
+  count(num_meetings) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Attendance Distribution By Number of Meetings Attended") %>%
+  kable_styling()
+```
+:::
+
+```{r}
+#| label: mar-16-grad-year
+
+# Graph
+ggplot(data = mar_16_data, mapping = aes(x = grad_year, fill = grad_year)) + 
+  geom_bar() + 
+  scale_fill_manual(values = unique_colors) + 
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +  
+  labs(
+    title = "Distribution By Graduation Year", 
+    subtitle = "Unique Students",
+    caption = "Source: WiENG 2023-2024",
+    x = "Graduation Year", 
+    y = "Number of Students", 
+    fill = ""
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position = "top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Graduation Race for March 16th
+```{r}
+# Table
+mar_16_data %>%
+  select(date, grad_year) %>%
+  count(grad_year) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Attendance Distribution By Graduation Year") %>%
+  kable_styling()
+```
+:::
+  
+```{r}
+#| label: mar-16-race
+
+# Graph
+ggplot(data = mar_16_data, mapping = aes(x = race, fill = race)) + 
+  geom_bar() + 
+  scale_fill_manual(values = unique_colors) + 
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = ..count..), 
+    position = position_stack(vjust = 0.5), 
+    family = "Georgia", 
+    fontface = "bold"
+  ) +  
+  labs(
+    title = "Distribution By Race", 
+    subtitle = "Unique Students",
+    caption = "Source: WiENG 2023-2024",
+    x = "Federal Race", 
+    y = "Number of Students", 
+    fill = ""
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position = "top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for Federal Race for March 16th
+```{r}
+# Table
+mar_16_data %>%
+  select(date, race) %>%
+  count(race) %>%
+  rename(num_students = n) %>%
+  mutate(
+    prop = num_students / sum(num_students), 
+    percent = prop * 100
+  ) %>%
+  kbl(caption = "Distribution By Federal Race") %>%
+  kable_styling()
+```
+:::
+  
+```{r}
+#| label: mar-16-two-race
+
+## Graph
+ggplot(data = mar_16_data, mapping = aes(x = white_non_white, fill = white_non_white)) +
+  geom_bar() + 
+  scale_fill_manual(values = unique_colors) +
+  geom_text(
+    stat = "count", 
+    mapping = aes(label = paste0(round(after_stat(count / sum(count) * 100), 1), "%")),
+    position = position_stack(vjust = 0.5),
+    family = "Georgia",
+    fontface = "bold"
+  ) +
+  labs(
+    title = "Number of Students Per Meeting Who Attended One Meeting",
+    subtitle = "By White and Non-White Students (Unique Students)",
+    caption = "Source: WiENG 2023-2024",
+    x = "Federal Race", 
+    y = "Number of Students", 
+    fill = ""
+  ) + 
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    legend.position ="top", 
+    legend.text = element_text(family = "Georgia", size = 12), 
+    axis.title = element_text(family = "Georgia", size = 12), 
+    axis.text = element_text(family = "Georgia", size = 10), 
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+```
+
+::: {.callout-note icon=false collapse="true"}
+## Table for White & Non-White for March 16th
+```{r}
+# Table
+mar_16_data %>%
   select(date, white_non_white) %>%
   count(white_non_white) %>%
   rename(num_students = n) %>%

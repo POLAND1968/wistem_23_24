@@ -368,6 +368,10 @@ wieng_03_15_2024  <- wieng_03_15_2024 %>%
   janitor::clean_names() %>%
   select(-period, -user, -user_room, -activity)
 
+wieng_03_16_2024  <- wieng_03_16_2024 %>% 
+  janitor::clean_names() %>%
+  select(-period, -user, -user_room, -activity)
+
 wieng_03_22_2024  <- wieng_03_22_2024 %>% 
   janitor::clean_names() %>%
   select(-period, -user, -user_room, -activity)
@@ -416,6 +420,10 @@ wieng_11_03_2023  <- wieng_11_03_2023 %>%
   janitor::clean_names() %>%
   select(-period, -user, -user_room, -activity)
 
+wieng_11_15_2023  <- wieng_11_15_2023 %>% 
+  janitor::clean_names() %>%
+  select(-period, -user, -user_room, -activity)
+
 wieng_11_17_2023  <- wieng_11_17_2023 %>% 
   janitor::clean_names() %>%
   select(-period, -user, -user_room, -activity)
@@ -446,6 +454,7 @@ wieng_02_23_2024$full_name <- paste(wieng_02_23_2024$first_name,wieng_02_23_2024
 wieng_03_01_2024$full_name <- paste(wieng_03_01_2024$first_name,wieng_03_01_2024$last_name)
 wieng_03_08_2024$full_name <- paste(wieng_03_08_2024$first_name,wieng_03_08_2024$last_name)
 wieng_03_15_2024$full_name <- paste(wieng_03_15_2024$first_name,wieng_03_15_2024$last_name)
+wieng_03_16_2024$full_name <- paste(wieng_03_16_2024$first_name,wieng_03_16_2024$last_name)
 wieng_03_22_2024$full_name <- paste(wieng_03_22_2024$first_name,wieng_03_22_2024$last_name)
 wieng_04_05_2024$full_name <- paste(wieng_04_05_2024$first_name,wieng_04_05_2024$last_name)
 wieng_04_12_2024$full_name <- paste(wieng_04_12_2024$first_name,wieng_04_12_2024$last_name)
@@ -458,6 +467,7 @@ wieng_10_06_2023$full_name <- paste(wieng_10_06_2023$first_name,wieng_10_06_2023
 wieng_10_13_2023$full_name <- paste(wieng_10_13_2023$first_name,wieng_10_13_2023$last_name)
 wieng_10_20_2023$full_name <- paste(wieng_10_20_2023$first_name,wieng_10_20_2023$last_name)
 wieng_11_03_2023$full_name <- paste(wieng_11_03_2023$first_name,wieng_11_03_2023$last_name)
+wieng_11_15_2023$full_name <- paste(wieng_11_15_2023$first_name,wieng_11_15_2023$last_name)
 wieng_11_17_2023$full_name <- paste(wieng_11_17_2023$first_name,wieng_11_17_2023$last_name)
 wieng_12_01_2023$full_name <- paste(wieng_12_01_2023$first_name,wieng_12_01_2023$last_name)
 wieng_12_08_2023$full_name <- paste(wieng_12_08_2023$first_name,wieng_12_08_2023$last_name)
@@ -473,6 +483,7 @@ wieng_attendance <- rbind(wieng_attendance, wieng_02_23_2024)
 wieng_attendance <- rbind(wieng_attendance, wieng_03_01_2024)
 wieng_attendance <- rbind(wieng_attendance, wieng_03_08_2024)
 wieng_attendance <- rbind(wieng_attendance, wieng_03_15_2024)
+wieng_attendance <- rbind(wieng_attendance, wieng_03_16_2024)
 wieng_attendance <- rbind(wieng_attendance, wieng_03_22_2024)
 wieng_attendance <- rbind(wieng_attendance, wieng_04_05_2024)
 wieng_attendance <- rbind(wieng_attendance, wieng_04_12_2024)
@@ -485,6 +496,7 @@ wieng_attendance <- rbind(wieng_attendance, wieng_10_06_2023)
 wieng_attendance <- rbind(wieng_attendance, wieng_10_13_2023)
 wieng_attendance <- rbind(wieng_attendance, wieng_10_20_2023)
 wieng_attendance <- rbind(wieng_attendance, wieng_11_03_2023)
+wieng_attendance <- rbind(wieng_attendance, wieng_11_15_2023)
 wieng_attendance <- rbind(wieng_attendance, wieng_11_17_2023)
 wieng_attendance <- rbind(wieng_attendance, wieng_12_01_2023)
 wieng_attendance <- rbind(wieng_attendance, wieng_12_08_2023)
@@ -494,7 +506,7 @@ wieng_attendance <- rbind(wieng_attendance, wieng_12_16_2023)
 ## Ordering the Date ----
 wieng_attendance$date <- gsub("1715014500", "May 3rd", wieng_attendance$date)
 wieng_attendance$date <- gsub("1715014560", "May 3rd", wieng_attendance$date)
-wieng_attendance$date <- factor(wieng_attendance$date, levels = c("Oct 6th", "Oct 13th", "Oct 20th", "Nov 3rd", "Nov 17th", "Dec 1st", "Dec 8th", "Dec 15th", "Dec 16th", "Jan 19th", "Jan 26th", "Feb 2nd", "Feb 9th", "Feb 16th", "Feb 23rd", "Mar 1st", "Mar 8th", "Mar 15th", "Mar 22nd", "Apr 5th", "Apr 12th", "Apr 19th", "Apr 26th", "May 3rd", "May 10th", "May 17th"))
+wieng_attendance$date <- factor(wieng_attendance$date, levels = c("Oct 6th", "Oct 13th", "Oct 20th", "Nov 3rd", "Nov 15th", "Nov 17th", "Dec 1st", "Dec 8th", "Dec 15th", "Dec 16th", "Jan 19th", "Jan 26th", "Feb 2nd", "Feb 9th", "Feb 16th", "Feb 23rd", "Mar 1st", "Mar 8th", "Mar 15th", "Mar 16th", "Mar 22nd", "Apr 5th", "Apr 12th", "Apr 19th", "Apr 26th", "May 3rd", "May 10th", "May 17th"))
 
 ## Adding Topic ----
 wieng_topics <- wieng_exit_slip_data %>% 

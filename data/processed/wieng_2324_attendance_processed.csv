@@ -1,367 +1,397 @@
 id,first_name,last_name,date,full_name,topic,race,grad_year,grade,white_non_white,num_meetings
-975530,Anne,Bauer,Jan 19th,Anne Bauer,Activity,White,2027,9,White,25
+975530,Anne,Bauer,Jan 19th,Anne Bauer,Activity,White,2027,9,White,26
 857052,Ellen,Pepsnik,Jan 19th,Ellen Pepsnik,Activity,White,2026,10,White,6
-118750,Deja,Malcolm,Jan 19th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-944436,Satthapi,Miller,Jan 19th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-118699,Monijesu,Adeosun,Jan 19th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
+118750,Deja,Malcolm,Jan 19th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+944436,Satthapi,Miller,Jan 19th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+118699,Monijesu,Adeosun,Jan 19th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
 725931,Chloe,Wagner,Jan 19th,Chloe Wagner,Activity,White,2024,12,White,13
-118700,Toluwanimi,Adeosun,Jan 19th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-896589,Johanna,Di Gioia,Jan 19th,Johanna Di Gioia,Activity,White,2024,12,White,19
-885762,Anika,Radhakrishnan,Jan 19th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-830634,Larkin,Zdawczyk,Jan 19th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Jan 19th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-996106,Sabine,Batza,Jan 19th,Sabine Batza,Activity,White,2025,11,White,24
-999008,Lucy,Carlisle,Jan 19th,Lucy Carlisle,Activity,White,2025,11,White,16
-975530,Anne,Bauer,Jan 26th,Anne Bauer,Activity,White,2027,9,White,25
-885762,Anika,Radhakrishnan,Jan 26th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
+118700,Toluwanimi,Adeosun,Jan 19th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+896589,Johanna,Di Gioia,Jan 19th,Johanna Di Gioia,Activity,White,2024,12,White,20
+885762,Anika,Radhakrishnan,Jan 19th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+830634,Larkin,Zdawczyk,Jan 19th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Jan 19th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+996106,Sabine,Batza,Jan 19th,Sabine Batza,Activity,White,2025,11,White,25
+999008,Lucy,Carlisle,Jan 19th,Lucy Carlisle,Activity,White,2025,11,White,17
+975530,Anne,Bauer,Jan 26th,Anne Bauer,Activity,White,2027,9,White,26
+885762,Anika,Radhakrishnan,Jan 26th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
 940804,Tahryll,Sevilla,Jan 26th,Tahryll Sevilla,Activity,Asian,2024,12,Non-White,7
-999725,Rachael,Rubin,Jan 26th,Rachael Rubin,Activity,White,2025,11,White,17
-996106,Sabine,Batza,Jan 26th,Sabine Batza,Activity,White,2025,11,White,24
-944436,Satthapi,Miller,Jan 26th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-118750,Deja,Malcolm,Jan 26th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-830634,Larkin,Zdawczyk,Jan 26th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Jan 26th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-995539,Nicole,Saenz Barros,Jan 26th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
+999725,Rachael,Rubin,Jan 26th,Rachael Rubin,Activity,White,2025,11,White,19
+996106,Sabine,Batza,Jan 26th,Sabine Batza,Activity,White,2025,11,White,25
+944436,Satthapi,Miller,Jan 26th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+118750,Deja,Malcolm,Jan 26th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+830634,Larkin,Zdawczyk,Jan 26th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Jan 26th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+995539,Nicole,Saenz Barros,Jan 26th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
 738826,Kupunoli,Sumi,Jan 26th,Kupunoli Sumi,Activity,Asian,2024,12,Non-White,1
-118700,Toluwanimi,Adeosun,Jan 26th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-118699,Monijesu,Adeosun,Jan 26th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
-880933,Katalin,Maji,Jan 26th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-896589,Johanna,Di Gioia,Jan 26th,Johanna Di Gioia,Activity,White,2024,12,White,19
-999008,Lucy,Carlisle,Jan 26th,Lucy Carlisle,Activity,White,2025,11,White,16
-999008,Lucy,Carlisle,Feb 2nd,Lucy Carlisle,Activity,White,2025,11,White,16
+118700,Toluwanimi,Adeosun,Jan 26th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+118699,Monijesu,Adeosun,Jan 26th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
+880933,Katalin,Maji,Jan 26th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+896589,Johanna,Di Gioia,Jan 26th,Johanna Di Gioia,Activity,White,2024,12,White,20
+999008,Lucy,Carlisle,Jan 26th,Lucy Carlisle,Activity,White,2025,11,White,17
+999008,Lucy,Carlisle,Feb 2nd,Lucy Carlisle,Activity,White,2025,11,White,17
 725931,Chloe,Wagner,Feb 2nd,Chloe Wagner,Activity,White,2024,12,White,13
-975530,Anne,Bauer,Feb 2nd,Anne Bauer,Activity,White,2027,9,White,25
-999725,Rachael,Rubin,Feb 2nd,Rachael Rubin,Activity,White,2025,11,White,17
+975530,Anne,Bauer,Feb 2nd,Anne Bauer,Activity,White,2027,9,White,26
+999725,Rachael,Rubin,Feb 2nd,Rachael Rubin,Activity,White,2025,11,White,19
 118619,Mary,Guiden,Feb 2nd,Mary Guiden,Activity,Black,2025,11,Non-White,11
-996148,Saheli,Goel,Feb 2nd,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-118750,Deja,Malcolm,Feb 2nd,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-830634,Larkin,Zdawczyk,Feb 2nd,Larkin Zdawczyk,Activity,White,2025,11,White,23
-880933,Katalin,Maji,Feb 2nd,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-885762,Anika,Radhakrishnan,Feb 2nd,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
+996148,Saheli,Goel,Feb 2nd,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+118750,Deja,Malcolm,Feb 2nd,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+830634,Larkin,Zdawczyk,Feb 2nd,Larkin Zdawczyk,Activity,White,2025,11,White,25
+880933,Katalin,Maji,Feb 2nd,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+885762,Anika,Radhakrishnan,Feb 2nd,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
 940804,Tahryll,Sevilla,Feb 2nd,Tahryll Sevilla,Activity,Asian,2024,12,Non-White,7
-944436,Satthapi,Miller,Feb 2nd,Satthapi Miller,Activity,Black,2026,10,Non-White,17
+944436,Satthapi,Miller,Feb 2nd,Satthapi Miller,Activity,Black,2026,10,Non-White,18
 892396,Addison,Benz,Feb 2nd,Addison Benz,Activity,White,2024,12,White,6
-118700,Toluwanimi,Adeosun,Feb 2nd,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-896589,Johanna,Di Gioia,Feb 2nd,Johanna Di Gioia,Activity,White,2024,12,White,19
-975530,Anne,Bauer,Feb 9th,Anne Bauer,Activity,White,2027,9,White,25
-885762,Anika,Radhakrishnan,Feb 9th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-996148,Saheli,Goel,Feb 9th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-830634,Larkin,Zdawczyk,Feb 9th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-995539,Nicole,Saenz Barros,Feb 9th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-118700,Toluwanimi,Adeosun,Feb 9th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+118700,Toluwanimi,Adeosun,Feb 2nd,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+896589,Johanna,Di Gioia,Feb 2nd,Johanna Di Gioia,Activity,White,2024,12,White,20
+975530,Anne,Bauer,Feb 9th,Anne Bauer,Activity,White,2027,9,White,26
+885762,Anika,Radhakrishnan,Feb 9th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+996148,Saheli,Goel,Feb 9th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+830634,Larkin,Zdawczyk,Feb 9th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+995539,Nicole,Saenz Barros,Feb 9th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+118700,Toluwanimi,Adeosun,Feb 9th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 759300,Nicole,Yao,Feb 9th,Nicole Yao,Activity,Asian,2024,12,Non-White,6
 725931,Chloe,Wagner,Feb 9th,Chloe Wagner,Activity,White,2024,12,White,13
-896589,Johanna,Di Gioia,Feb 9th,Johanna Di Gioia,Activity,White,2024,12,White,19
-996106,Sabine,Batza,Feb 9th,Sabine Batza,Activity,White,2025,11,White,24
-999008,Lucy,Carlisle,Feb 9th,Lucy Carlisle,Activity,White,2025,11,White,16
-118750,Deja,Malcolm,Feb 9th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-999725,Rachael,Rubin,Feb 9th,Rachael Rubin,Activity,White,2025,11,White,17
-119507,Kafayat,Aderibigbe,Feb 9th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,5
+896589,Johanna,Di Gioia,Feb 9th,Johanna Di Gioia,Activity,White,2024,12,White,20
+996106,Sabine,Batza,Feb 9th,Sabine Batza,Activity,White,2025,11,White,25
+999008,Lucy,Carlisle,Feb 9th,Lucy Carlisle,Activity,White,2025,11,White,17
+118750,Deja,Malcolm,Feb 9th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+999725,Rachael,Rubin,Feb 9th,Rachael Rubin,Activity,White,2025,11,White,19
+119507,Kafayat,Aderibigbe,Feb 9th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,6
 823640,Eva,Hansen,Feb 16th,Eva Hansen,Activity,White,2026,10,White,1
-999008,Lucy,Carlisle,Feb 16th,Lucy Carlisle,Activity,White,2025,11,White,16
-996106,Sabine,Batza,Feb 16th,Sabine Batza,Activity,White,2025,11,White,24
-975530,Anne,Bauer,Feb 16th,Anne Bauer,Activity,White,2027,9,White,25
+999008,Lucy,Carlisle,Feb 16th,Lucy Carlisle,Activity,White,2025,11,White,17
+996106,Sabine,Batza,Feb 16th,Sabine Batza,Activity,White,2025,11,White,25
+975530,Anne,Bauer,Feb 16th,Anne Bauer,Activity,White,2027,9,White,26
 999609,Daniela,Shepherd,Feb 16th,Daniela Shepherd,Activity,Hispanic,2025,11,Non-White,1
-118700,Toluwanimi,Adeosun,Feb 16th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-118750,Deja,Malcolm,Feb 16th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-880933,Katalin,Maji,Feb 16th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-995539,Nicole,Saenz Barros,Feb 16th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-944436,Satthapi,Miller,Feb 16th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-119507,Kafayat,Aderibigbe,Feb 16th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,5
-996148,Saheli,Goel,Feb 16th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-885762,Anika,Radhakrishnan,Feb 16th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-885762,Anika,Radhakrishnan,Feb 23rd,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-999008,Lucy,Carlisle,Feb 23rd,Lucy Carlisle,Activity,White,2025,11,White,16
-118750,Deja,Malcolm,Feb 23rd,Deja Malcolm,Activity,Black,2025,11,Non-White,16
+118700,Toluwanimi,Adeosun,Feb 16th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+118750,Deja,Malcolm,Feb 16th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+880933,Katalin,Maji,Feb 16th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+995539,Nicole,Saenz Barros,Feb 16th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+944436,Satthapi,Miller,Feb 16th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+119507,Kafayat,Aderibigbe,Feb 16th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,6
+996148,Saheli,Goel,Feb 16th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+885762,Anika,Radhakrishnan,Feb 16th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+885762,Anika,Radhakrishnan,Feb 23rd,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+999008,Lucy,Carlisle,Feb 23rd,Lucy Carlisle,Activity,White,2025,11,White,17
+118750,Deja,Malcolm,Feb 23rd,Deja Malcolm,Activity,Black,2025,11,Non-White,17
 892396,Addison,Benz,Feb 23rd,Addison Benz,Activity,White,2024,12,White,6
-999725,Rachael,Rubin,Feb 23rd,Rachael Rubin,Activity,White,2025,11,White,17
-995539,Nicole,Saenz Barros,Feb 23rd,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-975530,Anne,Bauer,Feb 23rd,Anne Bauer,Activity,White,2027,9,White,25
+999725,Rachael,Rubin,Feb 23rd,Rachael Rubin,Activity,White,2025,11,White,19
+995539,Nicole,Saenz Barros,Feb 23rd,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+975530,Anne,Bauer,Feb 23rd,Anne Bauer,Activity,White,2027,9,White,26
 725931,Chloe,Wagner,Feb 23rd,Chloe Wagner,Activity,White,2024,12,White,13
-996148,Saheli,Goel,Feb 23rd,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-118699,Monijesu,Adeosun,Feb 23rd,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
-896589,Johanna,Di Gioia,Feb 23rd,Johanna Di Gioia,Activity,White,2024,12,White,19
-830634,Larkin,Zdawczyk,Feb 23rd,Larkin Zdawczyk,Activity,White,2025,11,White,23
-880933,Katalin,Maji,Feb 23rd,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-944436,Satthapi,Miller,Feb 23rd,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-118700,Toluwanimi,Adeosun,Feb 23rd,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-119507,Kafayat,Aderibigbe,Feb 23rd,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,5
-880933,Katalin,Maji,Mar 1st,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-975530,Anne,Bauer,Mar 1st,Anne Bauer,Activity,White,2027,9,White,25
-118699,Monijesu,Adeosun,Mar 1st,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
-830634,Larkin,Zdawczyk,Mar 1st,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Mar 1st,Saheli Goel,Activity,Asian,2025,11,Non-White,24
+996148,Saheli,Goel,Feb 23rd,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+118699,Monijesu,Adeosun,Feb 23rd,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
+896589,Johanna,Di Gioia,Feb 23rd,Johanna Di Gioia,Activity,White,2024,12,White,20
+830634,Larkin,Zdawczyk,Feb 23rd,Larkin Zdawczyk,Activity,White,2025,11,White,25
+880933,Katalin,Maji,Feb 23rd,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+944436,Satthapi,Miller,Feb 23rd,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+118700,Toluwanimi,Adeosun,Feb 23rd,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+119507,Kafayat,Aderibigbe,Feb 23rd,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,6
+880933,Katalin,Maji,Mar 1st,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+975530,Anne,Bauer,Mar 1st,Anne Bauer,Activity,White,2027,9,White,26
+118699,Monijesu,Adeosun,Mar 1st,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
+830634,Larkin,Zdawczyk,Mar 1st,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Mar 1st,Saheli Goel,Activity,Asian,2025,11,Non-White,25
 725931,Chloe,Wagner,Mar 1st,Chloe Wagner,Activity,White,2024,12,White,13
-944436,Satthapi,Miller,Mar 1st,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-999725,Rachael,Rubin,Mar 1st,Rachael Rubin,Activity,White,2025,11,White,17
-118700,Toluwanimi,Adeosun,Mar 1st,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-896589,Johanna,Di Gioia,Mar 1st,Johanna Di Gioia,Activity,White,2024,12,White,19
-996106,Sabine,Batza,Mar 1st,Sabine Batza,Activity,White,2025,11,White,24
-944436,Satthapi,Miller,Mar 8th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-995539,Nicole,Saenz Barros,Mar 8th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-996106,Sabine,Batza,Mar 8th,Sabine Batza,Activity,White,2025,11,White,24
-999008,Lucy,Carlisle,Mar 8th,Lucy Carlisle,Activity,White,2025,11,White,16
-118750,Deja,Malcolm,Mar 8th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-975530,Anne,Bauer,Mar 8th,Anne Bauer,Activity,White,2027,9,White,25
-880933,Katalin,Maji,Mar 8th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-885762,Anika,Radhakrishnan,Mar 8th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-999725,Rachael,Rubin,Mar 8th,Rachael Rubin,Activity,White,2025,11,White,17
-119507,Kafayat,Aderibigbe,Mar 8th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,5
-830634,Larkin,Zdawczyk,Mar 8th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Mar 8th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
+944436,Satthapi,Miller,Mar 1st,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+999725,Rachael,Rubin,Mar 1st,Rachael Rubin,Activity,White,2025,11,White,19
+118700,Toluwanimi,Adeosun,Mar 1st,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+896589,Johanna,Di Gioia,Mar 1st,Johanna Di Gioia,Activity,White,2024,12,White,20
+996106,Sabine,Batza,Mar 1st,Sabine Batza,Activity,White,2025,11,White,25
+944436,Satthapi,Miller,Mar 8th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+995539,Nicole,Saenz Barros,Mar 8th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+996106,Sabine,Batza,Mar 8th,Sabine Batza,Activity,White,2025,11,White,25
+999008,Lucy,Carlisle,Mar 8th,Lucy Carlisle,Activity,White,2025,11,White,17
+118750,Deja,Malcolm,Mar 8th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+975530,Anne,Bauer,Mar 8th,Anne Bauer,Activity,White,2027,9,White,26
+880933,Katalin,Maji,Mar 8th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+885762,Anika,Radhakrishnan,Mar 8th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+999725,Rachael,Rubin,Mar 8th,Rachael Rubin,Activity,White,2025,11,White,19
+119507,Kafayat,Aderibigbe,Mar 8th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,6
+830634,Larkin,Zdawczyk,Mar 8th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Mar 8th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
 759300,Nicole,Yao,Mar 8th,Nicole Yao,Activity,Asian,2024,12,Non-White,6
-118700,Toluwanimi,Adeosun,Mar 8th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+118700,Toluwanimi,Adeosun,Mar 8th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 725931,Chloe,Wagner,Mar 8th,Chloe Wagner,Activity,White,2024,12,White,13
-896589,Johanna,Di Gioia,Mar 8th,Johanna Di Gioia,Activity,White,2024,12,White,19
-880933,Katalin,Maji,Mar 15th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-999725,Rachael,Rubin,Mar 15th,Rachael Rubin,Activity,White,2025,11,White,17
+896589,Johanna,Di Gioia,Mar 8th,Johanna Di Gioia,Activity,White,2024,12,White,20
+880933,Katalin,Maji,Mar 15th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+999725,Rachael,Rubin,Mar 15th,Rachael Rubin,Activity,White,2025,11,White,19
 725931,Chloe,Wagner,Mar 15th,Chloe Wagner,Activity,White,2024,12,White,13
-975530,Anne,Bauer,Mar 15th,Anne Bauer,Activity,White,2027,9,White,25
-830634,Larkin,Zdawczyk,Mar 15th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Mar 15th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-996106,Sabine,Batza,Mar 15th,Sabine Batza,Activity,White,2025,11,White,24
-885762,Anika,Radhakrishnan,Mar 15th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-995539,Nicole,Saenz Barros,Mar 15th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-999008,Lucy,Carlisle,Mar 15th,Lucy Carlisle,Activity,White,2025,11,White,16
-118750,Deja,Malcolm,Mar 15th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-118700,Toluwanimi,Adeosun,Mar 15th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-896589,Johanna,Di Gioia,Mar 15th,Johanna Di Gioia,Activity,White,2024,12,White,19
-119507,Kafayat,Aderibigbe,Mar 15th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,5
-885762,Anika,Radhakrishnan,Mar 22nd,Anika Radhakrishnan,Guest Presenter,Asian,2024,12,Non-White,20
-996106,Sabine,Batza,Mar 22nd,Sabine Batza,Guest Presenter,White,2025,11,White,24
-880933,Katalin,Maji,Mar 22nd,Katalin Maji,Guest Presenter,ToM,2024,12,Non-White,16
-996148,Saheli,Goel,Mar 22nd,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,24
-999008,Lucy,Carlisle,Mar 22nd,Lucy Carlisle,Guest Presenter,White,2025,11,White,16
-975530,Anne,Bauer,Mar 22nd,Anne Bauer,Guest Presenter,White,2027,9,White,25
-830634,Larkin,Zdawczyk,Mar 22nd,Larkin Zdawczyk,Guest Presenter,White,2025,11,White,23
-118750,Deja,Malcolm,Mar 22nd,Deja Malcolm,Guest Presenter,Black,2025,11,Non-White,16
-999725,Rachael,Rubin,Mar 22nd,Rachael Rubin,Guest Presenter,White,2025,11,White,17
-896589,Johanna,Di Gioia,Mar 22nd,Johanna Di Gioia,Guest Presenter,White,2024,12,White,19
-118700,Toluwanimi,Adeosun,Mar 22nd,Toluwanimi Adeosun,Guest Presenter,Black,2024,12,Non-White,22
-118699,Monijesu,Adeosun,Mar 22nd,Monijesu Adeosun,Guest Presenter,Black,2024,12,Non-White,14
+975530,Anne,Bauer,Mar 15th,Anne Bauer,Activity,White,2027,9,White,26
+830634,Larkin,Zdawczyk,Mar 15th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Mar 15th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+996106,Sabine,Batza,Mar 15th,Sabine Batza,Activity,White,2025,11,White,25
+885762,Anika,Radhakrishnan,Mar 15th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+995539,Nicole,Saenz Barros,Mar 15th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+999008,Lucy,Carlisle,Mar 15th,Lucy Carlisle,Activity,White,2025,11,White,17
+118750,Deja,Malcolm,Mar 15th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+118700,Toluwanimi,Adeosun,Mar 15th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+896589,Johanna,Di Gioia,Mar 15th,Johanna Di Gioia,Activity,White,2024,12,White,20
+119507,Kafayat,Aderibigbe,Mar 15th,Kafayat Aderibigbe,Activity,Black,2027,9,Non-White,6
+118619,Natalya,Guiden,Mar 16th,Natalya Guiden,Outside of School Event,Black,2025,11,Non-White,3
+944436,Satthapi,Miller,Mar 16th,Satthapi Miller,Outside of School Event,Black,2026,10,Non-White,18
+999725,Rachael,Rubin,Mar 16th,Rachael Rubin,Outside of School Event,White,2025,11,White,19
+119507,Kafayat,Aderibigbe,Mar 16th,Kafayat Aderibigbe,Outside of School Event,Black,2027,9,Non-White,6
+896589,Johanna,Di Gioia,Mar 16th,Johanna Di Gioia,Outside of School Event,White,2024,12,White,20
+118700,Toluwanimi,Adeosun,Mar 16th,Toluwanimi Adeosun,Outside of School Event,Black,2024,12,Non-White,24
+822371,Chloe,Ross,Mar 16th,Chloe Ross,Outside of School Event,ToM,2027,9,Non-White,1
+995539,Nicole,Saenz Barros,Mar 16th,Nicole Saenz Barros,Outside of School Event,Hispanic,2026,10,Non-White,17
+996106,Sabine,Batza,Mar 16th,Sabine Batza,Outside of School Event,White,2025,11,White,25
+999008,Lucy,Carlisle,Mar 16th,Lucy Carlisle,Outside of School Event,White,2025,11,White,17
+830634,Larkin,Zdawczyk,Mar 16th,Larkin Zdawczyk,Outside of School Event,White,2025,11,White,25
+118750,Deja,Malcolm,Mar 16th,Deja Malcolm,Outside of School Event,Black,2025,11,Non-White,17
+885762,Anika,Radhakrishnan,Mar 16th,Anika Radhakrishnan,Outside of School Event,Asian,2024,12,Non-White,21
+880933,Katalin,Maji,Mar 16th,Katalin Maji,Outside of School Event,ToM,2024,12,Non-White,18
+996148,Saheli,Goel,Mar 16th,Saheli Goel,Outside of School Event,Asian,2025,11,Non-White,25
+975530,Anne,Bauer,Mar 16th,Anne Bauer,Outside of School Event,White,2027,9,White,26
+885762,Anika,Radhakrishnan,Mar 22nd,Anika Radhakrishnan,Guest Presenter,Asian,2024,12,Non-White,21
+996106,Sabine,Batza,Mar 22nd,Sabine Batza,Guest Presenter,White,2025,11,White,25
+880933,Katalin,Maji,Mar 22nd,Katalin Maji,Guest Presenter,ToM,2024,12,Non-White,18
+996148,Saheli,Goel,Mar 22nd,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,25
+999008,Lucy,Carlisle,Mar 22nd,Lucy Carlisle,Guest Presenter,White,2025,11,White,17
+975530,Anne,Bauer,Mar 22nd,Anne Bauer,Guest Presenter,White,2027,9,White,26
+830634,Larkin,Zdawczyk,Mar 22nd,Larkin Zdawczyk,Guest Presenter,White,2025,11,White,25
+118750,Deja,Malcolm,Mar 22nd,Deja Malcolm,Guest Presenter,Black,2025,11,Non-White,17
+999725,Rachael,Rubin,Mar 22nd,Rachael Rubin,Guest Presenter,White,2025,11,White,19
+896589,Johanna,Di Gioia,Mar 22nd,Johanna Di Gioia,Guest Presenter,White,2024,12,White,20
+118700,Toluwanimi,Adeosun,Mar 22nd,Toluwanimi Adeosun,Guest Presenter,Black,2024,12,Non-White,24
+118699,Monijesu,Adeosun,Mar 22nd,Monijesu Adeosun,Guest Presenter,Black,2024,12,Non-White,15
 725931,Chloe,Wagner,Mar 22nd,Chloe Wagner,Guest Presenter,White,2024,12,White,13
-944436,Satthapi,Miller,Mar 22nd,Satthapi Miller,Guest Presenter,Black,2026,10,Non-White,17
-627199,Izzah,Shah,Mar 22nd,Izzah Shah,Guest Presenter,Asian,2025,11,Non-White,1
-975530,Anne,Bauer,Apr 5th,Anne Bauer,Activity,White,2027,9,White,25
+944436,Satthapi,Miller,Mar 22nd,Satthapi Miller,Guest Presenter,Black,2026,10,Non-White,18
+627199,Izzah,Shah,Mar 22nd,Izzah Shah,Guest Presenter,Asian,2025,11,Non-White,2
+975530,Anne,Bauer,Apr 5th,Anne Bauer,Activity,White,2027,9,White,26
 857052,Ellen,Pepsnik,Apr 5th,Ellen Pepsnik,Activity,White,2026,10,White,6
-118750,Deja,Malcolm,Apr 5th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-830634,Larkin,Zdawczyk,Apr 5th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Apr 5th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
+118750,Deja,Malcolm,Apr 5th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+830634,Larkin,Zdawczyk,Apr 5th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Apr 5th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
 849384,Elaine,Harris-Stapleton,Apr 5th,Elaine Harris-Stapleton,Activity,White,2027,9,White,12
-999008,Lucy,Carlisle,Apr 5th,Lucy Carlisle,Activity,White,2025,11,White,16
-996106,Sabine,Batza,Apr 5th,Sabine Batza,Activity,White,2025,11,White,24
-999725,Rachael,Rubin,Apr 5th,Rachael Rubin,Activity,White,2025,11,White,17
-885762,Anika,Radhakrishnan,Apr 12th,Anika Radhakrishnan,Guest Presenter,Asian,2024,12,Non-White,20
-996106,Sabine,Batza,Apr 12th,Sabine Batza,Guest Presenter,White,2025,11,White,24
-975530,Anne,Bauer,Apr 12th,Anne Bauer,Guest Presenter,White,2027,9,White,25
-830634,Larkin,Zdawczyk,Apr 12th,Larkin Zdawczyk,Guest Presenter,White,2025,11,White,23
-996148,Saheli,Goel,Apr 12th,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,24
+999008,Lucy,Carlisle,Apr 5th,Lucy Carlisle,Activity,White,2025,11,White,17
+996106,Sabine,Batza,Apr 5th,Sabine Batza,Activity,White,2025,11,White,25
+999725,Rachael,Rubin,Apr 5th,Rachael Rubin,Activity,White,2025,11,White,19
+885762,Anika,Radhakrishnan,Apr 12th,Anika Radhakrishnan,Guest Presenter,Asian,2024,12,Non-White,21
+996106,Sabine,Batza,Apr 12th,Sabine Batza,Guest Presenter,White,2025,11,White,25
+975530,Anne,Bauer,Apr 12th,Anne Bauer,Guest Presenter,White,2027,9,White,26
+830634,Larkin,Zdawczyk,Apr 12th,Larkin Zdawczyk,Guest Presenter,White,2025,11,White,25
+996148,Saheli,Goel,Apr 12th,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,25
 849384,Elaine,Harris-Stapleton,Apr 12th,Elaine Harris-Stapleton,Guest Presenter,White,2027,9,White,12
-896589,Johanna,Di Gioia,Apr 12th,Johanna Di Gioia,Guest Presenter,White,2024,12,White,19
+896589,Johanna,Di Gioia,Apr 12th,Johanna Di Gioia,Guest Presenter,White,2024,12,White,20
 759300,Nicole,Yao,Apr 12th,Nicole Yao,Guest Presenter,Asian,2024,12,Non-White,6
-995539,Nicole,Saenz Barros,Apr 12th,Nicole Saenz Barros,Guest Presenter,Hispanic,2026,10,Non-White,16
-118700,Toluwanimi,Adeosun,Apr 12th,Toluwanimi Adeosun,Guest Presenter,Black,2024,12,Non-White,22
-118750,Deja,Malcolm,Apr 12th,Deja Malcolm,Guest Presenter,Black,2025,11,Non-White,16
+995539,Nicole,Saenz Barros,Apr 12th,Nicole Saenz Barros,Guest Presenter,Hispanic,2026,10,Non-White,17
+118700,Toluwanimi,Adeosun,Apr 12th,Toluwanimi Adeosun,Guest Presenter,Black,2024,12,Non-White,24
+118750,Deja,Malcolm,Apr 12th,Deja Malcolm,Guest Presenter,Black,2025,11,Non-White,17
 725931,Chloe,Wagner,Apr 12th,Chloe Wagner,Guest Presenter,White,2024,12,White,13
-999008,Lucy,Carlisle,Apr 12th,Lucy Carlisle,Guest Presenter,White,2025,11,White,16
-880933,Katalin,Maji,Apr 19th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
+999008,Lucy,Carlisle,Apr 12th,Lucy Carlisle,Guest Presenter,White,2025,11,White,17
+880933,Katalin,Maji,Apr 19th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
 118619,Mary,Guiden,Apr 19th,Mary Guiden,Activity,Black,2025,11,Non-White,11
-999725,Rachael,Rubin,Apr 19th,Rachael Rubin,Activity,White,2025,11,White,17
-975530,Anne,Bauer,Apr 19th,Anne Bauer,Activity,White,2027,9,White,25
+999725,Rachael,Rubin,Apr 19th,Rachael Rubin,Activity,White,2025,11,White,19
+975530,Anne,Bauer,Apr 19th,Anne Bauer,Activity,White,2027,9,White,26
 725931,Chloe,Wagner,Apr 19th,Chloe Wagner,Activity,White,2024,12,White,13
 849384,Elaine,Harris-Stapleton,Apr 19th,Elaine Harris-Stapleton,Activity,White,2027,9,White,12
-896589,Johanna,Di Gioia,Apr 19th,Johanna Di Gioia,Activity,White,2024,12,White,19
-996106,Sabine,Batza,Apr 19th,Sabine Batza,Activity,White,2025,11,White,24
-830634,Larkin,Zdawczyk,Apr 19th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-885762,Anika,Radhakrishnan,Apr 19th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-996148,Saheli,Goel,Apr 19th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-118750,Deja,Malcolm,Apr 19th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
-995539,Nicole,Saenz Barros,Apr 19th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-944436,Satthapi,Miller,Apr 19th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-118700,Toluwanimi,Adeosun,Apr 19th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+896589,Johanna,Di Gioia,Apr 19th,Johanna Di Gioia,Activity,White,2024,12,White,20
+996106,Sabine,Batza,Apr 19th,Sabine Batza,Activity,White,2025,11,White,25
+830634,Larkin,Zdawczyk,Apr 19th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+885762,Anika,Radhakrishnan,Apr 19th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+996148,Saheli,Goel,Apr 19th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+118750,Deja,Malcolm,Apr 19th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
+995539,Nicole,Saenz Barros,Apr 19th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+944436,Satthapi,Miller,Apr 19th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+118700,Toluwanimi,Adeosun,Apr 19th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 725931,Chloe,Wagner,Apr 26th,Chloe Wagner,Guest Presenter,White,2024,12,White,13
-999008,Lucy,Carlisle,Apr 26th,Lucy Carlisle,Guest Presenter,White,2025,11,White,16
-996106,Sabine,Batza,Apr 26th,Sabine Batza,Guest Presenter,White,2025,11,White,24
-885762,Anika,Radhakrishnan,Apr 26th,Anika Radhakrishnan,Guest Presenter,Asian,2024,12,Non-White,20
-999725,Rachael,Rubin,Apr 26th,Rachael Rubin,Guest Presenter,White,2025,11,White,17
-118750,Deja,Malcolm,Apr 26th,Deja Malcolm,Guest Presenter,Black,2025,11,Non-White,16
-975530,Anne,Bauer,Apr 26th,Anne Bauer,Guest Presenter,White,2027,9,White,25
+999008,Lucy,Carlisle,Apr 26th,Lucy Carlisle,Guest Presenter,White,2025,11,White,17
+996106,Sabine,Batza,Apr 26th,Sabine Batza,Guest Presenter,White,2025,11,White,25
+885762,Anika,Radhakrishnan,Apr 26th,Anika Radhakrishnan,Guest Presenter,Asian,2024,12,Non-White,21
+999725,Rachael,Rubin,Apr 26th,Rachael Rubin,Guest Presenter,White,2025,11,White,19
+118750,Deja,Malcolm,Apr 26th,Deja Malcolm,Guest Presenter,Black,2025,11,Non-White,17
+975530,Anne,Bauer,Apr 26th,Anne Bauer,Guest Presenter,White,2027,9,White,26
 849384,Elaine,Harris-Stapleton,Apr 26th,Elaine Harris-Stapleton,Guest Presenter,White,2027,9,White,12
-830634,Larkin,Zdawczyk,Apr 26th,Larkin Zdawczyk,Guest Presenter,White,2025,11,White,23
-995539,Nicole,Saenz Barros,Apr 26th,Nicole Saenz Barros,Guest Presenter,Hispanic,2026,10,Non-White,16
-118700,Toluwanimi,Adeosun,Apr 26th,Toluwanimi Adeosun,Guest Presenter,Black,2024,12,Non-White,22
-996148,Saheli,Goel,Apr 26th,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,24
-995539,Nicole,Saenz Barros,May 3rd,Nicole Saenz Barros,Hangout,Hispanic,2026,10,Non-White,16
+830634,Larkin,Zdawczyk,Apr 26th,Larkin Zdawczyk,Guest Presenter,White,2025,11,White,25
+995539,Nicole,Saenz Barros,Apr 26th,Nicole Saenz Barros,Guest Presenter,Hispanic,2026,10,Non-White,17
+118700,Toluwanimi,Adeosun,Apr 26th,Toluwanimi Adeosun,Guest Presenter,Black,2024,12,Non-White,24
+996148,Saheli,Goel,Apr 26th,Saheli Goel,Guest Presenter,Asian,2025,11,Non-White,25
+995539,Nicole,Saenz Barros,May 3rd,Nicole Saenz Barros,Hangout,Hispanic,2026,10,Non-White,17
 849384,Elaine,Harris-Stapleton,May 3rd,Elaine Harris-Stapleton,Hangout,White,2027,9,White,12
 857052,Ellen,Pepsnik,May 3rd,Ellen Pepsnik,Hangout,White,2026,10,White,6
-999725,Rachael,Rubin,May 3rd,Rachael Rubin,Hangout,White,2025,11,White,17
-885762,Anika,Radhakrishnan,May 3rd,Anika Radhakrishnan,Hangout,Asian,2024,12,Non-White,20
-118750,Deja,Malcolm,May 3rd,Deja Malcolm,Hangout,Black,2025,11,Non-White,16
-118700,Toluwanimi,Adeosun,May 3rd,Toluwanimi Adeosun,Hangout,Black,2024,12,Non-White,22
-896589,Johanna,Di Gioia,May 3rd,Johanna Di Gioia,Hangout,White,2024,12,White,19
-118699,Monijesu,Adeosun,May 3rd,Monijesu Adeosun,Hangout,Black,2024,12,Non-White,14
+999725,Rachael,Rubin,May 3rd,Rachael Rubin,Hangout,White,2025,11,White,19
+885762,Anika,Radhakrishnan,May 3rd,Anika Radhakrishnan,Hangout,Asian,2024,12,Non-White,21
+118750,Deja,Malcolm,May 3rd,Deja Malcolm,Hangout,Black,2025,11,Non-White,17
+118700,Toluwanimi,Adeosun,May 3rd,Toluwanimi Adeosun,Hangout,Black,2024,12,Non-White,24
+896589,Johanna,Di Gioia,May 3rd,Johanna Di Gioia,Hangout,White,2024,12,White,20
+118699,Monijesu,Adeosun,May 3rd,Monijesu Adeosun,Hangout,Black,2024,12,Non-White,15
 725931,Chloe,Wagner,May 3rd,Chloe Wagner,Hangout,White,2024,12,White,13
 892396,Addison,Benz,May 3rd,Addison Benz,Hangout,White,2024,12,White,6
-830634,Larkin,Zdawczyk,May 3rd,Larkin Zdawczyk,Hangout,White,2025,11,White,23
+830634,Larkin,Zdawczyk,May 3rd,Larkin Zdawczyk,Hangout,White,2025,11,White,25
 118582,Madeleine,Schafer,May 3rd,Madeleine Schafer,Hangout,White,2025,11,White,1
-996106,Sabine,Batza,May 3rd,Sabine Batza,Hangout,White,2025,11,White,24
-999008,Lucy,Carlisle,May 3rd,Lucy Carlisle,Hangout,White,2025,11,White,16
-975530,Anne,Bauer,May 3rd,Anne Bauer,Hangout,White,2027,9,White,25
+996106,Sabine,Batza,May 3rd,Sabine Batza,Hangout,White,2025,11,White,25
+999008,Lucy,Carlisle,May 3rd,Lucy Carlisle,Hangout,White,2025,11,White,17
+975530,Anne,Bauer,May 3rd,Anne Bauer,Hangout,White,2027,9,White,26
 118619,Mary,Guiden,May 3rd,Mary Guiden,Hangout,Black,2025,11,Non-White,11
-996148,Saheli,Goel,May 3rd,Saheli Goel,Hangout,Asian,2025,11,Non-White,24
-996106,Sabine,Batza,May 10th,Sabine Batza,Hangout,White,2025,11,White,24
-830634,Larkin,Zdawczyk,May 10th,Larkin Zdawczyk,Hangout,White,2025,11,White,23
-999725,Rachael,Rubin,May 10th,Rachael Rubin,Hangout,White,2025,11,White,17
-996148,Saheli,Goel,May 10th,Saheli Goel,Hangout,Asian,2025,11,Non-White,24
+996148,Saheli,Goel,May 3rd,Saheli Goel,Hangout,Asian,2025,11,Non-White,25
+996106,Sabine,Batza,May 10th,Sabine Batza,Hangout,White,2025,11,White,25
+830634,Larkin,Zdawczyk,May 10th,Larkin Zdawczyk,Hangout,White,2025,11,White,25
+999725,Rachael,Rubin,May 10th,Rachael Rubin,Hangout,White,2025,11,White,19
+996148,Saheli,Goel,May 10th,Saheli Goel,Hangout,Asian,2025,11,Non-White,25
 849384,Elaine,Harris-Stapleton,May 10th,Elaine Harris-Stapleton,Hangout,White,2027,9,White,12
-944436,Satthapi,Miller,May 10th,Satthapi Miller,Hangout,Black,2026,10,Non-White,17
+944436,Satthapi,Miller,May 10th,Satthapi Miller,Hangout,Black,2026,10,Non-White,18
 118619,Mary,Guiden,May 10th,Mary Guiden,Hangout,Black,2025,11,Non-White,11
 857052,Ellen,Pepsnik,May 17th,Ellen Pepsnik,Activity,White,2026,10,White,6
-975530,Anne,Bauer,May 17th,Anne Bauer,Activity,White,2027,9,White,25
+975530,Anne,Bauer,May 17th,Anne Bauer,Activity,White,2027,9,White,26
 118619,Mary,Guiden,May 17th,Mary Guiden,Activity,Black,2025,11,Non-White,11
-995539,Nicole,Saenz Barros,May 17th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-996106,Sabine,Batza,May 17th,Sabine Batza,Activity,White,2025,11,White,24
-996148,Saheli,Goel,May 17th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-118750,Deja,Malcolm,May 17th,Deja Malcolm,Activity,Black,2025,11,Non-White,16
+995539,Nicole,Saenz Barros,May 17th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+996106,Sabine,Batza,May 17th,Sabine Batza,Activity,White,2025,11,White,25
+996148,Saheli,Goel,May 17th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+118750,Deja,Malcolm,May 17th,Deja Malcolm,Activity,Black,2025,11,Non-White,17
 849384,Elaine,Harris-Stapleton,May 17th,Elaine Harris-Stapleton,Activity,White,2027,9,White,12
-830634,Larkin,Zdawczyk,May 17th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-880933,Katalin,Maji,Oct 6th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-118699,Monijesu,Adeosun,Oct 6th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
+830634,Larkin,Zdawczyk,May 17th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+880933,Katalin,Maji,Oct 6th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+118699,Monijesu,Adeosun,Oct 6th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
 940804,Tahryll,Sevilla,Oct 6th,Tahryll Sevilla,Activity,Asian,2024,12,Non-White,7
-996106,Sabine,Batza,Oct 6th,Sabine Batza,Activity,White,2025,11,White,24
-975530,Anne,Bauer,Oct 6th,Anne Bauer,Activity,White,2027,9,White,25
-996148,Saheli,Goel,Oct 6th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-830634,Larkin,Zdawczyk,Oct 6th,Larkin Zdawczyk,Activity,White,2025,11,White,23
+996106,Sabine,Batza,Oct 6th,Sabine Batza,Activity,White,2025,11,White,25
+975530,Anne,Bauer,Oct 6th,Anne Bauer,Activity,White,2027,9,White,26
+996148,Saheli,Goel,Oct 6th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+830634,Larkin,Zdawczyk,Oct 6th,Larkin Zdawczyk,Activity,White,2025,11,White,25
 766938,Josephine,Bostic,Oct 6th,Josephine Bostic,Activity,Black,2026,10,Non-White,1
 999223,Valentina,Boni,Oct 6th,Valentina Boni,Activity,White,2025,11,White,1
-885762,Anika,Radhakrishnan,Oct 6th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-896589,Johanna,Di Gioia,Oct 6th,Johanna Di Gioia,Activity,White,2024,12,White,19
-944436,Satthapi,Miller,Oct 6th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-118700,Toluwanimi,Adeosun,Oct 6th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+885762,Anika,Radhakrishnan,Oct 6th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+896589,Johanna,Di Gioia,Oct 6th,Johanna Di Gioia,Activity,White,2024,12,White,20
+944436,Satthapi,Miller,Oct 6th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+118700,Toluwanimi,Adeosun,Oct 6th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 627165,Madeline,Banks,Oct 6th,Madeline Banks,Activity,White,2024,12,White,3
-995539,Nicole,Saenz Barros,Oct 6th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-885762,Anika,Radhakrishnan,Oct 13th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-975530,Anne,Bauer,Oct 13th,Anne Bauer,Activity,White,2027,9,White,25
-880933,Katalin,Maji,Oct 13th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
+995539,Nicole,Saenz Barros,Oct 6th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+885762,Anika,Radhakrishnan,Oct 13th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+975530,Anne,Bauer,Oct 13th,Anne Bauer,Activity,White,2027,9,White,26
+880933,Katalin,Maji,Oct 13th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
 927668,Ruby,Dean,Oct 13th,Ruby Dean,Activity,White,2027,9,White,3
-118699,Monijesu,Adeosun,Oct 13th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
+118699,Monijesu,Adeosun,Oct 13th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
 940804,Tahryll,Sevilla,Oct 13th,Tahryll Sevilla,Activity,Asian,2024,12,Non-White,7
-995539,Nicole,Saenz Barros,Oct 13th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-999008,Lucy,Carlisle,Oct 13th,Lucy Carlisle,Activity,White,2025,11,White,16
-996106,Sabine,Batza,Oct 13th,Sabine Batza,Activity,White,2025,11,White,24
-896589,Johanna,Di Gioia,Oct 13th,Johanna Di Gioia,Activity,White,2024,12,White,19
-830634,Larkin,Zdawczyk,Oct 13th,Larkin Zdawczyk,Activity,White,2025,11,White,23
+995539,Nicole,Saenz Barros,Oct 13th,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+999008,Lucy,Carlisle,Oct 13th,Lucy Carlisle,Activity,White,2025,11,White,17
+996106,Sabine,Batza,Oct 13th,Sabine Batza,Activity,White,2025,11,White,25
+896589,Johanna,Di Gioia,Oct 13th,Johanna Di Gioia,Activity,White,2024,12,White,20
+830634,Larkin,Zdawczyk,Oct 13th,Larkin Zdawczyk,Activity,White,2025,11,White,25
 954593,Naina,Malhotra,Oct 13th,Naina Malhotra,Activity,ToM,2025,11,Non-White,1
-118700,Toluwanimi,Adeosun,Oct 13th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+118700,Toluwanimi,Adeosun,Oct 13th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 892396,Addison,Benz,Oct 20th,Addison Benz,Activity,White,2024,12,White,6
-975530,Anne,Bauer,Oct 20th,Anne Bauer,Activity,White,2027,9,White,25
-118700,Toluwanimi,Adeosun,Oct 20th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+975530,Anne,Bauer,Oct 20th,Anne Bauer,Activity,White,2027,9,White,26
+118700,Toluwanimi,Adeosun,Oct 20th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 759300,Nicole,Yao,Oct 20th,Nicole Yao,Activity,Asian,2024,12,Non-White,6
-885762,Anika,Radhakrishnan,Oct 20th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
+885762,Anika,Radhakrishnan,Oct 20th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
 627165,Madeline,Banks,Oct 20th,Madeline Banks,Activity,White,2024,12,White,3
 118619,Mary,Guiden,Oct 20th,Mary Guiden,Activity,Black,2025,11,Non-White,11
-996106,Sabine,Batza,Oct 20th,Sabine Batza,Activity,White,2025,11,White,24
-944436,Satthapi,Miller,Oct 20th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-999008,Lucy,Carlisle,Oct 20th,Lucy Carlisle,Activity,White,2025,11,White,16
-880933,Katalin,Maji,Nov 3rd,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-896589,Johanna,Di Gioia,Nov 3rd,Johanna Di Gioia,Activity,White,2024,12,White,19
-999008,Lucy,Carlisle,Nov 3rd,Lucy Carlisle,Activity,White,2025,11,White,16
-996106,Sabine,Batza,Nov 3rd,Sabine Batza,Activity,White,2025,11,White,24
+996106,Sabine,Batza,Oct 20th,Sabine Batza,Activity,White,2025,11,White,25
+944436,Satthapi,Miller,Oct 20th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+999008,Lucy,Carlisle,Oct 20th,Lucy Carlisle,Activity,White,2025,11,White,17
+880933,Katalin,Maji,Nov 3rd,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+896589,Johanna,Di Gioia,Nov 3rd,Johanna Di Gioia,Activity,White,2024,12,White,20
+999008,Lucy,Carlisle,Nov 3rd,Lucy Carlisle,Activity,White,2025,11,White,17
+996106,Sabine,Batza,Nov 3rd,Sabine Batza,Activity,White,2025,11,White,25
 940804,Tahryll,Sevilla,Nov 3rd,Tahryll Sevilla,Activity,Asian,2024,12,Non-White,7
-118699,Monijesu,Adeosun,Nov 3rd,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
+118699,Monijesu,Adeosun,Nov 3rd,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
 759300,Nicole,Yao,Nov 3rd,Nicole Yao,Activity,Asian,2024,12,Non-White,6
-975530,Anne,Bauer,Nov 3rd,Anne Bauer,Activity,White,2027,9,White,25
-996148,Saheli,Goel,Nov 3rd,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-995539,Nicole,Saenz Barros,Nov 3rd,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-944436,Satthapi,Miller,Nov 3rd,Satthapi Miller,Activity,Black,2026,10,Non-White,17
+975530,Anne,Bauer,Nov 3rd,Anne Bauer,Activity,White,2027,9,White,26
+996148,Saheli,Goel,Nov 3rd,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+995539,Nicole,Saenz Barros,Nov 3rd,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+944436,Satthapi,Miller,Nov 3rd,Satthapi Miller,Activity,Black,2026,10,Non-White,18
 927668,Ruby,Dean,Nov 3rd,Ruby Dean,Activity,White,2027,9,White,3
 119174,Selam,Dejene,Nov 3rd,Selam Dejene,Activity,Black,2027,9,Non-White,3
 750906,Jhonae,Jaghai,Nov 3rd,Jhonae Jaghai,Activity,Black,2027,9,Non-White,3
-118750,Deja,Malcolm,Nov 3rd,Deja Malcolm,Activity,Black,2025,11,Non-White,16
+118750,Deja,Malcolm,Nov 3rd,Deja Malcolm,Activity,Black,2025,11,Non-White,17
 118619,Mary,Guiden,Nov 3rd,Mary Guiden,Activity,Black,2025,11,Non-White,11
-118700,Toluwanimi,Adeosun,Nov 3rd,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
+118700,Toluwanimi,Adeosun,Nov 3rd,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
 627165,Madeline,Banks,Nov 3rd,Madeline Banks,Activity,White,2024,12,White,3
-830634,Larkin,Zdawczyk,Nov 3rd,Larkin Zdawczyk,Activity,White,2025,11,White,23
+830634,Larkin,Zdawczyk,Nov 3rd,Larkin Zdawczyk,Activity,White,2025,11,White,25
 977050,Mireya,Maiewski,Nov 3rd,Mireya Maiewski,Activity,White,2027,9,White,1
 773647,Grace,Van Den Berg,Nov 3rd,Grace Van Den Berg,Activity,White,2027,9,White,1
-996106,Sabine,Batza,Nov 17th,Sabine Batza,Activity,White,2025,11,White,24
+830634,Larkin,Zdawczyk,Nov 15th,Larkin Zdawczyk,Outside School Event,White,2025,11,White,25
+118700,Toluwanimi,Adeosun,Nov 15th,Toluwanimi Adeosun,Outside School Event,Black,2024,12,Non-White,24
+999010,Hannah,McLeod,Nov 15th,Hannah McLeod,Outside School Event,White,2025,11,White,1
+999595,Maddie,Ross,Nov 15th,Maddie Ross,Outside School Event,NA,NA,NA,NA,1
+118619,Natalya,Guiden,Nov 15th,Natalya Guiden,Outside School Event,Black,2025,11,Non-White,3
+880933,Katalin,Maji,Nov 15th,Katalin Maji,Outside School Event,ToM,2024,12,Non-White,18
+118699,Monijesu,Adeosun,Nov 15th,Monijesu Adeosun,Outside School Event,Black,2024,12,Non-White,15
+999725,Rachael,Rubin,Nov 15th,Rachael Rubin,Outside School Event,White,2025,11,White,19
+996160,Mary,McDonald,Nov 15th,Mary McDonald,Outside School Event,White,2025,11,White,1
+627199,Izzah,Shah,Nov 15th,Izzah Shah,Outside School Event,Asian,2025,11,Non-White,2
+819084,Irys,Liang,Nov 15th,Irys Liang,Outside School Event,Asian,2025,11,Non-White,1
+119413,Yulian,Ramos,Nov 15th,Yulian Ramos,Outside School Event,Black,2025,11,Non-White,1
+704613,Una,Breen,Nov 15th,Una Breen,Outside School Event,White,2025,11,White,1
+999003,Lucia,Scrimenti,Nov 15th,Lucia Scrimenti,Outside School Event,White,2025,11,White,1
+996106,Sabine,Batza,Nov 17th,Sabine Batza,Activity,White,2025,11,White,25
 849384,Elaine,Harris-Stapleton,Nov 17th,Elaine Harris-Stapleton,Activity,White,2027,9,White,12
-896589,Johanna,Di Gioia,Nov 17th,Johanna Di Gioia,Activity,White,2024,12,White,19
+896589,Johanna,Di Gioia,Nov 17th,Johanna Di Gioia,Activity,White,2024,12,White,20
 118513,Charlotte,Nelson,Nov 17th,Charlotte Nelson,Activity,White,2025,11,White,1
-118700,Toluwanimi,Adeosun,Nov 17th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-880933,Katalin,Maji,Nov 17th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
-885762,Anika,Radhakrishnan,Nov 17th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-975530,Anne,Bauer,Nov 17th,Anne Bauer,Activity,White,2027,9,White,25
-944436,Satthapi,Miller,Nov 17th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
-999725,Rachael,Rubin,Nov 17th,Rachael Rubin,Activity,White,2025,11,White,17
+118700,Toluwanimi,Adeosun,Nov 17th,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+880933,Katalin,Maji,Nov 17th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
+885762,Anika,Radhakrishnan,Nov 17th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+975530,Anne,Bauer,Nov 17th,Anne Bauer,Activity,White,2027,9,White,26
+944436,Satthapi,Miller,Nov 17th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
+999725,Rachael,Rubin,Nov 17th,Rachael Rubin,Activity,White,2025,11,White,19
 857052,Ellen,Pepsnik,Nov 17th,Ellen Pepsnik,Activity,White,2026,10,White,6
 118619,Mary,Guiden,Nov 17th,Mary Guiden,Activity,Black,2025,11,Non-White,11
-830634,Larkin,Zdawczyk,Nov 17th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Nov 17th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-118699,Monijesu,Adeosun,Nov 17th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
-996106,Sabine,Batza,Dec 1st,Sabine Batza,Activity,White,2025,11,White,24
+830634,Larkin,Zdawczyk,Nov 17th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Nov 17th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+118699,Monijesu,Adeosun,Nov 17th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
+996106,Sabine,Batza,Dec 1st,Sabine Batza,Activity,White,2025,11,White,25
 118619,Mary,Guiden,Dec 1st,Mary Guiden,Activity,Black,2025,11,Non-White,11
-118700,Toluwanimi,Adeosun,Dec 1st,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,22
-999725,Rachael,Rubin,Dec 1st,Rachael Rubin,Activity,White,2025,11,White,17
+118700,Toluwanimi,Adeosun,Dec 1st,Toluwanimi Adeosun,Activity,Black,2024,12,Non-White,24
+999725,Rachael,Rubin,Dec 1st,Rachael Rubin,Activity,White,2025,11,White,19
 750906,Jhonae,Jaghai,Dec 1st,Jhonae Jaghai,Activity,Black,2027,9,Non-White,3
 927668,Ruby,Dean,Dec 1st,Ruby Dean,Activity,White,2027,9,White,3
 119174,Selam,Dejene,Dec 1st,Selam Dejene,Activity,Black,2027,9,Non-White,3
-944436,Satthapi,Miller,Dec 1st,Satthapi Miller,Activity,Black,2026,10,Non-White,17
+944436,Satthapi,Miller,Dec 1st,Satthapi Miller,Activity,Black,2026,10,Non-White,18
 849384,Elaine,Harris-Stapleton,Dec 1st,Elaine Harris-Stapleton,Activity,White,2027,9,White,12
-996148,Saheli,Goel,Dec 1st,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-975530,Anne,Bauer,Dec 1st,Anne Bauer,Activity,White,2027,9,White,25
-830634,Larkin,Zdawczyk,Dec 1st,Larkin Zdawczyk,Activity,White,2025,11,White,23
+996148,Saheli,Goel,Dec 1st,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+975530,Anne,Bauer,Dec 1st,Anne Bauer,Activity,White,2027,9,White,26
+830634,Larkin,Zdawczyk,Dec 1st,Larkin Zdawczyk,Activity,White,2025,11,White,25
 759300,Nicole,Yao,Dec 1st,Nicole Yao,Activity,Asian,2024,12,Non-White,6
-118699,Monijesu,Adeosun,Dec 1st,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
-995539,Nicole,Saenz Barros,Dec 1st,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,16
-975530,Anne,Bauer,Dec 8th,Anne Bauer,Discussion,White,2027,9,White,25
+118699,Monijesu,Adeosun,Dec 1st,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
+995539,Nicole,Saenz Barros,Dec 1st,Nicole Saenz Barros,Activity,Hispanic,2026,10,Non-White,17
+975530,Anne,Bauer,Dec 8th,Anne Bauer,Discussion,White,2027,9,White,26
 861007,Miranda,Slayton,Dec 8th,Miranda Slayton,Discussion,White,2025,11,White,2
-996106,Sabine,Batza,Dec 8th,Sabine Batza,Discussion,White,2025,11,White,24
-996148,Saheli,Goel,Dec 8th,Saheli Goel,Discussion,Asian,2025,11,Non-White,24
+996106,Sabine,Batza,Dec 8th,Sabine Batza,Discussion,White,2025,11,White,25
+996148,Saheli,Goel,Dec 8th,Saheli Goel,Discussion,Asian,2025,11,Non-White,25
 118619,Mary,Guiden,Dec 8th,Mary Guiden,Discussion,Black,2025,11,Non-White,11
-885762,Anika,Radhakrishnan,Dec 8th,Anika Radhakrishnan,Discussion,Asian,2024,12,Non-White,20
-896589,Johanna,Di Gioia,Dec 8th,Johanna Di Gioia,Discussion,White,2024,12,White,19
+885762,Anika,Radhakrishnan,Dec 8th,Anika Radhakrishnan,Discussion,Asian,2024,12,Non-White,21
+896589,Johanna,Di Gioia,Dec 8th,Johanna Di Gioia,Discussion,White,2024,12,White,20
 849384,Elaine,Harris-Stapleton,Dec 8th,Elaine Harris-Stapleton,Discussion,White,2027,9,White,12
-995539,Nicole,Saenz Barros,Dec 8th,Nicole Saenz Barros,Discussion,Hispanic,2026,10,Non-White,16
-880933,Katalin,Maji,Dec 8th,Katalin Maji,Discussion,ToM,2024,12,Non-White,16
-118699,Monijesu,Adeosun,Dec 8th,Monijesu Adeosun,Discussion,Black,2024,12,Non-White,14
-944436,Satthapi,Miller,Dec 8th,Satthapi Miller,Discussion,Black,2026,10,Non-White,17
-118700,Toluwanimi,Adeosun,Dec 8th,Toluwanimi Adeosun,Discussion,Black,2024,12,Non-White,22
+995539,Nicole,Saenz Barros,Dec 8th,Nicole Saenz Barros,Discussion,Hispanic,2026,10,Non-White,17
+880933,Katalin,Maji,Dec 8th,Katalin Maji,Discussion,ToM,2024,12,Non-White,18
+118699,Monijesu,Adeosun,Dec 8th,Monijesu Adeosun,Discussion,Black,2024,12,Non-White,15
+944436,Satthapi,Miller,Dec 8th,Satthapi Miller,Discussion,Black,2026,10,Non-White,18
+118700,Toluwanimi,Adeosun,Dec 8th,Toluwanimi Adeosun,Discussion,Black,2024,12,Non-White,24
 892396,Addison,Benz,Dec 15th,Addison Benz,Activity,White,2024,12,White,6
-885762,Anika,Radhakrishnan,Dec 15th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,20
-880933,Katalin,Maji,Dec 15th,Katalin Maji,Activity,ToM,2024,12,Non-White,16
+885762,Anika,Radhakrishnan,Dec 15th,Anika Radhakrishnan,Activity,Asian,2024,12,Non-White,21
+880933,Katalin,Maji,Dec 15th,Katalin Maji,Activity,ToM,2024,12,Non-White,18
 725931,Chloe,Wagner,Dec 15th,Chloe Wagner,Activity,White,2024,12,White,13
 940804,Tahryll,Sevilla,Dec 15th,Tahryll Sevilla,Activity,Asian,2024,12,Non-White,7
-975530,Anne,Bauer,Dec 15th,Anne Bauer,Activity,White,2027,9,White,25
+975530,Anne,Bauer,Dec 15th,Anne Bauer,Activity,White,2027,9,White,26
 849384,Elaine,Harris-Stapleton,Dec 15th,Elaine Harris-Stapleton,Activity,White,2027,9,White,12
-830634,Larkin,Zdawczyk,Dec 15th,Larkin Zdawczyk,Activity,White,2025,11,White,23
-996148,Saheli,Goel,Dec 15th,Saheli Goel,Activity,Asian,2025,11,Non-White,24
-996106,Sabine,Batza,Dec 15th,Sabine Batza,Activity,White,2025,11,White,24
+830634,Larkin,Zdawczyk,Dec 15th,Larkin Zdawczyk,Activity,White,2025,11,White,25
+996148,Saheli,Goel,Dec 15th,Saheli Goel,Activity,Asian,2025,11,Non-White,25
+996106,Sabine,Batza,Dec 15th,Sabine Batza,Activity,White,2025,11,White,25
 975150,Eve,Frajman,Dec 15th,Eve Frajman,Activity,White,2026,10,White,1
-118699,Monijesu,Adeosun,Dec 15th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,14
+118699,Monijesu,Adeosun,Dec 15th,Monijesu Adeosun,Activity,Black,2024,12,Non-White,15
 861007,Miranda,Slayton,Dec 15th,Miranda Slayton,Activity,White,2025,11,White,2
 985839,Miriam,Cortelyou,Dec 15th,Miriam Cortelyou,Activity,White,2026,10,White,1
 750906,Jhonae,Jaghai,Dec 15th,Jhonae Jaghai,Activity,Black,2027,9,Non-White,3
 857052,Ellen,Pepsnik,Dec 15th,Ellen Pepsnik,Activity,White,2026,10,White,6
 118862,Anna,Hanson,Dec 15th,Anna Hanson,Activity,White,2026,10,White,1
 118990,Shaili,Peters,Dec 15th,Shaili Peters,Activity,ToM,2026,10,Non-White,1
-944436,Satthapi,Miller,Dec 15th,Satthapi Miller,Activity,Black,2026,10,Non-White,17
+944436,Satthapi,Miller,Dec 15th,Satthapi Miller,Activity,Black,2026,10,Non-White,18
 119174,Selam,Dejene,Dec 15th,Selam Dejene,Activity,Black,2027,9,Non-White,3
-999725,Rachael,Rubin,Dec 15th,Rachael Rubin,Activity,White,2025,11,White,17
+999725,Rachael,Rubin,Dec 15th,Rachael Rubin,Activity,White,2025,11,White,19
 799158,Alice,Grossman,Dec 15th,Alice Grossman,Activity,White,2026,10,White,1
-896589,Johanna,Di Gioia,Dec 15th,Johanna Di Gioia,Activity,White,2024,12,White,19
+896589,Johanna,Di Gioia,Dec 15th,Johanna Di Gioia,Activity,White,2024,12,White,20
 118619,Mary,Guiden,Dec 15th,Mary Guiden,Activity,Black,2025,11,Non-White,11
-885762,Anika,Radhakrishnan,Dec 16th,Anika Radhakrishnan,Outside School Event,Asian,2024,12,Non-White,20
-999725,Rachael,Rubin,Dec 16th,Rachael Rubin,Outside School Event,White,2025,11,White,17
+885762,Anika,Radhakrishnan,Dec 16th,Anika Radhakrishnan,Outside School Event,Asian,2024,12,Non-White,21
+999725,Rachael,Rubin,Dec 16th,Rachael Rubin,Outside School Event,White,2025,11,White,19
 940804,Tahryll,Sevilla,Dec 16th,Tahryll Sevilla,Outside School Event,Asian,2024,12,Non-White,7
-118619,Natalya,Guiden,Dec 16th,Natalya Guiden,Outside School Event,Black,2025,11,Non-White,1
-880933,Katalin,Maji,Dec 16th,Katalin Maji,Outside School Event,ToM,2024,12,Non-White,16
-996148,Saheli,Goel,Dec 16th,Saheli Goel,Outside School Event,Asian,2025,11,Non-White,24
-830634,Larkin,Zdawczyk,Dec 16th,Larkin Zdawczyk,Outside School Event,White,2025,11,White,23
-996106,Sabine,Batza,Dec 16th,Sabine Batza,Outside School Event,White,2025,11,White,24
-118700,Toluwanimi,Adeosun,Dec 16th,Toluwanimi Adeosun,Outside School Event,Black,2024,12,Non-White,22
-975530,Anne,Bauer,Dec 16th,Anne Bauer,Outside School Event,White,2027,9,White,25
-896589,Johanna,Di Gioia,Dec 16th,Johanna Di Gioia,Outside School Event,White,2024,12,White,19
+118619,Natalya,Guiden,Dec 16th,Natalya Guiden,Outside School Event,Black,2025,11,Non-White,3
+880933,Katalin,Maji,Dec 16th,Katalin Maji,Outside School Event,ToM,2024,12,Non-White,18
+996148,Saheli,Goel,Dec 16th,Saheli Goel,Outside School Event,Asian,2025,11,Non-White,25
+830634,Larkin,Zdawczyk,Dec 16th,Larkin Zdawczyk,Outside School Event,White,2025,11,White,25
+996106,Sabine,Batza,Dec 16th,Sabine Batza,Outside School Event,White,2025,11,White,25
+118700,Toluwanimi,Adeosun,Dec 16th,Toluwanimi Adeosun,Outside School Event,Black,2024,12,Non-White,24
+975530,Anne,Bauer,Dec 16th,Anne Bauer,Outside School Event,White,2027,9,White,26
+896589,Johanna,Di Gioia,Dec 16th,Johanna Di Gioia,Outside School Event,White,2024,12,White,20
 892396,Addison,Benz,Dec 16th,Addison Benz,Outside School Event,White,2024,12,White,6
 849384,Elaine,Harris-Stapleton,Dec 16th,Elaine Harris-Stapleton,Outside School Event,White,2027,9,White,12
-118699,Monijesu,Adeosun,Dec 16th,Monijesu Adeosun,Outside School Event,Black,2024,12,Non-White,14
+118699,Monijesu,Adeosun,Dec 16th,Monijesu Adeosun,Outside School Event,Black,2024,12,Non-White,15
