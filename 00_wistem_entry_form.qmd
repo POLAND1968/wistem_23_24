@@ -416,7 +416,9 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, work_hard) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_wh_plot <- ggplot(data = percentage_data, mapping = aes(x = work_hard, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -430,7 +432,7 @@ one_wh_plot <- ggplot(data = percentage_data, mapping = aes(x = work_hard, y = p
     ) + 
   scale_fill_manual(
     name = "",
-    labels = c("Pre Test", "Post Test"), 
+    labels = c("Pre Test", "Post Test"),
     values = colors
     ) + 
   scale_y_continuous(labels = scales::label_percent(scale = 1)) +
@@ -508,7 +510,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, knowledge) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_know_plot <- ggplot(data = percentage_data, mapping = aes(x = knowledge, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -599,7 +604,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, courses) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_course_plot <- ggplot(data = percentage_data, mapping = aes(x = courses, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -692,7 +700,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, succesful) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_succ_plot <- ggplot(data = percentage_data, mapping = aes(x = succesful, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -784,7 +795,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, important) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_imp_plot <- ggplot(data = percentage_data, mapping = aes(x = important, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -876,7 +890,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, member) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_mem_plot <- ggplot(data = percentage_data, mapping = aes(x = member, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -968,7 +985,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, career) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_car_plot <- ggplot(data = percentage_data, mapping = aes(x = career, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -1060,7 +1080,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, identity) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_iden_plot <- ggplot(data = percentage_data, mapping = aes(x = identity, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -1152,7 +1175,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, meaningful) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_mean_plot <- ggplot(data = percentage_data, mapping = aes(x = meaningful, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
@@ -1243,7 +1269,10 @@ percentage_data <- entry_form_data %>%
   group_by(survey_type, everyday) %>%
   summarise(count = n()) %>%
   group_by(survey_type) %>%
-  mutate(percentage = count / sum(count) * 100)
+  mutate(percentage = count / sum(count) * 100) %>%
+  mutate(
+    percentage = count / sum(count) * 100,
+    survey_type = factor(survey_type, levels = c("Pre", "Post")))
 
 one_every_plot <- ggplot(data = percentage_data, mapping = aes(x = everyday, y = percentage, fill = survey_type)) + 
   geom_col(position = 'dodge') + 
