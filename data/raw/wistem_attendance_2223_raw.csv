@@ -1,0 +1,631 @@
+date,name,student_id,lunch,topic,num_meetings,graduation_year,federal_race,iep,program_504,esl,gender
+Sep 30th,Kofi Ejiofor,984096,Lunch 1,Discussion,1,2026,Black,N,N,N,female
+Sep 30th,Anika Radhakrishnan,885762,Lunch 1,Discussion,13,2024,Asian,N,N,N,female
+Sep 30th,Katalin Maji,880933,Lunch 1,Discussion,12,2024,T.M.O.,N,N,N,female
+Sep 30th,Madeline Hammett,903101,Lunch 1,Discussion,3,2023,White,N,Y,N,female
+Sep 30th,Ellen Pepsnik,857052,Lunch 1,Discussion,11,2026,White,Y,N,N,female
+Sep 30th,Viki Golemis,118366,Lunch 1,Discussion,11,2025,White,N,N,N,female
+Sep 30th,Madeline Varela,999744,Lunch 1,Discussion,3,2025,LatinX,N,N,N,female
+Sep 30th,Julia Newbold,988063,Lunch 1,Discussion,12,2024,T.M.O.,N,N,N,female
+Sep 30th,Emma Barker,823691,Lunch 1,Discussion,2,2023,White,N,N,N,female
+Sep 30th,Elise Levy,974414,Lunch 1,Discussion,11,2026,White,N,N,N,female
+Sep 30th,Katherine Schober,999168,Lunch 1,Discussion,12,2025,White,N,N,N,female
+Sep 30th,Mira Needlman,856677,Lunch 1,Discussion,10,2024,White,N,N,N,female
+Sep 30th,Georgia Stoolmaker,828254,Lunch 1,Discussion,13,2026,White,N,N,N,female
+Sep 30th,Hannah Johanna Velasco,118818,Lunch 1,Discussion,1,2026,LatinX,N,N,N,female
+Sep 30th,Eleanor Hutchinson,707657,Lunch 2,Discussion,7,2023,White,N,N,N,female
+Sep 30th,Amelia Myers,957611,Lunch 2,Discussion,1,2023,White,N,N,N,female
+Sep 30th,Serenah Foster-Loyd,795427,Lunch 2,Discussion,3,2024,Black,N,N,N,female
+Sep 30th,Samantha Daly-Short,845730,Lunch 2,Discussion,4,2024,White,N,Y,N,female
+Sep 30th,Daisy Banks,627165,Lunch 2,Discussion,2,2024,White,N,N,N,female
+Sep 30th,Saheli Goel,996148,Lunch 2,Discussion,10,2025,Asian,N,N,N,female
+Sep 30th,Larkin Zdawczyk,830634,Lunch 2,Discussion,11,2025,White,N,N,N,female
+Sep 30th,Wafa Shah,627052,Lunch 2,Discussion,2,2023,Asian,N,Y,N,female
+Sep 30th,Sabrina Ahmed,921352,Lunch 2,Discussion,4,2023,Asian,N,N,N,female
+Sep 30th,Natalya Guiden,118619,Lunch 2,Discussion,7,2025,Black,N,Y,N,female
+Sep 30th,Sophia Siddiqui,999310,Lunch 2,Discussion,1,2025,T.M.O.,N,N,N,female
+Sep 30th,Sophia Kiedrowski,999318,Lunch 2,Discussion,1,2025,White,N,N,N,female
+Sep 30th,Mary McDonald,996160,Lunch 2,Discussion,1,2025,White,N,N,N,female
+Sep 30th,Daniela Sheperd,999609,Lunch 2,Discussion,1,2025,LatinX,N,N,N,female
+Sep 30th,Kimberly Velasco,118723,Lunch 2,Discussion,2,2024,LatinX,N,N,Y,female
+Sep 30th,Charlene Solis,118225,Lunch 2,Discussion,2,2024,Asian,N,N,N,female
+Sep 30th,Amy Grill,723403,Lunch 2,Discussion,6,2024,White,N,N,N,female
+Sep 30th,Sidra Rutstein,827073,Lunch 2,Discussion,6,2024,White,N,N,N,female
+Sep 30th,Nahrain Hammond,808220,Lunch 2,Discussion,7,2025,Black,N,N,N,female
+Sep 30th,Janiya Martin,788039,Lunch 2,Discussion,5,2025,Black,N,N,N,female
+Sep 30th,Amiah Stringer,840189,Lunch 2,Discussion,8,2025,Black,N,N,N,female
+Sep 30th,Mireya Walsh,984566,Lunch 2,Discussion,2,2026,LatinX,N,N,N,female
+Sep 30th,Eva Hansen,823640,Lunch 2,Discussion,11,2026,White,N,N,N,female
+Sep 30th,Sofia Reel,748699,Lunch 2,Discussion,11,2026,LatinX,N,N,N,female
+Sep 30th,Wren Cohen,996071,Lunch 2,Discussion,2,2025,White,N,N,N,female
+Sep 30th,Olivia Catayong,997985,Lunch 2,Discussion,11,2024,LatinX,N,Y,N,female
+Sep 30th,Delilah Salzinski,965831,Lunch 2,Discussion,3,2023,White,N,N,N,female
+Sep 30th,Margaret Gass,789212,Lunch 2,Discussion,3,2023,White,N,Y,N,female
+Sep 30th,Josephine Gallo,118665,Lunch 2,Discussion,2,2025,White,Y,N,N,female
+Sep 30th,Lucy Carlisle,999008,Lunch 2,Discussion,4,2025,White,N,N,N,female
+Sep 30th,Joy Spalding,936210,Lunch 2,Discussion,10,2025,LatinX,N,N,N,female
+Sep 30th,Samantha Joseph,791665,Lunch 2,Discussion,6,2025,Asian,N,N,N,female
+Sep 30th,Pasha Irons-Rosin,999096,Lunch 2,Discussion,5,2025,White,N,N,N,female
+Sep 30th,Marin Ubersox,785994,Lunch 2,Discussion,5,2025,White,N,N,N,female
+Oct 14th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Oct 14th,Sadiya Freeman-Lucas,119019,Lunch 1,Activity,4,2026,Black,N,Y,N,female
+Oct 14th,Stephanie Lippke,926641,Lunch 1,Activity,10,2026,LatinX,N,N,N,female
+Oct 14th,Mira Needlman,856677,Lunch 1,Activity,10,2024,White,N,N,N,female
+Oct 14th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Oct 14th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Oct 14th,Rachel Durango-Cohen,763865,Lunch 1,Activity,8,2025,LatinX,N,N,N,female
+Oct 14th,Beri Barton,999072,Lunch 1,Activity,7,2025,White,N,N,N,female
+Oct 14th,Viki Golemis,118366,Lunch 1,Activity,11,2025,White,N,N,N,female
+Oct 14th,Mira Hasiba,758715,Lunch 1,Activity,5,2025,White,N,N,N,female
+Oct 14th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Oct 14th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Oct 14th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Oct 14th,Annabelle Harris,771944,Lunch 1,Activity,5,2024,White,N,N,N,female
+Oct 14th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Oct 14th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Oct 14th,Madeline Hammett,903101,Lunch 1,Activity,3,2023,White,N,Y,N,female
+Oct 14th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Oct 14th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Oct 14th,Hannah Hicks,807322,Lunch 2,Activity,5,2023,White,Y,N,N,female
+Oct 14th,Samantha Daly-Short,845730,Lunch 2,Activity,4,2024,White,N,Y,N,female
+Oct 14th,Kimberly Velasco,118723,Lunch 2,Activity,2,2024,LatinX,N,N,Y,female
+Oct 14th,Wafa Shah,627052,Lunch 2,Activity,2,2023,Asian,N,Y,N,female
+Oct 14th,Ramsha Khatoon,861324,Lunch 2,Activity,1,2025,Asian,N,N,N,female
+Oct 14th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Oct 14th,Laura Rotundo,118980,Lunch 2,Activity,1,2023,White,N,N,Y,female
+Oct 14th,Zoe Parker,780664,Lunch 2,Activity,1,2023,White,N,Y,N,female
+Oct 14th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Oct 14th,Charlene Solis,118225,Lunch 2,Activity,2,2024,Asian,N,N,N,female
+Oct 14th,Talia Bahar,963532,Lunch 2,Activity,8,2025,White,N,N,N,female
+Oct 14th,Serenah Foster-Loyd,795427,Lunch 2,Activity,3,2024,Black,N,N,N,female
+Oct 14th,Margaret Gass,789212,Lunch 2,Activity,3,2023,White,N,Y,N,female
+Oct 14th,Eleanor Hutchinson,707657,Lunch 2,Activity,7,2023,White,N,N,N,female
+Oct 14th,Sabrina Ahmed,921352,Lunch 2,Activity,4,2023,Asian,N,N,N,female
+Oct 28th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Oct 28th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Oct 28th,Stephanie Lippke,926641,Lunch 2,Activity,10,2026,LatinX,N,N,N,female
+Oct 28th,Sadiya Freeman-Lucas,119019,Lunch 1,Activity,4,2026,Black,N,Y,N,female
+Oct 28th,Beri Barton,999072,Lunch 1,Activity,7,2025,White,N,N,N,female
+Oct 28th,Rachel Durango-Cohen,763865,Lunch 1,Activity,8,2025,LatinX,N,N,N,female
+Oct 28th,Viki Golemis,118366,Lunch 1,Activity,11,2025,White,N,N,N,female
+Oct 28th,Emma Barker,823691,Lunch 1,Activity,2,2023,White,N,N,N,female
+Oct 28th,Madeline Varela,999744,Lunch 1,Activity,3,2025,LatinX,N,N,N,female
+Oct 28th,Sofia Varela,804730,Lunch 1,Activity,2,2023,LatinX,N,N,N,female
+Oct 28th,Annabelle Harris,771944,Lunch 1,Activity,5,2024,White,N,N,N,female
+Oct 28th,Kathleen Carrasco,747606,Lunch 1,Activity,4,2024,LatinX,N,N,N,female
+Oct 28th,Lucy Fredrickson,730411,Lunch 1,Activity,4,2024,White,N,Y,N,female
+Oct 28th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Oct 28th,Mira Needlman,856677,Lunch 1,Activity,10,2024,White,N,N,N,female
+Oct 28th,Caroline Streicker,886147,Lunch 1,Activity,2,2024,White,N,N,N,female
+Oct 28th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Oct 28th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Oct 28th,Monijesu Adeosun,118699,Lunch 1,Activity,6,2024,Black,N,N,Y,female
+Oct 28th,Saliha Ansari,999292,Lunch 1,Activity,5,2024,Asian,N,Y,N,female
+Oct 28th,Magdalena Papa,743339,Lunch 1,Activity,8,2023,White,N,N,N,female
+Oct 28th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Oct 28th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Oct 28th,Mira Hasiba,758715,Lunch 1,Activity,5,2025,White,N,N,N,female
+Oct 28th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Oct 28th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Oct 28th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Oct 28th,Tinsae Geyer,957925,Lunch 2,Activity,8,2026,Black,N,N,N,female
+Oct 28th,Samantha Joseph,791665,Lunch 2,Activity,6,2025,Asian,N,N,N,female
+Oct 28th,Josephine Gallo,118665,Lunch 2,Activity,2,2025,White,Y,N,N,female
+Oct 28th,Marin Ubersox,785994,Lunch 2,Activity,5,2025,White,N,N,N,female
+Oct 28th,Hannah Hicks,807322,Lunch 2,Activity,5,2023,White,Y,N,N,female
+Oct 28th,Abigail Owens,625597,Lunch 2,Activity,7,2023,White,N,Y,N,female
+Oct 28th,Una Breen,704613,Lunch 2,Activity,6,2025,White,N,N,N,female
+Oct 28th,Talia Bahar,963532,Lunch 2,Activity,8,2025,White,N,N,N,female
+Oct 28th,Rachael Rubin,999725,Lunch 2,Activity,6,2025,White,N,N,N,female
+Oct 28th,Saheli Goel,996148,Lunch 2,Activity,10,2025,Asian,N,N,N,female
+Oct 28th,Talia Reichlin,118843,Lunch 2,Activity,1,2026,White,Y,N,N,female
+Oct 28th,Daisy Banks,627165,Lunch 2,Activity,2,2024,White,N,N,N,female
+Oct 28th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+Oct 28th,Sofia Reel,748699,Lunch 2,Activity,11,2026,LatinX,N,N,N,female
+Oct 28th,Eva Hansen,823640,Lunch 2,Activity,11,2026,White,N,N,N,female
+Oct 28th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Oct 28th,Sarah Polley,995225,Lunch 2,Activity,3,2024,White,N,N,N,female
+Oct 28th,Pasha Irons-Rosin,999096,Lunch 2,Activity,5,2025,White,N,N,N,female
+Oct 28th,Margaret Gass,789212,Lunch 2,Activity,3,2023,White,N,Y,N,female
+Oct 28th,Olivia Catayong,997985,Lunch 2,Activity,11,2024,LatinX,N,Y,N,female
+Oct 28th,Samantha Daly-Short,845730,Lunch 2,Activity,4,2024,White,N,Y,N,female
+Oct 14th,Una Breen,704613,Lunch 2,Activity,6,2025,White,N,N,N,female
+Nov 18th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Nov 18th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Nov 18th,Madeline Hammett,903101,Lunch 1,Activity,3,2023,White,N,Y,N,female
+Nov 18th,Beri Barton,999072,Lunch 1,Activity,7,2025,White,N,N,N,female
+Nov 18th,Viki Golemis,118366,Lunch 1,Activity,11,2025,White,N,N,N,female
+Nov 18th,Rachel Durango-Cohen,763865,Lunch 1,Activity,8,2025,LatinX,N,N,N,female
+Nov 18th,Stephanie Lippke,926641,Lunch 1,Activity,10,2026,LatinX,N,N,N,female
+Nov 18th,Sadiya Freeman-Lucas,119019,Lunch 1,Activity,4,2026,Black,N,Y,N,female
+Nov 18th,Sofia Varela,804730,Lunch 1,Activity,2,2023,LatinX,N,N,N,female
+Nov 18th,Madeline Varela,999744,Lunch 1,Activity,3,2025,LatinX,N,N,N,female
+Nov 18th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Nov 18th,Blythe Coleman,725670,Lunch 1,Activity,1,2023,White,N,N,N,female
+Nov 18th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Nov 18th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Nov 18th,Annabelle Harris,771944,Lunch 1,Activity,5,2024,White,N,N,N,female
+Nov 18th,Mira Needlman,856677,Lunch 1,Activity,10,2024,White,N,N,N,female
+Nov 18th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Nov 18th,Magdalena Papa,743339,Lunch 1,Activity,8,2023,White,N,N,N,female
+Nov 18th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Nov 18th,Mira Hasiba,758715,Lunch 1,Activity,5,2025,White,N,N,N,female
+Nov 18th,Vanisha Vig,200901,Lunch 1,Activity,8,2026,Asian,N,N,N,female
+Nov 18th,Monijesu Adeosun,118699,Lunch 1,Activity,6,2024,Black,N,N,Y,female
+Nov 18th,Saliha Ansari,999292,Lunch 1,Activity,5,2024,Asian,N,Y,N,female
+Nov 18th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Nov 18th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Nov 18th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Nov 18th,Hannah Hicks,807322,Lunch 2,Activity,5,2023,White,Y,N,N,female
+Nov 18th,Samantha Joseph,791665,Lunch 2,Activity,6,2025,Asian,N,N,N,female
+Nov 18th,Pasha Irons-Rosin,999096,Lunch 2,Activity,5,2025,White,N,N,N,female
+Nov 18th,Samantha Daly-Short,845730,Lunch 2,Activity,4,2024,White,N,Y,N,female
+Nov 18th,Sofia Reel,748699,Lunch 2,Activity,11,2026,LatinX,N,N,N,female
+Nov 18th,Eva Hansen,823640,Lunch 2,Activity,11,2026,White,N,N,N,female
+Nov 18th,Eleanor Hutchinson,707657,Lunch 2,Activity,7,2023,White,N,N,N,female
+Nov 18th,Amiah Stringer,840189,Lunch 2,Activity,8,2025,Black,N,N,N,female
+Nov 18th,Janiya Martin,788039,Lunch 2,Activity,5,2025,Black,N,N,N,female
+Nov 18th,Serenah Foster-Loyd,795427,Lunch 2,Activity,3,2024,Black,N,N,N,female
+Nov 18th,Talia Bahar,963532,Lunch 2,Activity,8,2025,White,N,N,N,female
+Nov 18th,Una Breen,704613,Lunch 2,Activity,6,2025,White,N,N,N,female
+Nov 18th,Mireya Walsh,984566,Lunch 2,Activity,2,2026,LatinX,N,N,N,female
+Nov 18th,Olivia Catayong,997985,Lunch 2,Activity,11,2024,LatinX,N,Y,N,female
+Nov 18th,Joy Spalding,936210,Lunch 2,Activity,10,2025,LatinX,N,N,N,female
+Nov 18th,Teagan Kenney,996041,Lunch 2,Activity,9,2025,White,N,N,N,female
+Nov 18th,Wren Cohen,996071,Lunch 2,Activity,2,2025,White,N,N,N,female
+Nov 18th,Sabrina Ahmed,921352,Lunch 2,Activity,4,2023,Asian,N,N,N,female
+Nov 18th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+Nov 18th,Janya Forrest,894955,Lunch 2,Activity,1,2025,Black,N,N,N,female
+Nov 18th,Corinne Sylvestre,707003,Lunch 2,Activity,1,2025,Black,N,N,Y,female
+Nov 18th,Marin Ubersox,785994,Lunch 2,Activity,5,2025,White,N,N,N,female
+Nov 18th,Rachael Rubin,999725,Lunch 2,Activity,6,2025,White,N,N,N,female
+Nov 18th,Abigail Owomoyela-Olusesi,873056,Lunch 2,Activity,1,2025,Black,N,Y,N,female
+Nov 18th,Natalya Guiden,118619,Lunch 2,Activity,7,2025,Black,N,Y,N,female
+Dec 2nd,Katalin Maji,880933,Lunch 1,Discussion,12,2024,T.M.O.,N,N,N,female
+Dec 2nd,Vanisha Vig,200901,Lunch 1,Discussion,8,2026,Asian,N,N,N,female
+Dec 2nd,Audrey Hurd,830932,Lunch 1,Discussion,6,2026,White,N,N,N,female
+Dec 2nd,Siena Bowen,911310,Lunch 1,Discussion,8,2026,T.M.O.,N,N,N,female
+Dec 2nd,Ellen Pepsnik,857052,Lunch 1,Discussion,11,2026,White,Y,N,N,female
+Dec 2nd,Mira Needlman,856677,Lunch 1,Discussion,10,2024,White,N,N,N,female
+Dec 2nd,Julia Newbold,988063,Lunch 1,Discussion,12,2024,T.M.O.,N,N,N,female
+Dec 2nd,Emersen Mann,877080,Lunch 1,Discussion,2,2024,White,N,Y,N,female
+Dec 2nd,Sydney Chow,948486,Lunch 1,Discussion,5,2024,Asian,N,N,N,female
+Dec 2nd,Viki Golemis,118366,Lunch 1,Discussion,11,2025,White,N,N,N,female
+Dec 2nd,Georgia Stoolmaker,828254,Lunch 1,Discussion,13,2026,White,N,N,N,female
+Dec 2nd,Beri Barton,999072,Lunch 1,Discussion,7,2025,White,N,N,N,female
+Dec 2nd,Nicole Yao,759300,Lunch 1,Discussion,10,2024,Asian,N,N,N,female
+Dec 2nd,Elise Levy,974414,Lunch 1,Discussion,11,2026,White,N,N,N,female
+Dec 2nd,Stephanie Lippke,926641,Lunch 1,Discussion,10,2026,LatinX,N,N,N,female
+Dec 2nd,Sadiya Freeman-Lucas,119019,Lunch 1,Discussion,4,2026,Black,N,Y,N,female
+Dec 2nd,Rachel Durango-Cohen,763865,Lunch 1,Discussion,8,2025,LatinX,N,N,N,female
+Dec 2nd,Anika Radhakrishnan,885762,Lunch 1,Discussion,13,2024,Asian,N,N,N,female
+Dec 2nd,Mira Hasiba,758715,Lunch 1,Discussion,5,2025,White,N,N,N,female
+Dec 2nd,Katherine Schober,999168,Lunch 1,Discussion,12,2025,White,N,N,N,female
+Dec 2nd,Kathleen Carrasco,747606,Lunch 1,Discussion,4,2024,LatinX,N,N,N,female
+Dec 2nd,Lucy Fredrickson,730411,Lunch 1,Discussion,4,2024,White,N,Y,N,female
+Dec 2nd,Monijesu Adeosun,118699,Lunch 1,Discussion,6,2024,Black,N,N,Y,female
+Dec 2nd,Toluwanimi Adeosun,118700,Lunch 1,Discussion,11,2024,Black,N,N,Y,female
+Dec 2nd,Magdalena Papa,743339,Lunch 1,Discussion,8,2023,White,N,N,N,female
+Dec 2nd,Amy Grill,723403,Lunch 2,Discussion,6,2024,White,N,N,N,female
+Dec 2nd,Pasha Irons-Rosin,999096,Lunch 2,Discussion,5,2025,White,N,N,N,female
+Dec 2nd,Sidra Rutstein,827073,Lunch 2,Discussion,6,2024,White,N,N,N,female
+Dec 2nd,Natalya Guiden,118619,Lunch 2,Discussion,7,2025,Black,N,Y,N,female
+Dec 2nd,Samantha Joseph,791665,Lunch 2,Discussion,6,2025,Asian,N,N,N,female
+Dec 2nd,Una Breen,704613,Lunch 2,Discussion,6,2025,White,N,N,N,female
+Dec 2nd,Talia Bahar,963532,Lunch 2,Discussion,8,2025,White,N,N,N,female
+Dec 2nd,Eva Hansen,823640,Lunch 2,Discussion,11,2026,White,N,N,N,female
+Dec 2nd,Sofia Reel,748699,Lunch 2,Discussion,11,2026,LatinX,N,N,N,female
+Dec 2nd,Abigail Owens,625597,Lunch 2,Discussion,7,2023,White,N,Y,N,female
+Dec 2nd,Eleanor Hutchinson,707657,Lunch 2,Discussion,7,2023,White,N,N,N,female
+Dec 2nd,Hannah Hicks,807322,Lunch 2,Discussion,5,2023,White,Y,N,N,female
+Dec 2nd,Amiah Stringer,840189,Lunch 2,Discussion,8,2025,Black,N,N,N,female
+Dec 2nd,Nahrain Hammond,808220,Lunch 2,Discussion,7,2025,Black,N,N,N,female
+Dec 2nd,Delilah Salzinski,965831,Lunch 2,Discussion,3,2023,White,N,N,N,female
+Dec 2nd,Marin Ubersox,785994,Lunch 2,Discussion,5,2025,White,N,N,N,female
+Dec 2nd,Satthapi Miller,944436,Lunch 2,Discussion,1,2026,Black,N,N,N,female
+Dec 2nd,Isabella Nagatani-Beyers,942548,Lunch 2,Discussion,5,2026,T.M.O.,N,N,N,female
+Dec 2nd,Naomi Satut,792695,Lunch 2,Discussion,8,2026,White,N,N,N,female
+Dec 2nd,Liviani Sumi,887090,Lunch 2,Discussion,11,2026,Asian,N,N,N,female
+Dec 2nd,Tinsae Geyer,957925,Lunch 2,Discussion,8,2026,Black,N,N,N,female
+Dec 2nd,Olivia Catayong,997985,Lunch 2,Discussion,11,2024,LatinX,N,Y,N,female
+Dec 2nd,Sarah Moulinier,709065,Lunch 2,Discussion,6,2023,White,N,N,N,female
+Dec 16th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Dec 16th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Dec 16th,Siena Bowen,911310,Lunch 1,Activity,8,2026,T.M.O.,N,N,N,female
+Dec 16th,Audrey Hurd,830932,Lunch 1,Activity,6,2026,White,N,N,N,female
+Dec 16th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Dec 16th,Stephanie Lippke,926641,Lunch 1,Activity,10,2026,LatinX,N,N,N,female
+Dec 16th,Sydney Chow,948486,Lunch 1,Activity,5,2024,Asian,N,N,N,female
+Dec 16th,Caroline Streicker,886147,Lunch 1,Activity,2,2024,White,N,N,N,female
+Dec 16th,Ava Moseley,751099,Lunch 1,Activity,1,2023,T.M.O.,N,N,N,female
+Dec 16th,Mira Needlman,856677,Lunch 1,Activity,10,2024,White,N,N,N,female
+Dec 16th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Dec 16th,Vanisha Vig,200901,Lunch 1,Activity,8,2026,Asian,N,N,N,female
+Dec 16th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Dec 16th,Viki Golemis,118366,Lunch 1,Activity,11,2025,White,N,N,N,female
+Dec 16th,Rachel Durango-Cohen,763865,Lunch 1,Activity,8,2025,LatinX,N,N,N,female
+Dec 16th,Beri Barton,999072,Lunch 1,Activity,7,2025,White,N,N,N,female
+Dec 16th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Dec 16th,Monijesu Adeosun,118699,Lunch 1,Activity,6,2024,Black,N,N,Y,female
+Dec 16th,Saliha Ansari,999292,Lunch 1,Activity,5,2024,Asian,N,Y,N,female
+Dec 16th,Ashley Cochrane,117955,Lunch 1,Activity,4,2023,Black,N,N,N,female
+Dec 16th,Maya Vezner,863517,Lunch 1,Activity,5,2023,White,N,N,N,female
+Dec 16th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Dec 16th,Magdalena Papa,743339,Lunch 1,Activity,8,2023,White,N,N,N,female
+Dec 16th,Hannah Hicks,807322,Lunch 2,Activity,5,2023,White,Y,N,N,female
+Dec 16th,Samantha Joseph,791665,Lunch 2,Activity,6,2025,Asian,N,N,N,female
+Dec 16th,Sidra Rutstein,827073,Lunch 2,Activity,6,2024,White,N,N,N,female
+Dec 16th,Amy Grill,723403,Lunch 2,Activity,6,2024,White,N,N,N,female
+Dec 16th,Tinsae Geyer,957925,Lunch 2,Activity,8,2026,Black,N,N,N,female
+Dec 16th,Naomi Satut,792695,Lunch 2,Activity,8,2026,White,N,N,N,female
+Dec 16th,Kayjah Etyem,885497,Lunch 2,Activity,6,2025,Black,N,N,N,female
+Dec 16th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Dec 16th,Grace Stewart,999250,Lunch 2,Activity,6,2025,White,N,N,N,female
+Dec 16th,Amiah Stringer,840189,Lunch 2,Activity,8,2025,Black,N,N,N,female
+Dec 16th,Janiya Martin,788039,Lunch 2,Activity,5,2025,Black,N,N,N,female
+Dec 16th,Abigail Owens,625597,Lunch 2,Activity,7,2023,White,N,Y,N,female
+Dec 16th,Alexandra Palacios,922663,Lunch 2,Activity,1,2023,LatinX,N,N,N,female
+Dec 16th,Teagan Kenney,996041,Lunch 2,Activity,9,2025,White,N,N,N,female
+Dec 16th,Isabella Nagatani-Beyers,942548,Lunch 2,Activity,5,2026,T.M.O.,N,N,N,female
+Dec 16th,Natalya Guiden,118619,Lunch 2,Activity,7,2025,Black,N,Y,N,female
+Dec 16th,Sabrina Ahmed,921352,Lunch 2,Activity,4,2023,Asian,N,N,N,female
+Dec 16th,Talia Bahar,963532,Lunch 2,Activity,8,2025,White,N,N,N,female
+Dec 16th,Anna Durkin,118002,Lunch 2,Activity,1,2023,White,N,N,N,female
+Dec 16th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Dec 16th,Ella Machut,999080,Lunch 2,Activity,6,2025,White,N,N,N,female
+Dec 16th,Eva Hansen,823640,Lunch 2,Activity,11,2026,White,N,N,N,female
+Dec 16th,Sofia Reel,748699,Lunch 2,Activity,11,2026,LatinX,N,N,N,female
+Dec 16th,Saheli Goel,996148,Lunch 2,Activity,10,2025,Asian,N,N,N,female
+Dec 16th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+Dec 16th,Pasha Irons-Rosin,999096,Lunch 2,Activity,5,2025,White,N,N,N,female
+Dec 16th,Jessica Juarez-Jamaica,625702,Lunch 2,Activity,1,2023,LatinX,N,N,N,female
+Dec 16th,Marin Ubersox,785994,Lunch 2,Activity,5,2025,White,N,N,N,female
+Dec 16th,Nahrain Hammond,808220,Lunch 2,Activity,7,2025,Black,N,N,N,female
+Dec 16th,Sarah Moulinier,709065,Lunch 2,Activity,6,2023,White,N,N,N,female
+Dec 16th,Sophia Milner-Gorvine,943294,Lunch 2,Activity,1,2023,White,N,N,N,female
+Jan 27th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Jan 27th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Jan 27th,Sydney Chow,948486,Lunch 1,Activity,5,2024,Asian,N,N,N,female
+Jan 27th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Jan 27th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Jan 27th,Stephanie Lippke,926641,Lunch 1,Activity,10,2026,LatinX,N,N,N,female
+Jan 27th,Vanisha Vig,200901,Lunch 1,Activity,8,2026,Asian,N,N,N,female
+Jan 27th,Beri Barton,999072,Lunch 1,Activity,7,2025,White,N,N,N,female
+Jan 27th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Jan 27th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Jan 27th,Mira Needlman,856677,Lunch 1,Activity,10,2024,White,N,N,N,female
+Jan 27th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Jan 27th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Jan 27th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Jan 27th,Viki Golemis,118366,Lunch 1,Activity,11,2025,White,N,N,N,female
+Jan 27th,Madeline Nimrod,873352,Lunch 1,Activity,1,2024,White,N,N,N,female
+Jan 27th,Maya Vezner,863517,Lunch 1,Activity,5,2023,White,N,N,N,female
+Jan 27th,Saliha Ansari,999292,Lunch 1,Activity,5,2024,Asian,N,Y,N,female
+Jan 27th,Sophie Centofanti,854208,Lunch 1,Activity,4,2024,White,N,N,N,female
+Jan 27th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Jan 27th,Kathleen Carrasco,747606,Lunch 1,Activity,4,2024,LatinX,N,N,N,female
+Jan 27th,Audrey Hurd,830932,Lunch 1,Activity,6,2026,White,N,N,N,female
+Jan 27th,Eleanor Hutchinson,707657,Lunch 2,Activity,7,2023,White,N,N,N,female
+Jan 27th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Jan 27th,Abigail Owens,625597,Lunch 2,Activity,7,2023,White,N,Y,N,female
+Jan 27th,Saheli Goel,996148,Lunch 2,Activity,10,2025,Asian,N,N,N,female
+Jan 27th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Jan 27th,Grace Stewart,999250,Lunch 2,Activity,6,2025,White,N,N,N,female
+Jan 27th,Rachel Durango-Cohen,763865,Lunch 2,Activity,8,2025,LatinX,N,N,N,female
+Jan 27th,Kayla Rodriguez,118633,Lunch 2,Activity,1,2024,LatinX,Y,N,N,female
+Jan 27th,Ella Machut,999080,Lunch 2,Activity,6,2025,White,N,N,N,female
+Jan 27th,Naomi Satut,792695,Lunch 2,Activity,8,2026,White,N,N,N,female
+Jan 27th,Sarah Moulinier,709065,Lunch 2,Activity,6,2023,White,N,N,N,female
+Jan 27th,Tinsae Geyer,957925,Lunch 2,Activity,8,2026,Black,N,N,N,female
+Jan 27th,Kate Flint,119023,Lunch 2,Activity,5,2026,White,N,N,N,female
+Jan 27th,Isabella Nagatani-Beyers,942548,Lunch 2,Activity,5,2026,T.M.O.,N,N,N,female
+Jan 27th,Natalya Guiden,118619,Lunch 2,Activity,7,2025,Black,N,Y,N,female
+Jan 27th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+Jan 27th,Teagan Kenney,996041,Lunch 2,Activity,9,2025,White,N,N,N,female
+Jan 27th,Joy Spalding,936210,Lunch 2,Activity,10,2025,LatinX,N,N,N,female
+Jan 27th,Olivia Catayong,997985,Lunch 2,Activity,11,2024,LatinX,N,Y,N,female
+Jan 27th,Kayjah Etyem,885497,Lunch 2,Activity,6,2025,Black,N,N,N,female
+Jan 27th,Rachael Rubin,999725,Lunch 2,Activity,6,2025,White,N,N,N,female
+Jan 27th,Monijesu Adeosun,118699,Lunch 2,Activity,6,2024,Black,N,N,Y,female
+Feb 10th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Feb 10th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Feb 10th,Stephanie Lippke,926641,Lunch 1,Activity,10,2026,LatinX,N,N,N,female
+Feb 10th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Feb 10th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Feb 10th,Ashley Cochrane,117955,Lunch 1,Activity,4,2023,Black,N,N,N,female
+Feb 10th,Maya Vezner,863517,Lunch 1,Activity,5,2023,White,N,N,N,female
+Feb 10th,Natalie Svolos,118146,Lunch 1,Activity,1,2023,White,N,N,N,female
+Feb 10th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Feb 10th,Saliha Ansari,999292,Lunch 1,Activity,5,2024,Asian,N,Y,N,female
+Feb 10th,Sophie Centofanti,854208,Lunch 1,Activity,4,2024,White,N,N,N,female
+Feb 10th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Feb 10th,Magdalena Papa,743339,Lunch 1,Activity,8,2023,White,N,N,N,female
+Feb 10th,Irys Liang,819084,Lunch 1,Activity,6,2025,Asian,N,N,N,female
+Feb 10th,Aden Johansen,711315,Lunch 1,Activity,6,2025,White,N,N,N,female
+Feb 10th,Madeline Ross,999595,Lunch 1,Activity,4,2025,White,N,N,N,female
+Feb 10th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Feb 10th,Mira Hasiba,758715,Lunch 1,Activity,5,2025,White,N,N,N,female
+Feb 10th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Feb 10th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Feb 10th,Delilah Salzinski,965831,Lunch 2,Activity,3,2023,White,N,N,N,female
+Feb 10th,Frida Perez,870748,Lunch 2,Activity,1,2024,LatinX,N,N,N,female
+Feb 10th,Karis Martin,887955,Lunch 2,Activity,1,2024,Black,N,N,N,female
+Feb 10th,Monijesu Adeosun,118699,Lunch 2,Activity,6,2024,Black,N,N,Y,female
+Feb 10th,Talia Bahar,963532,Lunch 2,Activity,8,2025,White,N,N,N,female
+Feb 10th,Una Breen,704613,Lunch 2,Activity,6,2025,White,N,N,N,female
+Feb 10th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+Feb 10th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Feb 10th,Saheli Goel,996148,Lunch 2,Activity,10,2025,Asian,N,N,N,female
+Feb 10th,Grace Cummins,118528,Lunch 2,Activity,1,2025,Asian,N,Y,N,female
+Feb 10th,Rachael Rubin,999725,Lunch 2,Activity,6,2025,White,N,N,N,female
+Feb 10th,Rose Eccleston,999660,Lunch 2,Activity,1,2025,White,N,Y,N,female
+Feb 10th,Sarah Polley,995225,Lunch 2,Activity,3,2024,White,N,N,N,female
+Feb 10th,Tinsae Geyer,957925,Lunch 2,Activity,8,2026,Black,N,N,N,female
+Feb 10th,Kate Flint,119023,Lunch 2,Activity,5,2026,White,N,N,N,female
+Feb 10th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Feb 10th,Naomi Satut,792695,Lunch 2,Activity,8,2026,White,N,N,N,female
+Feb 10th,Siena Bowen,911310,Lunch 2,Activity,8,2026,T.M.O.,N,N,N,female
+Feb 10th,Grace Stewart,999250,Lunch 2,Activity,6,2025,White,N,N,N,female
+Feb 10th,Joy Spalding,936210,Lunch 2,Activity,10,2025,LatinX,N,N,N,female
+Feb 10th,Abigail Serpa,803773,Lunch 2,Activity,5,2025,White,N,N,N,female
+Feb 10th,Teagan Kenney,996041,Lunch 2,Activity,9,2025,White,N,N,N,female
+Feb 10th,Olivia Catayong,997985,Lunch 2,Activity,11,2024,LatinX,N,Y,N,female
+Feb 10th,Abigail Owens,625597,Lunch 2,Activity,7,2023,White,N,Y,N,female
+Feb 10th,Kayjah Etyem,885497,Lunch 2,Activity,6,2025,Black,N,N,N,female
+Feb 10th,Amiah Stringer,840189,Lunch 2,Activity,8,2025,Black,N,N,N,female
+Feb 10th,Nahrain Hammond,808220,Lunch 2,Activity,7,2025,Black,N,N,N,female
+Feb 10th,Jamie Belgrad,999017,Lunch 2,Activity,3,2025,Asian,N,N,N,female
+Feb 10th,Eleanor Hutchinson,707657,Lunch 2,Activity,7,2023,White,N,N,N,female
+Feb 10th,Eva Hansen,823640,Lunch 2,Activity,11,2026,White,N,N,N,female
+Feb 10th,Sofia Reel,748699,Lunch 2,Activity,11,2026,LatinX,N,N,N,female
+Mar 3rd,Katalin Maji,880933,Lunch 1,Guest Speaker,12,2024,T.M.O.,N,N,N,female
+Mar 3rd,Anika Radhakrishnan,885762,Lunch 1,Guest Speaker,13,2024,Asian,N,N,N,female
+Mar 3rd,Ashley Cochrane,117955,Lunch 1,Guest Speaker,4,2023,Black,N,N,N,female
+Mar 3rd,Maya Vezner,863517,Lunch 1,Guest Speaker,5,2023,White,N,N,N,female
+Mar 3rd,Elise Levy,974414,Lunch 1,Guest Speaker,11,2026,White,N,N,N,female
+Mar 3rd,Georgia Stoolmaker,828254,Lunch 1,Guest Speaker,13,2026,White,N,N,N,female
+Mar 3rd,Magdalena Papa,743339,Lunch 1,Guest Speaker,8,2023,White,N,N,N,female
+Mar 3rd,Viki Golemis,118366,Lunch 1,Guest Speaker,11,2025,White,N,N,N,female
+Mar 3rd,Katherine Schober,999168,Lunch 1,Guest Speaker,12,2025,White,N,N,N,female
+Mar 3rd,Aden Johansen,711315,Lunch 1,Guest Speaker,6,2025,White,N,N,N,female
+Mar 3rd,Irys Liang,819084,Lunch 1,Guest Speaker,6,2025,Asian,N,N,N,female
+Mar 3rd,Amalia Thibodeaux,999054,Lunch 1,Guest Speaker,4,2025,Black,N,N,N,female
+Mar 3rd,Madeline Ross,999595,Lunch 1,Guest Speaker,4,2025,White,N,N,N,female
+Mar 3rd,Emily Schirer,981754,Lunch 1,Guest Speaker,5,2025,T.M.O.,Y,N,Y,female
+Mar 3rd,Eleanor Warren,996076,Lunch 1,Guest Speaker,3,2025,White,N,Y,N,female
+Mar 3rd,Sophie Centofanti,854208,Lunch 1,Guest Speaker,4,2024,White,N,N,N,female
+Mar 3rd,Audrey Hurd,830932,Lunch 1,Guest Speaker,6,2026,White,N,N,N,female
+Mar 3rd,Vanisha Vig,200901,Lunch 1,Guest Speaker,8,2026,Asian,N,N,N,female
+Mar 3rd,Kathleen Kerr,118088,Lunch 1,Guest Speaker,2,2024,White,N,N,N,female
+Mar 3rd,Lucy Fredrickson,730411,Lunch 1,Guest Speaker,4,2024,White,N,Y,N,female
+Mar 3rd,Julia Newbold,988063,Lunch 1,Guest Speaker,12,2024,T.M.O.,N,N,N,female
+Mar 3rd,Alexia Lennon,853505,Lunch 1,Guest Speaker,3,2024,White,N,N,N,female
+Mar 3rd,Sydney Chow,948486,Lunch 1,Guest Speaker,5,2024,Asian,N,N,N,female
+Mar 3rd,Stephanie Lippke,926641,Lunch 1,Guest Speaker,10,2026,LatinX,N,N,N,female
+Mar 3rd,Toluwanimi Adeosun,118700,Lunch 1,Guest Speaker,11,2024,Black,N,N,Y,female
+Mar 3rd,Ella Machut,999080,Lunch 2,Guest Speaker,6,2025,White,N,N,N,female
+Mar 3rd,Saheli Goel,996148,Lunch 2,Guest Speaker,10,2025,Asian,N,N,N,female
+Mar 3rd,Liviani Sumi,887090,Lunch 2,Guest Speaker,11,2026,Asian,N,N,N,female
+Mar 3rd,Siena Bowen,911310,Lunch 2,Guest Speaker,8,2026,T.M.O.,N,N,N,female
+Mar 3rd,Kate Flint,119023,Lunch 2,Guest Speaker,5,2026,White,N,N,N,female
+Mar 3rd,Ainsley Charles,118814,Lunch 2,Guest Speaker,4,2026,White,N,Y,N,female
+Mar 3rd,Natalya Guiden,118619,Lunch 2,Guest Speaker,7,2025,Black,N,Y,N,female
+Mar 3rd,Tinsae Geyer,957925,Lunch 2,Guest Speaker,8,2026,Black,N,N,N,female
+Mar 3rd,Naomi Satut,792695,Lunch 2,Guest Speaker,8,2026,White,N,N,N,female
+Mar 3rd,Abigail Serpa,803773,Lunch 2,Guest Speaker,5,2025,White,N,N,N,female
+Mar 3rd,Isabella Nagatani-Beyers,942548,Lunch 2,Guest Speaker,5,2026,T.M.O.,N,N,N,female
+Mar 3rd,Teagan Kenney,996041,Lunch 2,Guest Speaker,9,2025,White,N,N,N,female
+Mar 3rd,Grace Stewart,999250,Lunch 2,Guest Speaker,6,2025,White,N,N,N,female
+Mar 3rd,Joy Spalding,936210,Lunch 2,Guest Speaker,10,2025,LatinX,N,N,N,female
+Mar 3rd,Nahrain Hammond,808220,Lunch 2,Guest Speaker,7,2025,Black,N,N,N,female
+Mar 3rd,Amiah Stringer,840189,Lunch 2,Guest Speaker,8,2025,Black,N,N,N,female
+Mar 3rd,Janiya Martin,788039,Lunch 2,Guest Speaker,5,2025,Black,N,N,N,female
+Mar 3rd,Amelia Ward,979957,Lunch 2,Guest Speaker,3,2023,White,N,N,N,female
+Mar 3rd,Sarah Moulinier,709065,Lunch 2,Guest Speaker,6,2023,White,N,N,N,female
+Mar 3rd,Eva Hansen,823640,Lunch 2,Guest Speaker,11,2026,White,N,N,N,female
+Mar 3rd,Sofia Reel,748699,Lunch 2,Guest Speaker,11,2026,LatinX,N,N,N,female
+Mar 3rd,Talia Bahar,963532,Lunch 2,Guest Speaker,8,2025,White,N,N,N,female
+Mar 3rd,Sidra Rutstein,827073,Lunch 2,Guest Speaker,6,2024,White,N,N,N,female
+Mar 3rd,Amy Grill,723403,Lunch 2,Guest Speaker,6,2024,White,N,N,N,female
+Mar 3rd,Olivia Catayong,997985,Lunch 2,Guest Speaker,11,2024,LatinX,N,Y,N,female
+Mar 3rd,Ife Renfro-Legghette,977329,Lunch 2,Guest Speaker,4,2024,Black,N,N,N,female
+Feb 24th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Feb 24th,Magdalena Papa,743339,Lunch 1,Activity,8,2023,White,N,N,N,female
+Feb 24th,Isabella Rene,746782,Lunch 1,Activity,7,2023,Black,N,N,N,female
+Feb 24th,Genevieve Hogan,721490,Lunch 1,Activity,1,2024,White,N,N,N,female
+Feb 24th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Feb 24th,Alexia Lennon,853505,Lunch 1,Activity,3,2024,White,N,N,N,female
+Feb 24th,Annabelle Harris,771944,Lunch 1,Activity,5,2024,White,N,N,N,female
+Feb 24th,Nicole Yao,759300,Lunch 1,Activity,10,2024,Asian,N,N,N,female
+Feb 24th,Sydney Chow,948486,Lunch 1,Activity,5,2024,Asian,N,N,N,female
+Feb 24th,Vanisha Vig,200901,Lunch 1,Activity,8,2026,Asian,N,N,N,female
+Feb 24th,Audrey Hurd,830932,Lunch 1,Activity,6,2026,White,N,N,N,female
+Feb 24th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Feb 24th,Emily Schirer,981754,Lunch 1,Activity,5,2025,T.M.O.,Y,N,Y,female
+Feb 24th,Eleanor Warren,996076,Lunch 1,Activity,3,2025,White,N,Y,N,female
+Feb 24th,Yolanda Esionye,855217,Lunch 1,Activity,2,2025,Black,N,N,N,female
+Feb 24th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Feb 24th,Irys Liang,819084,Lunch 1,Activity,6,2025,Asian,N,N,N,female
+Feb 24th,Madeline Ross,999595,Lunch 1,Activity,4,2025,White,N,N,N,female
+Feb 24th,Aden Johansen,711315,Lunch 1,Activity,6,2025,White,N,N,N,female
+Feb 24th,Kathleen Kerr,118088,Lunch 1,Activity,2,2024,White,N,N,N,female
+Feb 24th,Lucy Fredrickson,730411,Lunch 1,Activity,4,2024,White,N,Y,N,female
+Feb 24th,Kathleen Carrasco,747606,Lunch 1,Activity,4,2024,LatinX,N,N,N,female
+Feb 24th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Feb 24th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Feb 24th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Feb 24th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Feb 24th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Feb 24th,Siena Bowen,911310,Lunch 2,Activity,8,2026,T.M.O.,N,N,N,female
+Feb 24th,Ella Machut,999080,Lunch 2,Activity,6,2025,White,N,N,N,female
+Feb 24th,Kayjah Etyem,885497,Lunch 2,Activity,6,2025,Black,N,N,N,female
+Feb 24th,Saheli Goel,996148,Lunch 2,Activity,10,2025,Asian,N,N,N,female
+Feb 24th,Nahrain Hammond,808220,Lunch 2,Activity,7,2025,Black,N,N,N,female
+Feb 24th,Naomi Satut,792695,Lunch 2,Activity,8,2026,White,N,N,N,female
+Feb 24th,Abigail Serpa,803773,Lunch 2,Activity,5,2025,White,N,N,N,female
+Feb 24th,Olivia Catayong,997985,Lunch 2,Activity,11,2024,LatinX,N,Y,N,female
+Feb 24th,Ife Renfro-Legghette,977329,Lunch 2,Activity,4,2024,Black,N,N,N,female
+Feb 24th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+Feb 24th,Sidra Rutstein,827073,Lunch 2,Activity,6,2024,White,N,N,N,female
+Feb 24th,Amy Grill,723403,Lunch 2,Activity,6,2024,White,N,N,N,female
+Feb 24th,Amelia Ward,979957,Lunch 2,Activity,3,2023,White,N,N,N,female
+Feb 24th,Sarah Moulinier,709065,Lunch 2,Activity,6,2023,White,N,N,N,female
+Feb 24th,Amiah Stringer,840189,Lunch 2,Activity,8,2025,Black,N,N,N,female
+Feb 24th,Eva Hansen,823640,Lunch 2,Activity,11,2026,White,N,N,N,female
+Feb 24th,Sofia Reel,748699,Lunch 2,Activity,11,2026,LatinX,N,N,N,female
+Feb 24th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Feb 24th,Joy Spalding,936210,Lunch 2,Activity,10,2025,LatinX,N,N,N,female
+Feb 24th,Teagan Kenney,996041,Lunch 2,Activity,9,2025,White,N,N,N,female
+Feb 24th,Abigail Owens,625597,Lunch 2,Activity,7,2023,White,N,Y,N,female
+Mar 31st,Alyssa Ong,736834,Lunch 1,Guest Speaker,1,2023,Asian,N,N,N,female
+Mar 31st,Nicole Yao,759300,Lunch 1,Guest Speaker,10,2024,Asian,N,N,N,female
+Mar 31st,Alexia Lennon,853505,Lunch 1,Guest Speaker,3,2024,White,N,N,N,female
+Mar 31st,Mira Needlman,856677,Lunch 1,Guest Speaker,10,2024,White,N,N,N,female
+Mar 31st,Julia Newbold,988063,Lunch 1,Guest Speaker,12,2024,T.M.O.,N,N,N,female
+Mar 31st,Emily Schirer,981754,Lunch 1,Guest Speaker,5,2025,T.M.O.,Y,N,Y,female
+Mar 31st,Eleanor Warren,996076,Lunch 1,Guest Speaker,3,2025,White,N,Y,N,female
+Mar 31st,Ellen Pepsnik,857052,Lunch 1,Guest Speaker,11,2026,White,Y,N,N,female
+Mar 31st,Audrey Hurd,830932,Lunch 1,Guest Speaker,6,2026,White,N,N,N,female
+Mar 31st,Vanisha Vig,200901,Lunch 1,Guest Speaker,8,2026,Asian,N,N,N,female
+Mar 31st,Sophie Centofanti,854208,Lunch 1,Guest Speaker,4,2024,White,N,N,N,female
+Mar 31st,Adrianna Capiz,723838,Lunch 1,Guest Speaker,1,2024,White,N,N,N,female
+Mar 31st,Magdalena Papa,743339,Lunch 1,Guest Speaker,8,2023,White,N,N,N,female
+Mar 31st,Maya Vezner,863517,Lunch 1,Guest Speaker,5,2023,White,N,N,N,female
+Mar 31st,Ashley Cochrane,117955,Lunch 1,Guest Speaker,4,2023,Black,N,N,N,female
+Mar 31st,Toluwanimi Adeosun,118700,Lunch 1,Guest Speaker,11,2024,Black,N,N,Y,female
+Mar 31st,Katherine Schober,999168,Lunch 1,Guest Speaker,12,2025,White,N,N,N,female
+Mar 31st,Aden Johansen,711315,Lunch 1,Guest Speaker,6,2025,White,N,N,N,female
+Mar 31st,Amalia Thibodeaux,999054,Lunch 1,Guest Speaker,4,2025,Black,N,N,N,female
+Mar 31st,Viki Golemis,118366,Lunch 1,Guest Speaker,11,2025,White,N,N,N,female
+Mar 31st,Irys Liang,819084,Lunch 1,Guest Speaker,6,2025,Asian,N,N,N,female
+Mar 31st,Yolanda Esionye,855217,Lunch 1,Guest Speaker,2,2025,Black,N,N,N,female
+Mar 31st,Sofia Valenti Arenas,999618,Lunch 1,Guest Speaker,1,2025,LatinX,N,N,N,female
+Mar 31st,Georgia Stoolmaker,828254,Lunch 1,Guest Speaker,13,2026,White,N,N,N,female
+Mar 31st,Stephanie Lippke,926641,Lunch 1,Guest Speaker,10,2026,LatinX,N,N,N,female
+Mar 31st,Katalin Maji,880933,Lunch 1,Guest Speaker,12,2024,T.M.O.,N,N,N,female
+Mar 31st,Anika Radhakrishnan,885762,Lunch 1,Guest Speaker,13,2024,Asian,N,N,N,female
+Mar 31st,Lola Southard,758207,Lunch 1,Guest Speaker,1,2025,White,N,Y,N,female
+Mar 31st,Larkin Zdawczyk,830634,Lunch 2,Guest Speaker,11,2025,White,N,N,N,female
+Mar 31st,Ella Machut,999080,Lunch 2,Guest Speaker,6,2025,White,N,N,N,female
+Mar 31st,Kayjah Etyem,885497,Lunch 2,Guest Speaker,6,2025,Black,N,N,N,female
+Mar 31st,Sarah Polley,995225,Lunch 2,Guest Speaker,3,2024,White,N,N,N,female
+Mar 31st,Ainsley Charles,118814,Lunch 2,Guest Speaker,4,2026,White,N,Y,N,female
+Mar 31st,Rachael Rubin,999725,Lunch 2,Guest Speaker,6,2025,White,N,N,N,female
+Mar 31st,Rachel Durango-Cohen,763865,Lunch 2,Guest Speaker,8,2025,LatinX,N,N,N,female
+Mar 31st,Naomi Satut,792695,Lunch 2,Guest Speaker,8,2026,White,N,N,N,female
+Mar 31st,Liviani Sumi,887090,Lunch 2,Guest Speaker,11,2026,Asian,N,N,N,female
+Mar 31st,Saheli Goel,996148,Lunch 2,Guest Speaker,10,2025,Asian,N,N,N,female
+Mar 31st,Lillian Borro,771294,Lunch 2,Guest Speaker,1,2026,White,N,N,N,female
+Mar 31st,Tinsae Geyer,957925,Lunch 2,Guest Speaker,8,2026,Black,N,N,N,female
+Mar 31st,Siena Bowen,911310,Lunch 2,Guest Speaker,8,2026,T.M.O.,N,N,N,female
+Mar 31st,Isabella Nagatani-Beyers,942548,Lunch 2,Guest Speaker,5,2026,T.M.O.,N,N,N,female
+Mar 31st,Zoe Centofanti,903149,Lunch 2,Guest Speaker,2,2026,White,N,N,N,female
+Mar 31st,Eva Hansen,823640,Lunch 2,Guest Speaker,11,2026,White,N,N,N,female
+Mar 31st,Sofia Reel,748699,Lunch 2,Guest Speaker,11,2026,LatinX,N,N,N,female
+Mar 31st,Amy Grill,723403,Lunch 2,Guest Speaker,6,2024,White,N,N,N,female
+Mar 31st,Sidra Rutstein,827073,Lunch 2,Guest Speaker,6,2024,White,N,N,N,female
+Mar 31st,Jamie Belgrad,999017,Lunch 2,Guest Speaker,3,2025,Asian,N,N,N,female
+Mar 31st,Eleanor Hutchinson,707657,Lunch 2,Guest Speaker,7,2023,White,N,N,N,female
+Mar 31st,Abigail Owens,625597,Lunch 2,Guest Speaker,7,2023,White,N,Y,N,female
+Mar 31st,Ife Renfro-Legghette,977329,Lunch 2,Guest Speaker,4,2024,Black,N,N,N,female
+Mar 31st,Kupunoli Sumi,738826,Lunch 2,Guest Speaker,3,2024,Asian,N,N,N,female
+Mar 31st,Teagan Kenney,996041,Lunch 2,Guest Speaker,9,2025,White,N,N,N,female
+Mar 31st,Joy Spalding,936210,Lunch 2,Guest Speaker,10,2025,LatinX,N,N,N,female
+Mar 31st,Olivia Catayong,997985,Lunch 2,Guest Speaker,11,2024,LatinX,N,Y,N,female
+Mar 31st,Sarah Moulinier,709065,Lunch 2,Guest Speaker,6,2023,White,N,N,N,female
+Mar 31st,Amelia Ward,979957,Lunch 2,Guest Speaker,3,2023,White,N,N,N,female
+Apr 14th,Toluwanimi Adeosun,118700,Lunch 1,Activity,11,2024,Black,N,N,Y,female
+Apr 14th,Aden Johansen,711315,Lunch 1,Activity,6,2025,White,N,N,N,female
+Apr 14th,Elise Levy,974414,Lunch 1,Activity,11,2026,White,N,N,N,female
+Apr 14th,Irys Liang,819084,Lunch 1,Activity,6,2025,Asian,N,N,N,female
+Apr 14th,Stephanie Lippke,926641,Lunch 1,Activity,10,2026,LatinX,N,N,N,female
+Apr 14th,Katalin Maji,880933,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Apr 14th,Mira Needlman,856677,Lunch 1,Activity,10,2024,White,N,N,N,female
+Apr 14th,Julia Newbold,988063,Lunch 1,Activity,12,2024,T.M.O.,N,N,N,female
+Apr 14th,Ellen Pepsnik,857052,Lunch 1,Activity,11,2026,White,Y,N,N,female
+Apr 14th,Anika Radhakrishnan,885762,Lunch 1,Activity,13,2024,Asian,N,N,N,female
+Apr 14th,Emily Schirer,981754,Lunch 1,Activity,5,2025,T.M.O.,Y,N,Y,female
+Apr 14th,Katherine Schober,999168,Lunch 1,Activity,12,2025,White,N,N,N,female
+Apr 14th,Georgia Stoolmaker,828254,Lunch 1,Activity,13,2026,White,N,N,N,female
+Apr 14th,Amalia Thibodeaux,999054,Lunch 1,Activity,4,2025,Black,N,N,N,female
+Apr 14th,Vanisha Vig,200901,Lunch 1,Activity,8,2026,Asian,N,N,N,female
+Apr 14th,Clare Styslinger,118546,Lunch 1,Activity,2,2025,White,N,Y,N,female
+Apr 14th,Chrystal Salmon,970098,Lunch 1,Activity,2,2024,Black,N,N,N,female
+Apr 14th,Natalie Lundgren,919106,Lunch 1,Activity,2,2024,LatinX,N,N,N,female
+Apr 14th,Keira Walkden,744218,Lunch 1,Activity,1,2024,White,N,N,N,female
+Apr 14th,Talia Bahar,963532,Lunch 2,Activity,8,2025,White,N,N,N,female
+Apr 14th,Siena Bowen,911310,Lunch 2,Activity,8,2026,T.M.O.,N,N,N,female
+Apr 14th,Una Breen,704613,Lunch 2,Activity,6,2025,White,N,N,N,female
+Apr 14th,Lucy Carlisle,999008,Lunch 2,Activity,4,2025,White,N,N,N,female
+Apr 14th,Olivia Catayong,997985,Lunch 2,Activity,11,2024,LatinX,N,Y,N,female
+Apr 14th,Zoe Centofanti,903149,Lunch 2,Activity,2,2026,White,N,N,N,female
+Apr 14th,Ainsley Charles,118814,Lunch 2,Activity,4,2026,White,N,Y,N,female
+Apr 14th,Rachel Durango-Cohen,763865,Lunch 2,Activity,8,2025,LatinX,N,N,N,female
+Apr 14th,Kate Flint,119023,Lunch 2,Activity,5,2026,White,N,N,N,female
+Apr 14th,Tinsae Geyer,957925,Lunch 2,Activity,8,2026,Black,N,N,N,female
+Apr 14th,Saheli Goel,996148,Lunch 2,Activity,10,2025,Asian,N,N,N,female
+Apr 14th,Eva Hansen,823640,Lunch 2,Activity,11,2026,White,N,N,N,female
+Apr 14th,Teagan Kenney,996041,Lunch 2,Activity,9,2025,White,N,N,N,female
+Apr 14th,Naina Malhotra,954593,Lunch 2,Activity,9,2025,T.M.O.,N,Y,N,female
+Apr 14th,Sofia Reel,748699,Lunch 2,Activity,11,2026,LatinX,N,N,N,female
+Apr 14th,Abigail Serpa,803773,Lunch 2,Activity,5,2025,White,N,N,N,female
+Apr 14th,Joy Spalding,936210,Lunch 2,Activity,10,2025,LatinX,N,N,N,female
+Apr 14th,Grace Stewart,999250,Lunch 2,Activity,6,2025,White,N,N,N,female
+Apr 14th,Kupunoli Sumi,738826,Lunch 2,Activity,3,2024,Asian,N,N,N,female
+Apr 14th,Liviani Sumi,887090,Lunch 2,Activity,11,2026,Asian,N,N,N,female
+Apr 14th,Larkin Zdawczyk,830634,Lunch 2,Activity,11,2025,White,N,N,N,female
+May 12th,Toluwanimi Adeosun,118700,Lunch 1,Guest / Discussion,11,2024,Black,N,N,Y,female
+May 12th,Beri Barton,999072,Lunch 1,Guest / Discussion,7,2025,White,N,N,N,female
+May 12th,Viki Golemis,118366,Lunch 1,Guest / Discussion,11,2025,White,N,N,N,female
+May 12th,Aden Johansen,711315,Lunch 1,Guest / Discussion,6,2025,White,N,N,N,female
+May 12th,Elise Levy,974414,Lunch 1,Guest / Discussion,11,2026,White,N,N,N,female
+May 12th,Irys Liang,819084,Lunch 1,Guest / Discussion,6,2025,Asian,N,N,N,female
+May 12th,Emersen Mann,877080,Lunch 1,Guest / Discussion,2,2024,White,N,Y,N,female
+May 12th,Mira Needlman,856677,Lunch 1,Guest / Discussion,10,2024,White,N,N,N,female
+May 12th,Julia Newbold,988063,Lunch 1,Guest / Discussion,12,2024,T.M.O.,N,N,N,female
+May 12th,Ellen Pepsnik,857052,Lunch 1,Guest / Discussion,11,2026,White,Y,N,N,female
+May 12th,Anika Radhakrishnan,885762,Lunch 1,Guest / Discussion,13,2024,Asian,N,N,N,female
+May 12th,Madeline Ross,999595,Lunch 1,Guest / Discussion,4,2025,White,N,N,N,female
+May 12th,Emily Schirer,981754,Lunch 1,Guest / Discussion,5,2025,T.M.O.,Y,N,Y,female
+May 12th,Katherine Schober,999168,Lunch 1,Guest / Discussion,12,2025,White,N,N,N,female
+May 12th,Georgia Stoolmaker,828254,Lunch 1,Guest / Discussion,13,2026,White,N,N,N,female
+May 12th,Amalia Thibodeaux,999054,Lunch 1,Guest / Discussion,4,2025,Black,N,N,N,female
+May 12th,Nicole Yao,759300,Lunch 1,Guest / Discussion,10,2024,Asian,N,N,N,female
+May 12th,Clare Styslinger,118546,Lunch 1,Guest / Discussion,2,2025,White,N,Y,N,female
+May 12th,Chrystal Salmon,970098,Lunch 1,Guest / Discussion,2,2024,Black,N,N,N,female
+May 12th,Natalie Lundgren,919106,Lunch 1,Guest / Discussion,2,2024,LatinX,N,N,N,female
+May 12th,Jamie Belgrad,999017,Lunch 2,Guest / Discussion,3,2025,Asian,N,N,N,female
+May 12th,Siena Bowen,911310,Lunch 2,Guest / Discussion,8,2026,T.M.O.,N,N,N,female
+May 12th,Lucy Carlisle,999008,Lunch 2,Guest / Discussion,4,2025,White,N,N,N,female
+May 12th,Olivia Catayong,997985,Lunch 2,Guest / Discussion,11,2024,LatinX,N,Y,N,female
+May 12th,Ainsley Charles,118814,Lunch 2,Guest / Discussion,4,2026,White,N,Y,N,female
+May 12th,Kayjah Etyem,885497,Lunch 2,Guest / Discussion,6,2025,Black,N,N,N,female
+May 12th,Kate Flint,119023,Lunch 2,Guest / Discussion,5,2026,White,N,N,N,female
+May 12th,Saheli Goel,996148,Lunch 2,Guest / Discussion,10,2025,Asian,N,N,N,female
+May 12th,Natalya Guiden,118619,Lunch 2,Guest / Discussion,7,2025,Black,N,Y,N,female
+May 12th,Nahrain Hammond,808220,Lunch 2,Guest / Discussion,7,2025,Black,N,N,N,female
+May 12th,Eva Hansen,823640,Lunch 2,Guest / Discussion,11,2026,White,N,N,N,female
+May 12th,Teagan Kenney,996041,Lunch 2,Guest / Discussion,9,2025,White,N,N,N,female
+May 12th,Ella Machut,999080,Lunch 2,Guest / Discussion,6,2025,White,N,N,N,female
+May 12th,Naina Malhotra,954593,Lunch 2,Guest / Discussion,9,2025,T.M.O.,N,Y,N,female
+May 12th,Janiya Martin,788039,Lunch 2,Guest / Discussion,5,2025,Black,N,N,N,female
+May 12th,Sofia Reel,748699,Lunch 2,Guest / Discussion,11,2026,LatinX,N,N,N,female
+May 12th,Ife Renfro-Legghette,977329,Lunch 2,Guest / Discussion,4,2024,Black,N,N,N,female
+May 12th,Naomi Satut,792695,Lunch 2,Guest / Discussion,8,2026,White,N,N,N,female
+May 12th,Abigail Serpa,803773,Lunch 2,Guest / Discussion,5,2025,White,N,N,N,female
+May 12th,Joy Spalding,936210,Lunch 2,Guest / Discussion,10,2025,LatinX,N,N,N,female
+May 12th,Grace Stewart,999250,Lunch 2,Guest / Discussion,6,2025,White,N,N,N,female
+May 12th,Amiah Stringer,840189,Lunch 2,Guest / Discussion,8,2025,Black,N,N,N,female
+May 12th,Kupunoli Sumi,738826,Lunch 2,Guest / Discussion,3,2024,Asian,N,N,N,female
+May 12th,Liviani Sumi,887090,Lunch 2,Guest / Discussion,11,2026,Asian,N,N,N,female
+May 12th,Larkin Zdawczyk,830634,Lunch 2,Guest / Discussion,11,2025,White,N,N,N,female
+May 12th,Deja Malcolm,118750,Lunch 2,Guest / Discussion,1,2025,Black,N,N,N,female
+Apr 28th,Lucy Carlisle,999008,NA,Out of School Event,4,2025,White,N,N,N,female
+Apr 28th,Joy Spalding,936210,NA,Out of School Event,10,2025,LatinX,N,N,N,female
+Apr 28th,Viki Golemis,118366,NA,Out of School Event,11,2025,White,N,N,N,female
+Apr 28th,Sabine Batza,996106,NA,Out of School Event,1,2025,White,N,N,N,female
+Apr 28th,Rachael Rubin,999725,NA,Out of School Event,6,2025,White,N,N,N,female
+Apr 28th,Samantha Joseph,791665,NA,Out of School Event,6,2025,Asian,N,N,N,female
+Apr 28th,Naina Malhotra,954593,NA,Out of School Event,9,2025,T.M.O.,N,Y,N,female
+Apr 28th,Annabelle Harris,771944,NA,Out of School Event,5,2024,White,N,N,N,female
+Apr 28th,Larkin Zdawczyk,830634,NA,Out of School Event,11,2025,White,N,N,N,female

@@ -427,14 +427,14 @@ one_wh_plot <- ggplot(data = percentage_data, mapping = aes(x = work_hard, y = p
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
-    ) + 
+  ) + 
   scale_fill_manual(
     name = "",
     labels = c("Pre Test", "Post Test"),
-    values = colors
-    ) + 
+    values = colors 
+  ) + 
   scale_y_continuous(labels = scales::label_percent(scale = 1)) +
   labs(
     x = "Student Responses", 
@@ -442,18 +442,18 @@ one_wh_plot <- ggplot(data = percentage_data, mapping = aes(x = work_hard, y = p
     title = "I'll Find the Answer If I Work Hard", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),  
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
-    )
+  )
 
 one_wh_plot
 ```
@@ -522,7 +522,7 @@ one_know_plot <- ggplot(data = percentage_data, mapping = aes(x = knowledge, y =
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial",  
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -537,14 +537,14 @@ one_know_plot <- ggplot(data = percentage_data, mapping = aes(x = knowledge, y =
     title = "Confident In Applying Prior Knowledge To New Projects", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") +  
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),  
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -616,7 +616,7 @@ one_course_plot <- ggplot(data = percentage_data, mapping = aes(x = courses, y =
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -631,14 +631,14 @@ one_course_plot <- ggplot(data = percentage_data, mapping = aes(x = courses, y =
     title = "Confident In Ability To Do Well In STE(A)M Courses", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -712,7 +712,7 @@ one_succ_plot <- ggplot(data = percentage_data, mapping = aes(x = succesful, y =
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -727,14 +727,14 @@ one_succ_plot <- ggplot(data = percentage_data, mapping = aes(x = succesful, y =
     title = "I Could Be Successful In A STE(A)M Career", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -807,7 +807,7 @@ one_imp_plot <- ggplot(data = percentage_data, mapping = aes(x = important, y = 
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -822,14 +822,14 @@ one_imp_plot <- ggplot(data = percentage_data, mapping = aes(x = important, y = 
     title = "People In The STE(A)M Field Solve Important Problems", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -902,13 +902,13 @@ one_mem_plot <- ggplot(data = percentage_data, mapping = aes(x = member, y = per
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial",  # Change to your desired font
     fontface = "bold"
   ) + 
   scale_fill_manual(
     name = "",
     labels = c("Pre Test", "Post Test"), 
-    values = colors
+    values = colors  # Assuming 'colors' is defined elsewhere
   ) + 
   scale_y_continuous(labels = scales::label_percent(scale = 1)) +
   labs(
@@ -917,14 +917,14 @@ one_mem_plot <- ggplot(data = percentage_data, mapping = aes(x = member, y = per
     title = "I Am A Member Of A STE(A)M Community", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") +  # Set base font here
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
     legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -997,7 +997,7 @@ one_car_plot <- ggplot(data = percentage_data, mapping = aes(x = career, y = per
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -1012,14 +1012,14 @@ one_car_plot <- ggplot(data = percentage_data, mapping = aes(x = career, y = per
     title = "A Career In STE(A)M May Be A Good Fit For Me", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -1092,7 +1092,7 @@ one_iden_plot <- ggplot(data = percentage_data, mapping = aes(x = identity, y = 
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -1107,14 +1107,14 @@ one_iden_plot <- ggplot(data = percentage_data, mapping = aes(x = identity, y = 
     title = "'Future STE(A)M Professional' Is An Important Identity", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -1187,7 +1187,7 @@ one_mean_plot <- ggplot(data = percentage_data, mapping = aes(x = meaningful, y 
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -1202,14 +1202,14 @@ one_mean_plot <- ggplot(data = percentage_data, mapping = aes(x = meaningful, y 
     title = "I Could Make a Meaningful Contribution In STE(A)M", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
@@ -1281,7 +1281,7 @@ one_every_plot <- ggplot(data = percentage_data, mapping = aes(x = everyday, y =
     position = position_dodge(width = 0.9), 
     vjust = -0.5, 
     size = 3, 
-    family = "Georgia", 
+    family = "Arial", 
     fontface = "bold"
   ) + 
   scale_fill_manual(
@@ -1296,14 +1296,14 @@ one_every_plot <- ggplot(data = percentage_data, mapping = aes(x = everyday, y =
     title = "I Understand What Everyday STE(A)M Work Is Like", 
     subtitle = "WiSTEM 2023 - 2024"
   ) + 
-  theme_minimal() + 
+  theme_minimal(base_family = "Arial") + 
   theme(
-    plot.title = element_text(hjust = 0.5, family = "Georgia", face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, family = "Georgia"),
-    legend.position ="top", 
-    legend.text = element_text(family = "Georgia", size = 12), 
-    axis.title = element_text(family = "Georgia", size = 12), 
-    axis.text = element_text(family = "Georgia", size = 10), 
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "top", 
+    legend.text = element_text(size = 12), 
+    axis.title = element_text(size = 12), 
+    axis.text = element_text(size = 10), 
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank()
